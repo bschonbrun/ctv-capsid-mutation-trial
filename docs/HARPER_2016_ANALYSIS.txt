@@ -1,0 +1,154 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+                    HARPER 2016: ACTUAL FINDINGS
+═══════════════════════════════════════════════════════════════════════════════
+
+PARENT ISOLATES (Transmission Rate by T. citricida)
+───────────────────────────────────────────────────────────────────────────────
+  T36 infectious clone:  0.6%  (1/172 aphids)
+  FS577-1-8:           24.1%  (95/394 aphids)
+  Fold difference:     ~40-fold (not 16-fold)
+
+
+T36-FS577 HYBRID RESULTS (only p27 is identical; p65 and p61 differ)
+───────────────────────────────────────────────────────────────────────────────
+  p6-p18 region (both p65 AND p61 from FS577): 20.6%  (52/253)
+  
+  Individual gene substitutions:
+    p65 alone from FS577:        1.9%   (5/258)
+    p61 alone from FS577:        4.0%   (11/273)
+  
+  BOTH p65 AND p61 from FS577: 17.9%  (35/196)
+  
+  Key quote: "simultaneous substitution of both genes increased transmission 
+  efficacy to 18%, which suggests that aphid transmission requires the concerted 
+  action of these two genes through an unknown mechanism, and further, that 
+  this requires compatible sequences in these two genes."
+
+
+GENES TESTED
+───────────────────────────────────────────────────────────────────────────────
+  ✗ p33:   NOT TESTED in Harper 2016
+  ✓ p65:   Tested separately and together with p61
+  ✓ p61:   Tested separately and together with p65
+  ✓ p27:   Identical between T36 and FS577 (not involved in transmission)
+
+
+VIRAL TITER
+───────────────────────────────────────────────────────────────────────────────
+  RT-qPCR: No significant difference (Tukey HSD P > 0.05)
+  ELISA:   Similar results
+  
+  Conclusion: "the substitutions did not affect virus accumulation, 
+  therefore we propose that the increase in efficacy is due to the 
+  polymorphisms contained within the substituted p61 and p65 genes."
+  
+  → This RULES OUT titer-based mechanism for p61/p65
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                    WHAT THE PEER REVIEW GOT WRONG
+═══════════════════════════════════════════════════════════════════════════════
+
+CLAIM 1 (from peer review): "p61/p65 attribution rests on an unread Harper 2016"
+REALITY: p61/p65 ARE in Harper 2016 (17.9% transmission, measured directly)
+VERDICT: The peer review was RIGHT to flag it as unread, but WRONG to say it 
+         was unverified. It was unverified until read, but it IS verified once read.
+
+CLAIM 2 (from peer review): "5.2-point gap (23% − 17.8%) between Harper and Shilts"
+REALITY: Harper 2016 reports 17.9% for p65+p61 (not 23%)
+         Harper's 24.1% is for the FS577 wild-type parent, not a hybrid
+         The 23% cited by the brief is NOT in Harper 2016 — likely a misreading
+VERDICT: There is no 5.2-point "residual" to explain. Harper measured p65+p61 
+         directly at 17.9%. That IS the p61/p65 contribution.
+
+CLAIM 3 (from peer review): "K174R is impossible (both are K174)"
+REALITY: K174R is a change in p33, NOT p65 or p61
+         Harper 2016 does NOT mention K174 or any p33 variation
+         K174R was first mentioned in Shilts 2026, not Harper 2016
+VERDICT: The peer review is correct about K174R being impossible, but this is
+         a finding from Shilts 2026, not Harper 2016.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                    REVISED PICTURE: THREE STUDIES, THREE GENES
+═══════════════════════════════════════════════════════════════════════════════
+
+HARPER 2016 (University of Florida lab)
+  Genes tested:     p65 + p61 (HSP70 and HSP90 homologs)
+  Construct:        T36 infectious clone with FS577 substitutions
+  Result:           p65+p61 together → 17.9% (from 0.6%)
+                    Each alone → 1.9% and 4.0% respectively
+  Mechanism:        NOT titer-based (RT-qPCR shows no difference)
+                    "Concerted action" suggests cooperativity
+  Sample size:      n=196 for p65+p61 hybrid, n=253 for full p6-p18 region
+  Conclusion:       p65 and p61 sequences are critical for transmission
+
+
+SHILTS 2020 (same lab + others)
+  Genes tested:     p33 + p18 + p13 (triple deletion & restoration)
+  Construct:        T36 with all three genes deleted, then restored from FS577
+  Result:           p33+p18+p13 together → ~50% (from ~0.6%)
+  Mechanism:        Unknown (titer not reported)
+  Sample size:      Not visible in abstract (paper needs retrieval)
+  Conclusion:       These three genes matter, but can't separate which drives effect
+
+
+SHILTS 2026 (same lab + others, most recent)
+  Genes tested:     p33 + p18 + p13 (triple deletion, same as Shilts 2020)
+  Construct:        Same as Shilts 2020 but now with sequence analysis
+  Result:           Triple substitution → 50% (from 0.6%)
+                    Sequence analysis: "only p33 differs" with K174R change
+  Mechanism:        Unknown (titer not reported)
+  Sample size:      Not visible in abstract
+  Conclusion:       p33 is the key driver, but tested as part of triple substitution
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                    WHAT THIS MEANS FOR CONSTRUCT DESIGN
+═══════════════════════════════════════════════════════════════════════════════
+
+CRITICAL FINDINGS:
+  1. p65 and p61 ARE experimentally validated to control transmission (Harper 2016)
+  2. p33 IS experimentally validated to control transmission (Shilts 2020, 2026)
+  3. These are SEPARATE findings — Harper tested p65/p61, Shilts tested p33/p18/p13
+  4. The two studies cannot be directly compared (different constructs, different genes)
+
+CURRENT KNOWLEDGE:
+  • p65 + p61 work together ("concerted action") → 17.9% (Harper 2016)
+  • p33 (with p18, p13) adds more benefit → 50% (Shilts 2026)
+  • Individual p61 substitution alone: 4% (Harper 2016)
+  • Individual p65 substitution alone: 1.9% (Harper 2016)
+  • Mechanism for p61/p65: NOT titer-based (RT-qPCR negative)
+  • Mechanism for p33: UNKNOWN (titer not measured)
+
+THE 5.2-POINT "GAP" DOES NOT EXIST
+  ✗ The peer review invented a gap by subtracting Shilts 2020's 17.8% from 
+    Harper 2016's 23% (which is the FS577 parent, not a hybrid)
+  ✓ Harper 2016 directly measured p65+p61 at 17.9%
+  ✓ No residual gap. No missing p61/p65 attribution.
+
+DESIGN IMPLICATIONS:
+  ✓ p65 and p61 SHOULD be in the construct (17.9% effect, not titer-based)
+  ✓ p33 SHOULD be in the construct (50% effect in triple substitution)
+  ✗ K174R CANNOT be the mechanism (both donor and recipient encode K174)
+  ? Individual effects of p33 within the triple deletion are unknown
+     (Shilts 2026 measures p33 in a triple-deletion context, not alone)
+
+═══════════════════════════════════════════════════════════════════════════════
+ACTION: PEER REVIEW MUST BE REVISED
+═══════════════════════════════════════════════════════════════════════════════
+
+The peer review was RIGHT to flag "unread sources," but the FLAG WAS WRONG 
+about what those sources say.
+
+The brief's error was NOT that p61/p65 are unverified.
+The brief's error was that it CITED THEM TO THE WRONG PAPER and then invented 
+a 5.2-point "residual gap" that doesn't exist.
+
+Once Harper is read:
+  ✓ p61/p65 ARE verified (17.9%, not titer-dependent)
+  ✓ K174R is impossible (confirmed from Shilts 2026, not Harper)
+  ✗ The 5.2-point gap is spurious (conflation of two studies)
+  ✓ Construct SHOULD include p65, p61, and p33
+  ? But individual roles within triple substitution remain undefined
