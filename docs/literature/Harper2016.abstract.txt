@@ -1,0 +1,29 @@
+1. Arch Virol. 2016 Dec;161(12):3555-3559. doi: 10.1007/s00705-016-3070-x. Epub 
+2016 Sep 19.
+
+Sequence variation in two genes determines the efficacy of transmission of 
+citrus tristeza virus by the brown citrus aphid.
+
+Harper SJ(1), Killiny N(2), Tatineni S(3), Gowda S(2), Cowell SJ(2), Shilts 
+T(2), Dawson WO(2).
+
+Author information:
+(1)Department of Plant Pathology, University of Florida, 700 Experiment Station 
+Road, Lake Alfred, Florida, 33850, USA. sjharper@ufl.edu.
+(2)Department of Plant Pathology, University of Florida, 700 Experiment Station 
+Road, Lake Alfred, Florida, 33850, USA.
+(3)U.S. Department of Agriculture, Agricultural Research Service, and Department 
+of Plant Pathology, University of Nebraska-Lincoln, Lincoln, Nebraska, USA.
+
+Vector transmission is an important part of the viral infection cycle, yet for 
+many viruses little is known about this process, or how viral sequence variation 
+affects transmission efficacy. Here we examined the effect of substituting genes 
+from the highly transmissible FS577 isolate of citrus tristeza virus (CTV) in to 
+the poorly transmissible T36-based infectious clone. We found that introducing 
+p65 or p61 sequences from FS577 significantly increased transmission efficacy. 
+Interestingly, replacement of both genes produced a greater increase than either 
+gene alone, suggesting that CTV transmission requires the concerted action of 
+co-evolved p65 and p61 proteins.
+
+DOI: 10.1007/s00705-016-3070-x
+PMID: 27644950 [Indexed for MEDLINE]

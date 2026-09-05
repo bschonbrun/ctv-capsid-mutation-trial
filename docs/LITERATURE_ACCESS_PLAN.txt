@@ -81,16 +81,31 @@ WHAT THE PEER REVIEW TOLD YOU TO DO
 The 6-model panel said:
 
   ✗ BLOCK: "Do NOT build K174R + p61/p65 constructs as designed"
-  
+
   BECAUSE:
-    1. K174R is impossible (both viruses already have K174)
+    1. ~~K174R is impossible (both viruses already have K174)~~
+       [RETRACTED 2026-09-05, round-3 panel: inverted — T68-1 (JQ965169) =
+        R174, AY170468 = R174, EU937521 = K174; FS577 vs EU937521 p33 differ
+        at exactly R174K; the Shilts 2026 abstract is consistent with these
+        sequences. Residue 174 de-emphasis instead re-anchored on T30 (R174,
+        1.57%) + Harper's K174-retaining hybrids (17.9%/20.6%).
+        See docs/peer_reviews_round3/CONSENSUS.md]
     2. The 5.2-point gap for p61/p65 rests on an unread Harper 2016
+       [RESOLVED since: Harper 2016 read — p65+p61 measured directly at
+        17.9% (35/196); no "gap" to distribute (2026-09-05)]
     3. That gap has only 14% statistical power anyway
-  
+       [2026-09-05, round-3 panel: baseline-dependent — 14%/~934-per-arm
+        holds only at the mid-scale 15→20% contrast; at the
+        decision-relevant 1→6% contrast n=90 gives ~45% and 80% needs
+        ~211/arm. See docs/peer_reviews_round3/CONSENSUS.md]
+
   ✓ PROCEED ONCE YOU:
     1. [X] Read Shilts 2026 (available now)
     2. [ ] Read Harper 2016 (request from author or library)
     3. [ ] Measure viral titer in source plants
+       [2026-09-05, round-3 panel: Shilts 2020 donor plants WERE measured by
+        DAS-ELISA (OD 3.36/3.41/3.50, same Tukey letter); the remaining gap
+        is RT-qPCR-level quantitation. See docs/peer_reviews_round3/CONSENSUS.md]
     4. [ ] Design reciprocal swap (T36 p33 → T68-1 background)
 
 ═════════════════════════════════════════════════════════════════════════════════
@@ -130,3 +145,11 @@ substitution gave 50%, but it's unclear which gene(s) drove the effect.
 
 This is exactly the kind of ambiguity that killed the K174R hypothesis:
 the brief was citing findings without having read the actual results.
+
+[NOTE 2026-09-05, round-3 panel: "killed the K174R hypothesis" here referred
+ to the rounds 1-2 impossibility verdict, which was itself retracted —
+ the sequences DO differ at exactly R174K (FS577 vs EU937521); T68-1 =
+ R174. The point about unread-source ambiguity stands. Also: wherever the
+ p61/p65 substitution set appears, the 11-vs-7 adjudication is pending and
+ the EU937521-validated 7-residue set is the default.
+ See docs/peer_reviews_round3/CONSENSUS.md]

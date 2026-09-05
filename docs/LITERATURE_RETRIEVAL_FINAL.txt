@@ -42,8 +42,12 @@ FINDINGS
 WHAT CHANGES ONCE YOU READ THESE
 ═══════════════════════════════════════════════════════════════════════════════
 
-The peer review said: "Do not proceed with K174R + p61/p65 design until you 
+The peer review said: "Do not proceed with K174R + p61/p65 design until you
 read Harper 2016 and verify the 5.2-point gap logic."
+  [2026-09-05, round-3 panel — both halves now resolved/corrected: the K174R
+   "impossibility" was inverted (T68-1/AY170468 = R174, EU937521 = K174);
+   Harper 2016 was read (p65+p61 = 17.9%, 35/196, direct). See
+   docs/peer_reviews_round3/CONSENSUS.md]
 
 Once you have Harper:
   • You'll see what "two genes" actually means (p33 + ?)
@@ -53,12 +57,25 @@ Once you have Harper:
     justified or exploratory
 
 The peer review findings DON'T change if you can't get Harper. It still says:
-  "K174R is impossible (both are K174)"
+  ~~"K174R is impossible (both are K174)"~~
+    [RETRACTED 2026-09-05, round-3 panel: INVERTED — they are NOT both K174.
+     T68-1 (JQ965169) = R174; AY170468 = R174; EU937521 = K174; FS577 vs
+     EU937521 p33 differ at exactly R174K; the 2026 abstract is consistent.
+     Residue-174 dead-lever conclusion re-anchored on T30 (R174, 1.57%) +
+     Harper's K174-retaining hybrids (17.9%/20.6%).
+     See docs/peer_reviews_round3/CONSENSUS.md]
   "5.2-point gap has 14% power either way"
+    [2026-09-05, round-3 panel: baseline-dependent — 14%/~934-per-arm holds
+     only at the mid-scale 15→20% contrast; at 1→6% n=90 gives ~45% power
+     and 80% needs ~211/arm. See docs/peer_reviews_round3/CONSENSUS.md]
   "Proceed with narrowed plan once you measure titer and do reciprocal swap"
+    [2026-09-05, round-3 panel: "measure titer" narrows to RT-qPCR — Shilts
+     2020 donor plants already have DAS-ELISA (OD 3.36/3.41/3.50, same Tukey
+     letter). See docs/peer_reviews_round3/CONSENSUS.md]
 
-So: get Harper if you want to understand p61/p65. But the critical blockers 
-(K174R impossible, mechanism unidentified) are checkable from what you already have.
+So: get Harper if you want to understand p61/p65. But the critical blockers
+(~~K174R impossible~~ [retracted, see above], mechanism under-identified at
+RT-qPCR level) are checkable from what you already have.
 
 ═══════════════════════════════════════════════════════════════════════════════
 NEXT STEPS (Not automated retrieval)
@@ -71,6 +88,9 @@ NEXT STEPS (Not automated retrieval)
        - What are the sample sizes?
        - Does p61/p65 justify being in the construct design?
 4. [ ] Decision: Proceed with narrowed p33-only plan, or add p61/p65 exploratory?
-5. [ ] Either way: Start measuring titer in source plants (Shilts used T36 + FS577 
+5. [ ] Either way: Start measuring titer in source plants (Shilts used T36 + FS577
        source material — request samples from UF if needed)
+       [2026-09-05, round-3 panel: scope this as RT-qPCR — Shilts 2020 Table 2
+        already reports donor-plant DAS-ELISA (OD 3.36/3.41/3.50, same Tukey
+        letter). See docs/peer_reviews_round3/CONSENSUS.md]
 6. [ ] Design reciprocal swap construct (T36 p33 into T68-1 background)

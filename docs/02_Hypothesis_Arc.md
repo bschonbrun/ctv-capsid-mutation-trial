@@ -84,6 +84,9 @@ DATA GATHERING WORKFLOW:
     - FS577 (KC517488): 24.1% transmission (medium)
     - T30 (AF260651): 1.57% transmission (low)
     - T36 field isolate (U16304): 1.5% transmission (baseline/lowest)
+      [CORRECTED 2026-09-05 — CONSENSUS correction 4: the 1.5% (1/66) figure is
+       Shilts's T36 CLONE arm (AY170468 backbone), not the field isolate;
+       Harper's T36 field rate is 2/380 = 0.53%]
   
   REASONING: If CPm is the transmission determinant, CPm sequences should differ
   systematically between high-transmitters (T68-1, FS577) and low-transmitters
@@ -106,6 +109,9 @@ DATA GATHERING WORKFLOW:
   ────────────────────────────────
   OBSERVATION: FS577 and T36 field isolate are **identical** in CPm (240/240 aa),
   yet they differ **16-fold in transmission efficiency** (24.1% vs 1.5%).
+  [CORRECTED 2026-09-05 — CONSENSUS correction 4: the 1.5% (1/66) is the Shilts
+   T36 clone arm; the T36 field rate is 0.53% (2/380, Harper) — the CPm-identity
+   conclusion is unchanged either way]
   
   LOGICAL CONSEQUENCE:
     If CPm_FS577 = CPm_T36 (same sequence)
@@ -180,6 +186,8 @@ LITERATURE SEARCH STRATEGY:
 KEY FINDING: p33 VIROPORIN DISCOVERY (PLOS Pathogens 2025)
   ────────────────────────────────────────────────────────
   Title: "The citrus tristeza virus p33 protein functions as a viroporin"
+  [CITATION VERIFIED 2026-09-05 — CONSENSUS correction 9: Aknadibossian et al.
+   2025, PLoS Pathogens 21(11):e1013730, DOI 10.1371/journal.ppat.1013730]
   
   • p33 has Class I viroporin architecture (transmembrane + cytoplasmic domains)
   • Induces K+ and Na+ currents in Xenopus oocytes (two-electrode voltage clamp)
@@ -202,6 +210,10 @@ SECONDARY FINDING: Shilts et al. 2026 (Virology)
   
   Key finding:
     • Among the three complemented genes, ONLY p33 differs (K174R mutation)
+      [VERIFIED CONSISTENT 2026-09-05 — CONSENSUS correction 2: T36 clone
+       EU937521 = K174, FS577 = R174; they differ at exactly R174K. But residue
+       174 is NOT the dominant lever: T30 (R174) transmits at 1.57% and Harper's
+       K174-retaining hybrids at 17.9%/20.6% — correction 3]
     • Conclusion: "Efficient aphid transmission likely requires coordinated roles
       of p33, p61, and p65"
   
@@ -289,14 +301,20 @@ NEW INSIGHT FROM RESIDUE 174 CENSUS:
   PROBLEM: If K174R is "THE mutation" for high transmission, why do the actual
   high-transmitters (T68-1, FS577) have R174 (the wild-type)?
   
-  RESOLUTION: K174R is necessary but NOT sufficient. the Shilts et al. 2026 paper likely
-  engineered K174 into a T36 background (which naturally lacks it), and the
-  complementation with p33+p61+p65 together achieved the transmission gain.
+  RESOLUTION [CORRECTED 2026-09-05 — CONSENSUS corrections 2–3]: the round-3
+  re-alignment confirms T68-1 = R174, AY170468 = R174, and the T36 infectious
+  clone EU937521 = K174; FS577 vs EU937521 differ at exactly R174K, so the
+  2026 abstract's K174R statement is consistent with the verified sequences.
+  The earlier "necessary but not sufficient" framing (and the guess that T36
+  "naturally lacks" K174) is withdrawn. The switch reading fails on phenotype:
+  T30 (R174) transmits at 1.57%, and Harper's K174-retaining hybrids transmit
+  at 17.9%/20.6% — residue 174 is not the dominant lever; the transmission
+  gain came from the coordinated p33+p61+p65 complementation.
   
   IMPLICATION FOR DESIGN:
     Not: "Install K174R and transmission will go up"
-    But: "K174R is one component of a coordinated p33+p61+p65 strategy; test
-         the combined effect"
+    But: "p33 sequence variation is one component of a coordinated p33+p61+p65
+         strategy; test the combined effect"
 
 ═══════════════════════════════════════════════════════════════════════════════
 PHASE 8: DECISION POINT FOR THE TEAM (Week 9, Today)

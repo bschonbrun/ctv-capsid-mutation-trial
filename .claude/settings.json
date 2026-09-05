@@ -35,5 +35,18 @@
         ]
       }
     ]
+  },
+  "sandbox": {
+    "network": {
+      "allowedDomains": [
+        "api.anthropic.com",
+        "api.openai.com",
+        "generativelanguage.googleapis.com",
+        "api.deepseek.com",
+        "api.x.ai",
+        "openrouter.ai",
+        "access.carbonet.app"
+      ]
+    }
   }
 }

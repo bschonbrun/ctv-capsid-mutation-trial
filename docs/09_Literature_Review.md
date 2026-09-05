@@ -49,9 +49,13 @@ C. Our sequence verification (2026-09-05)
                       BUT A174 in field isolate U16304 (indel artifact)
    T30 (1.6%):        R174 in p33
    
-   → The K174R difference exists ONLY between FS577 and the T36 infectious clone, 
-   but NOT between FS577 and T30 (both have R174 yet 23-fold difference in 
-   transmission). This suggests K174R is NECESSARY but NOT SUFFICIENT.
+   → The R174K difference exists ONLY between FS577 and the T36 infectious clone 
+   (EU937521), but NOT between FS577 and T30 (both have R174 yet ~15-fold
+   difference in transmission). Conclusion re-anchored by round-3 panel:
+   residue 174 can be NEITHER necessary NOR the dominant lever — T30 (R174,
+   1.57%) plus Harper 2016's K174-retaining hybrids (17.9%/20.6% transmission)
+   both contradict necessity/dominance. (corrected 2026-09-05, round-3 panel:
+   see docs/peer_reviews_round3/CONSENSUS.md)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PART 2: WHAT DOES THE CPM-CENTERED HYPOTHESIS ACTUALLY SAY?
@@ -75,6 +79,9 @@ PRO-CPm EVIDENCE (The original hypothesis was built on this)
    - A frameshift mutation in CPm abolishes whitefly transmission
    - Yet: virion assembly and systemic plant movement are UNAFFECTED
    - Chimeric CPm experiments show ~60% LCV CPm insertion still permits transmission
+     [FLAGGED 2026-09-05, round-3 panel: the 60% vs 41% assignment below is
+      likely REVERSED relative to Chen et al. 2011 (PNAS 108:16777) — needs
+      source check before citing. See docs/peer_reviews_round3/CONSENSUS.md §2]
    
    Interpretation: "CPm can be mutated to disrupt transmission while keeping assembly"
    Status: PEER-REVIEWED; shows CPm mutations CAN disrupt transmission. BUT this was 
@@ -100,6 +107,11 @@ AGAINST-CPm EVIDENCE (What the data actually show)
 2. What DOES differ between FS577 and T36?
    ─────────────────────────────────────────
    p33:  98.7% identity; 3 aa differences (V117S, V262I, E264G) + 1 gap
+         [corrected 2026-09-05, round-3 panel: 98.7% ≈ 299/303 (gapped
+          alignment, 1 gap) — an earlier write-up stating "295/302 = 98.7%"
+          was arithmetic error; vs the AY170468/EU937521 clone references
+          p33 identity is 99.7%. State the reference when quoting.
+          See docs/peer_reviews_round3/CONSENSUS.md]
    p65:  98.8% identity; 7 aa differences
    p61:  98.1% identity; 10 aa differences
    p25:  99.1% identity; 2 aa differences (H79R, I209V)
@@ -171,7 +183,11 @@ LIYV (Lettuce infectious yellows virus, whitefly-transmitted)
 2. CPm chimeras with LCV (lettuce chlorosis virus)
    - CPmP-1 (60% LCV, 40% LIYV sequence): transmits
    - CPmP-4 (41% LCV): does NOT transmit
-   - CPm is PLASTIC for transmission, tolerates some cross-species content
+   [FLAGGED 2026-09-05, round-3 panel: these percentages are likely REVERSED
+    relative to Chen et al. 2011 (PNAS 108:16777) — nobody fetched the source;
+    re-check required before citing. See docs/peer_reviews_round3/CONSENSUS.md §2]
+   - CPm may be PLASTIC for transmission, tolerating some cross-species content
+     (pending the source re-check above)
    
    Implication: Structural regions ≠ sequence-specific; epitope matters
 
@@ -259,8 +275,12 @@ PROS:
 CONS:
 ─────
 ✗ FS577 and T36 have IDENTICAL CPm despite 16-fold transmission difference
-  → This directly falsifies the hypothesis that CPm sequence variation determines 
-    transmission in CTV
+  → This rules out the hypothesis that CPm SEQUENCE VARIATION determines 
+    transmission in CTV (240/240 identity, independently re-confirmed).
+    NOTE 2026-09-05, round-3 panel: CPm involvement itself is NOT ruled out —
+    sequence identity is now the sole basis for the falsification after the
+    17/90 CPm-construct figure was found not to exist in Shilts 2020
+    (see docs/peer_reviews_round3/CONSENSUS.md)
 ✗ LIYV data is from a frameshift (complete loss of function), not a point mutation
   → Doesn't prove subtle CPm mutations can selectively block transmission
 ✗ No example of a CPm point mutation abolishing transmission in CTV or any virus
@@ -288,6 +308,8 @@ The original hypothesis (CPm mutations) was built on:
 But the SEQUENCE DATA directly contradicts it:
   - FS577/T36 CPm identity (0 differences) + 16-fold transmission gap
   → CPm sequence is NOT the determinant of transmission efficiency in CTV
+    (CPm sequence variation only; CPm involvement not excluded —
+     corrected 2026-09-05, round-3 panel: see docs/peer_reviews_round3/CONSENSUS.md)
   
 The DATA point to p33 instead:
   - p33 shows 3 differences between FS577/T36 (vs. CPm's 0)

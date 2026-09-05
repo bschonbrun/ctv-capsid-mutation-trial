@@ -19,8 +19,12 @@ hypothesis development through rigorous validation, ready for team strategy sess
    → Who needs it: Leadership (confidence in data integrity), wet-lab team 
      (validation checklist before Stage 0)
    → Key insight: All core claims verified or traced to peer-reviewed sources
-   → Critical caveat: K174R is necessary but NOT sufficient (requires p33+p61+p65 
-     coordinated function)
+   → Critical caveat: residue 174 (K174R) is NOT a standalone lever — T30 has
+     R174 yet transmits at 1.57%, and Harper's K174-retaining hybrids still
+     transmit (17.9%/20.6%); multi-protein context matters
+     (corrected 2026-09-05, round-3 panel: the earlier framing "K174R
+     necessary but not sufficient" rested on inverted sequences — T68-1 =
+     R174, not K174. See docs/peer_reviews_round3/CONSENSUS.md)
 
 2. CTV_Citation_Audit_and_Verification.txt
    → What it is: Detailed breakdown showing which claims come from which sources
@@ -97,8 +101,12 @@ PHASE 5: Sequence Analysis for p33 Mutations (Week 2)
    Question: What are the actual amino acid differences in p33 between high 
              and low transmitters?
    Data: Aligned p33 from 130 genomes; focused on T36 vs FS577 contrast
-   Result: p33 is 98.7% identical (7 aa diffs + 1 gap)
-          Among these: K174R mutation documented in literature
+   Result: p33 is 98.7% identical (≈299/303, gapped alignment with 1 gap)
+          [corrected 2026-09-05, round-3 panel: an earlier "295/302 = 98.7%"
+           was arithmetic error (it is 97.7%); vs the AY170468/EU937521
+           clone references p33 identity is 99.7%; FS577 vs EU937521 p33
+           differ at exactly R174K — see docs/peer_reviews_round3/CONSENSUS.md]
+          Among the differences: residue 174 (K174R) documented in literature
    
 PHASE 6: Citation Verification (Week 2-3, rigour checkpoint)
 ─────────────────────────────────────────────────────────────
@@ -106,14 +114,19 @@ PHASE 6: Citation Verification (Week 2-3, rigour checkpoint)
    Methods: 
      - Fetched Shilts 2020 full text, verified transmission rates word-for-word
      - CrossRef search for Shilts et al. 2026, found PubMed abstract confirming K174R
-     - Generated census of residue 174 across 130 genomes (3.2% K174, 96.8% R174)
+     - Generated census of residue 174 across 130 genomes
+       [corrected 2026-09-05, round-3 panel: census was 125 (121 R + 4 K)
+        after dropping five 302-aa T36-lineage sequences (U16304, NC_001661,
+        DQ272579, AY340974, OR192037) that carry R at their shifted position
+        173; normalized homologous census = 126 R / 4 K / 130, i.e.
+        3.1% K, 96.9% R — see docs/peer_reviews_round3/CONSENSUS.md]
    Results: ✓ Transmission baselines verified
            ✓ K174R claim confirmed in peer-reviewed PubMed abstract
            ⚠ CRITICAL: K174R works in T36 background only; requires p33+p61+p65
    
 PHASE 7: Interpretation & Caveat Identification (Week 3)
 ─────────────────────────────────────────────────────────
-   Apparent paradox: K174R is rare (3.2%); high-transmitters have R174 (wild-type)
+   Apparent paradox: K174 is rare (3.1%, 4/130 corrected census); high-transmitters have R174 (wild-type)
    Resolution: Shilts et al. 2026 states K174R requires coordinated p61+p65 function
               Not a single-gene fix; multi-protein epistasis
    Decision: Include p61, p65 as co-targets in construct library
@@ -140,13 +153,20 @@ THREE BLOCKING ITEMS (must complete before construct library design):
      • T68-1 = 44.18% (95/215 plants, high transmitter)
      • FS577 = 24.1% (intermediate, same genotype as T36 but high tx)
      • T30 = 1.57% (2/127 plants, low transmitter)
-     • T36 = 1.5% (1/66 plants, low transmitter baseline)
+     • T36 = 1.5% (1/66 plants, low transmitter baseline) — T36 *clone* arm
+       (AY170468 backbone); Harper's T36 field rate is 2/380 = 0.53%
+       (corrected 2026-09-05, round-3 panel: see docs/peer_reviews_round3/CONSENSUS.md)
    Confidence: CERTAIN (direct quote from peer-reviewed paper)
 
 2. ✓ Shilts et al. 2026 PAPER & K174R CLAIM
    Status: VERIFIED via PubMed metadata + abstract
    Citation: Virology 2026, Vol. 621, Article 110928, PMID: 42061270
-   Key finding from abstract: Only p33 differs between T36 and FS577 (K174R)
+   Key finding from abstract: Only p33 differs between T36 and FS577 (residue
+   174, K→R direction). NOTE 2026-09-05, round-3 panel: sequences now
+   re-derived from repo GenBank files — EU937521 = K174, AY170468 = R174,
+   T68-1 (JQ965169) = R174; FS577 vs EU937521 p33 differ at exactly R174K;
+   the abstract is consistent with these corrected assignments
+   (see docs/peer_reviews_round3/CONSENSUS.md)
    Caveat from abstract: "Efficient transmissibility requires coordinated 
                          function of multiple viral proteins, including P33, P61, 
                          and P65"
@@ -166,8 +186,15 @@ THREE BLOCKING ITEMS (must complete before construct library design):
 STAGE 0 CONSTRUCT LIBRARY (Ready to design)
 ═════════════════════════════════════════════
 
-Design principle: Test p33 K174R as part of a coordinated p33+p61+p65 system
-                  (NOT K174R alone)
+Design principle: Test p33 residue-174 variants as part of a coordinated
+                  p33+p61+p65 system (NOT residue 174 alone). Singles are
+                  insufficient (p61 alone partially active p = 0.034 vs
+                  control; p65 alone not p = 0.41) — moving both genes is
+                  data-required. Only the gain-of-function direction is
+                  published; the reciprocal loss-of-function swap (the
+                  actual lead design) is untested — state it in the
+                  pre-registration.
+                  (corrected 2026-09-05, round-3 panel: see docs/peer_reviews_round3/CONSENSUS.md)
 
 Construct hierarchy:
 

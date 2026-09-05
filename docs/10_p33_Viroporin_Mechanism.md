@@ -10,6 +10,10 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 NEW DISCOVERY (PLOS Pathogens, November 24, 2025)
+  Citation verified 2026-09-05 by round-3 panel (direct fetch): Aknadibossian
+  et al. 2025, PLoS Pathog 21(11):e1013730, DOI 10.1371/journal.ppat.1013730
+  — TEVC inward K+/Na+ currents, membrane remodeling; third plant-virus
+  viroporin. (see docs/peer_reviews_round3/CONSENSUS.md)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 CTV p33 IS A VIROPORIN
@@ -261,6 +265,23 @@ FINAL RECOMMENDATION (September 5, 2026)
 
 PATH: p33 VIROPORIN MUTATIONS with K174 as primary target
 ═════════════════════════════════════════════════════════════
+
+NOTE 2026-09-05, round-3 panel (see docs/peer_reviews_round3/CONSENSUS.md):
+  - Residue-174 sequence assignments re-derived: T68-1(JQ965169) = R174,
+    AY170468 = R174, EU937521 = K174; FS577 vs EU937521 p33 differ at
+    exactly R174K (the K174R directions in Stages 0–1 above are consistent
+    with these corrected sequences).
+  - But residue 174 is a CANDIDATE, not an anchor: T30 (R174) transmits at
+    1.57%, and Harper 2016's K174-retaining hybrids transmit at 17.9%/20.6%
+    — it cannot be the dominant lever of the T36 phenotype.
+  - Lead design is the paired p61+p65 swap (singles insufficient: p61 alone
+    partially active p = 0.034 vs control; p65 alone not p = 0.41); only the
+    gain-of-function direction is published — reciprocal loss-of-function
+    swap untested; state that in the pre-registration.
+  - Wherever this plan cites the 11-residue p61/p65 substitution set:
+    11-vs-7 adjudication pending; the EU937521-validated 7-residue set is
+    the default (4 of the 11 are AY170468-private — p61 D324G, E382D, I455V;
+    p65 G227S).
 
 CONFIDENCE LEVEL: MEDIUM-HIGH
 ─────────────────────────────

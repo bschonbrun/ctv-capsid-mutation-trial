@@ -1,0 +1,26 @@
+1. Arch Virol. 2018 Dec;163(12):3373-3376. doi: 10.1007/s00705-018-4009-1. Epub 
+2018 Sep 6.
+
+Bottlenecks and complementation in the aphid transmission of citrus tristeza 
+virus populations.
+
+Harper SJ(1), Cowell SJ(2), Dawson WO(2).
+
+Author information:
+(1)Department of Plant Pathology, Washington State University, Prosser, WA, USA. 
+scott.harper@wsu.edu.
+(2)Citrus Research and Education Center, University of Florida, Lake Alfred, FL, 
+USA.
+
+Aphid transmission is a major factor in the formation of citrus tristeza virus 
+(CTV) populations. Here, we examined the effect of population interaction on 
+aphid transmissibility of different CTV genotypes. We found that there was no 
+correlation between the proportion of viral genotypes in the source population 
+and what was transmitted. We next examined the transmission of a poorly 
+transmitted infectious cDNA clone (T36) in mixture with other CTV genotypes. T36 
+transmission increased from 0.5% alone, to up to 35.7%, depending on the 
+coinfecting genotype. These results suggest that interaction between CTV 
+genotypes affects the transmission of this virus.
+
+DOI: 10.1007/s00705-018-4009-1
+PMID: 30191371 [Indexed for MEDLINE]

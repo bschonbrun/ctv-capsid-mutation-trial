@@ -5,6 +5,7 @@ const mods = [
   ...require("./slides_b.js"),
   ...require("./slides_c.js"),
   ...require("./slides_d.js"),
+  ...require("./slides_e.js"),
 ];
 const total = mods.length;
 console.log("slide count:", total);

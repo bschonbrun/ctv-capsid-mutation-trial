@@ -1,0 +1,50 @@
+1. PLoS Pathog. 2025 Nov 24;21(11):e1013730. doi: 10.1371/journal.ppat.1013730. 
+eCollection 2025 Nov.
+
+The citrus tristeza virus p33 protein functions as a viroporin.
+
+Aknadibossian V(1), Stokes C(2), Papke RL(2), Teh HW(1), Wang Y(1), Folimonova 
+SY(1).
+
+Author information:
+(1)Department of Plant Pathology, Institute of Food and Agricultural Sciences, 
+University of Florida, Gainesville, Florida, United States of America.
+(2)Department of Pharmacology and Therapeutics, College of Medicine, University 
+of Florida, Gainesville, Florida, United States of America.
+
+Viroporins are viral proteins that form ion channels in the membranes of the 
+host and, thus, alter the host ion homeostasis to create more favorable 
+environments for the virus. Since the discovery of the ion channel activity of 
+the M2 protein encoded by influenza virus A (species: Alphainfluenzavirus 
+influenzae), many additional viral proteins have also been characterized as 
+viroporins. However, most viroporins known thus far belong to animal viruses, 
+while the discovery of plant virus viroporins has significantly lagged. In this 
+work, we present evidence that the p33 protein, a membrane-associated protein of 
+citrus tristeza virus (CTV; species: Closterovirus tristezae), possesses the 
+characteristics of a viroporin. We first show the substantial structural 
+similarities between the transmembrane and cytoplasmic domains of known Class I 
+viroporins and those of the p33 protein. Using two-voltage electrode clamp 
+assays in Xenopus oocytes, we further demonstrate the ion channel properties of 
+p33 such as the ability to induce strong inward currents of potassium and sodium 
+when activated at lowered membrane potentials. Finally, using confocal and 
+electron microscopy, we show that, similarly to other Class I viroporins, the 
+p33 protein triggers extensive membrane remodeling and discuss additional 
+characteristics of p33 and the functions of this protein in the CTV infection, 
+which resemble those found with viroporins of other viruses. This study 
+represents the third report of a viroporin encoded by a plant virus and the 
+first validation of the ability of a plant virus viroporin to induce currents 
+across eukaryotic membranes using electrophysiological assays. The findings of 
+this work open new avenues in research focusing on the understanding the role of 
+viroporins in plant virus infections.
+
+Copyright: © 2025 Aknadibossian et al. This is an open access article 
+distributed under the terms of the Creative Commons Attribution License, which 
+permits unrestricted use, distribution, and reproduction in any medium, provided 
+the original author and source are credited.
+
+DOI: 10.1371/journal.ppat.1013730
+PMCID: PMC12671738
+PMID: 41284747 [Indexed for MEDLINE]
+
+Conflict of interest statement: The authors have declared that no competing 
+interests exist.

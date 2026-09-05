@@ -1,0 +1,32 @@
+1. J Virol. 2010 Dec;84(23):12165-73. doi: 10.1128/JVI.01192-10. Epub 2010 Sep
+22.
+
+A mutation in the Lettuce infectious yellows virus minor coat protein disrupts 
+whitefly transmission but not in planta systemic movement.
+
+Stewart LR(1), Medina V, Tian T, Turina M, Falk BW, Ng JC.
+
+Author information:
+(1)Plant Pathology Department, University of California, Davis, Davis, 
+California 956161, USA.
+
+The Lettuce infectious yellows virus (LIYV) RNA 2 mutant p1-5b was previously 
+isolated from Bemisia tabaci-transmitted virus maintained in Chenopodium murale 
+plants. p1-5b RNA 2 contains a single-nucleotide deletion in the minor coat 
+protein (CPm) open reading frame (ORF) that is predicted to result in a 
+frameshift and premature termination of the protein. Using the recently 
+developed agroinoculation system for LIYV, we tested RNA 2 containing the p1-5b 
+CPm mutant genotype (agro-pR6-5b) in Nicotiana benthamiana plants. We showed 
+that plant infection triggered by agro-pR6-5b spread systemically and resulted 
+in the formation of virions similar to those produced in p1-5b-inoculated 
+protoplasts. However, virions derived from these mutant CPm genotypes were not 
+transmitted by whiteflies, even though virion concentrations were above the 
+typical transmission thresholds. In contrast, and as demonstrated for the first 
+time, an engineered restoration mutant (agro-pR6-5bM1) was capable of both 
+systemic movement in plants and whitefly transmission. These results provide 
+strong molecular evidence that the full-length LIYV-encoded CPm is dispensable 
+for systemic plant movement but is required for whitefly transmission.
+
+DOI: 10.1128/JVI.01192-10
+PMCID: PMC2976407
+PMID: 20861267 [Indexed for MEDLINE]

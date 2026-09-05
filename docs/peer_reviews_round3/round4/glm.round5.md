@@ -1,0 +1,18 @@
+*(Seat bookkeeping: I am the Claude seat — my scores appear under "GLM 5.3" in the consensus table, per the round-4 provenance note; I sign for that record.)*
+
+## 1. Round-4 HOLDs
+
+- **#8 — RESOLVED.** 299/303 = 98.68% ✓, and the stated 99.7% vs EU937521 is exactly what a single R174K difference predicts (302/303 = 99.67%) — the corrected claim is internally consistent and the false equation is gone.
+- **#24 — RESOLVED.** Adopted wording is the converged one (drop "falsified," keep move-both, loss-of-function direction labeled as inference); record correction to my own round-4 note: "p≈0.23 vs 1/172" had the single-gene controls swapped — 0.034 *is* the vs-1/172 value (I reproduce ~0.03; ~0.3 belongs to the 1/66 comparison) — immaterial to the fix.
+- **#42 — RESOLVED.** I reproduce all four stated bounds (0/110: 2.69% one-sided / ~3.29–3.30% two-sided; 0/200: 1.49% / 1.83%); the resolution also shows the original 3.3% was the two-sided Clopper–Pearson bound, so my round-3 "wrong" was really "unstated convention," and the adopted fix (state one) is correct; plants-vs-aphids units fixed with claim 44 flagged.
+- **#43 — RESOLVED.** I reproduce both stated contrasts (15→20%: ~14% at n=90, ~906–934/arm for 80%; 1→6%: ~45% at n=90, ~208–212/arm for 80%), and the "state the contrast for every power number" rule is adopted.
+
+*(Not holds: #4 and #30 were round-4 concessions; the consensus matches both — #30's R174 finding is what I conceded to, numbering-offset reconciliation moot as predicted. One further correction to my own record: the Shilts Table 2 ELISA fetch shows my round-3 Attack-2 answer ("no published p33-swap titer measurement known to me") was wrong about ELISA; the RT-qPCR gap and the protocol addition stand.)*
+
+## 2. What the corrections broke
+
+One thing, and it is load-bearing: **claim 39's adjudication note is self-contradictory as applied** — "the notation direction is FS577→T36" and "signs flip for the actual edit" cannot both be true for an FS577 backbone receiving T36-clone alleles (if the list is already FS577→T36 no flip is needed; if a flip is needed the list is T36→FS577), and executing the wrong reading yields silent no-op or all-positions-inverted edits that the transmission assay cannot detect from its own data — so replace the note with a per-residue FS577|EU937521 parent table before any construct order. Not new breaks but propagation gaps: claim 5 still calls T36 "field (~1.5%)" after correction 4 redefined that baseline (field = 2/380 = 0.53%; 1.5% is Shilts's AY170468 clone arm — the CPm conclusion survives since all T36 baselines are ≤1.5%), and claim 3's panel-contradicted "transmission blocking"/virion-side-carbohydrate wording is deferred rather than applied (§1.16); every other corrected number I re-checked holds (299/303; 302/303 ↔ single R174K; 126/4/130; 71/306 = 23.2%; ~83× vs 2/380; ~15×; 30.2% FWER; both power pairs).
+
+## 3. Final sign-off
+
+**8/10 — green-light**, conditional on (a) the claim-39 per-residue parent table before construct ordering and (b) the claim-44 re-cost, with the unretraced 17/90 quarantined from any derived document until its origin is traced. All four of my holds are resolved and re-verified, K174R and the phantom arm are closed, and the corrected accessions actually strengthen #33 (two low-transmission T36 clone backgrounds bracket residue 174: AY170468/R174 at 1.5%, EU937521/K174 at 0.6%); my residual deductions are the direction-sign ambiguity above, fetch-reliance on the T2 verifications I could not read myself, the synergy estimate still stated without intervals, and complementation conditionality on any future deployment claim — up from 7.5 because every open deduction I carried into round 4 was closed.

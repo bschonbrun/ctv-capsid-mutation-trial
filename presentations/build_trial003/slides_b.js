@@ -62,13 +62,13 @@ function s15(pres, tag) {
 function s16(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
   T.titleBlock(s, "WHY / NOT THE COAT", "The favorite explanation died on sequence data.",
-    "CPm was the obvious target — the only coat protein on the virion surface that binds the aphid. Two independent tests killed it as the transmission dial.", { densetop: true });
+    "CPm was the obvious target — the only coat protein on the virion surface that binds the aphid. Sequence identity killed it as the transmission dial; a 'functional test' once cited beside it turned out not to exist.", { densetop: true });
   const y0 = 2.95;
   T.numStat(s, M, y0, 3.6, "240 / 240", "CPM AMINO ACIDS IDENTICAL · FS577 VS T36",
     "…across a transmission gap of 24.1% vs 1.5%. A sequence that does not vary cannot explain a phenotype that does.", { nsize: 34, nh: 0.55 });
   T.vline(s, M + 4.0, y0 - 0.05, 1.9);
-  T.numStat(s, M + 4.4, y0, 3.6, "p = 1.00", "THE FUNCTIONAL NULL · SHILTS 2020",
-    "Adding CPm+5′UTR to the p33 swap changed nothing: 17/90 vs 16/90. Where variation exists, it still does nothing.", { nsize: 34, nh: 0.55 });
+  T.numStat(s, M + 4.4, y0, 3.6, "WITHDRAWN", "THE 17/90 'FUNCTIONAL NULL' · SHILTS 2020",
+    "The CPm+5′UTR 17/90 construct appears nowhere in Shilts 2020 — verified page by page, struck in round 3. The 240/240 identity carries the falsification alone.", { nsize: 34, nh: 0.55 });
   T.vline(s, M + 8.45, y0 - 0.05, 1.9);
   G.card_min(s, M + 8.85, y0 - 0.05, 3.95, 2.0, C.TAN);
   T.h(s, "THE DISTINCTION THAT SURVIVES", M + 9.05, y0 + 0.12, 3.55, { color: C.RUST_DK });
@@ -77,7 +77,7 @@ function s16(pres, tag) {
     M + 9.05, y0 + 0.42, 3.55, { size: 10, h: 1.4, lsm: 1.1 });
   T.takeaway(s, "NECESSARY MACHINERY ≠ THE DETERMINANT — CONFUSING THE TWO COST THIS PROJECT'S FIRST WEEK");
   T.footer(s, tag, "TIER 1: OUR ALIGNMENT · TIER 2: SHILTS 2020 FULL TEXT");
-  s.addNotes("CPm falsified two independent ways: sequence identity and a functional null (p=1.00). The nuance to keep: CPm is still the binding ligand, just not the variation.");
+  s.addNotes("CPm falsified on sequence identity (240/240). Round-3 correction: the 17/90 'functional null' (p=1.00) was never in Shilts 2020 — the construct does not exist; the claim was struck, not relied on. The nuance to keep: CPm is still the binding ligand, just not the variation.");
 }
 function s17(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
@@ -88,7 +88,7 @@ function s17(pres, tag) {
     { label: "T68-1 · field", rate: 0.4418, num: 95, n: 215, color: C.FAINT },
     { label: "FS577 · field", rate: 0.241, num: 95, n: 394, color: C.AMBER },
     { label: "T30 · field", rate: 0.0157, num: 2, n: 127, color: C.FAINT },
-    { label: "T36 · field", rate: 0.015, num: 1, n: 66, color: C.FAINT },
+    { label: "T36 · clone · Shilts", rate: 0.015, num: 1, n: 66, color: C.FAINT },
     { label: "T36 · infectious clone", rate: 0.006, num: 1, n: 172, color: C.TERRA },
   ], { max: 50, rowH: 0.4 });
   T.vline(s, 8.5, 2.9, 3.3);
@@ -100,7 +100,8 @@ function s17(pres, tag) {
   ], 8.75, 3.25, 4.0, { size: 9.5, gap: 6, h: 2.6 });
   T.takeaway(s, "AN ASSEMBLY-PERFECT, MOVEMENT-PERFECT, TRANSMISSION-DEAD VIRUS EXISTS — T36 IS THE PROTOTYPE");
   T.footer(s, tag, "RATES: SHILTS 2020 (FULL TEXT) · CLONE: HARPER 2016 (FULL TEXT)");
-  s.addNotes("The bar chart carries its denominators. T36's floor value is drift, not design — which is precisely why drift can be reverse-engineered into design.");
+  s.addNotes("The bar chart carries its denominators. T36's floor value is drift, not design — which is precisely why drift can be reverse-engineered into design. " +
+    "Round-3 label fix: 1/66 is Shilts's T36 clone arm (AY170468), previously mislabeled 'field'; Harper's T36 field rate is 2/380 = 0.53%.");
 }
 function s18(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
@@ -193,7 +194,8 @@ function s20(pres, tag) {
   ], 7.25, 3.3, 5.25, { size: 10, gap: 7, h: 2.8 });
   T.takeaway(s, "THE PREDICTED DEFECT IS IN THE APHID, NOT THE PLANT — THAT IS THE WHOLE PRODUCT IDEA");
   T.footer(s, tag, "HARPER 2016 FIG. 2 · VERIFIED FROM SOURCE");
-  s.addNotes("Titer ruled out: equal accumulation, 30-fold transmission difference. This is the separability premise — the product's reason to exist.");
+  s.addNotes("Titer ruled out: equal accumulation, 30-fold transmission difference. This is the separability premise — the product's reason to exist. " +
+    "Round-3 flag: Harper's Tukey HSD ran on n = 2–4 source plants per arm — an underpowered null; the quote is verbatim and the claim is kept at face value with that flag.");
 }
 function s21(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
@@ -275,38 +277,39 @@ function s23(pres, tag) {
   T.h(s, "WHAT IT DOES TO TRANSMISSION", M + 4.2, y0, 3.9, { color: C.TERRA });
   T.bullets(s, [
     { text: "T68-p33 into T36: 1.5% → 17.8% (16/90; Fisher p = 0.0012, OR 14.1 — verified, full text)" },
-    { text: "Accounts for ~94% of the chimera-series gain; CPm adds ~1 point on top" },
+    { text: "T36/T68 5′-end construct: 71/306 (23.2%) — the gain is real; the old 'CPm adds ~1 point' was struck with the phantom 17/90" },
   ], M + 4.2, y0 + 0.3, 3.75, { size: 9.5, gap: 7, h: 1.6 });
   T.vline(s, M + 8.3, y0 - 0.05, 3.35);
   T.h(s, "WHAT NOBODY MEASURED", M + 8.65, y0, 4.1, { color: C.AMBER });
   T.bullets(s, [
-    { text: "Source-plant titer in any p33 swap — the accumulation confound is open" },
+    { text: "RT-qPCR on swap source plants — donor ELISA was equal (Shilts 2020 Table 2, same Tukey letter); the open gap is narrower than first flagged" },
     { text: "The reciprocal: T36-p33 into a high-transmitter — causality untested" },
     { text: "Pleiotropy risk: p33 also runs plasmodesmata movement, host range (sour orange TMD), superinfection exclusion, CmMLP2 immunity" },
   ], M + 8.65, y0 + 0.3, 4.05, { size: 9.2, gap: 6, h: 2.2, markerColor: C.AMBER });
   T.takeaway(s, "A TOOL, NOT YET A TARGET — p33 JOINS THE PANEL AS APPROACH B, WITH TITER NORMALIZATION WRITTEN IN");
   T.footer(s, tag, "SHILTS 2020 (FULL TEXT) · AKNADIBOSSIAN 2025 (FULL TEXT)");
-  s.addNotes("p33: verified effect (16.3 pp, p=0.001), verified viroporin biophysics, unmeasured titer confound. Its multifunctionality is why it isn't the lead.");
+  s.addNotes("p33: verified effect (16.3 pp, p=0.001), verified viroporin biophysics (Aknadibossian 2025, PLoS Pathog 21(11):e1013730, full text). " +
+    "Round-3 titer correction: donor-plant DAS-ELISA was equal across swaps (OD 3.36/3.41/3.50, same Tukey letter) — the residual confound is RT-qPCR only. Its multifunctionality is why it isn't the lead.");
 }
 function s24(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
-  T.titleBlock(s, "K174R / THE DEAD RESIDUE", "An abstract named a residue. Alignment buried it.",
-    "The most instructive failure of the project — a single-residue story that survived a published abstract and died under ten minutes of sequence work.", { densetop: true });
+  T.titleBlock(s, "K174R / THE DEAD RESIDUE", "An abstract named a residue. Re-derivation buried the switch — and our first refutation with it.",
+    "The most instructive failure of the project — a single-residue story that died on sequence work, taking this team's own first 'proof' down alongside it.", { densetop: true });
   const cols = [{ label: "THE CLAIM", w: 5.6 }, { label: "WHAT RE-DERIVATION SHOWED", w: 6.6 }];
   const rows = [
     { h: 0.72, cells: [
       [{ text: "Virology 2026 (abstract): a triple-gene complement raised T36 from ~0.6% to ~50%; " +
         "'only p33 differs … a single amino acid change (K174R)'", options: {} }],
-      [{ text: "The swap pair — T36 clone and T68-1 — both encode K174 at that position. " +
-        "A K↔R change that moved nothing cannot explain an effect. The residue arithmetic was wrong.",
+      [{ text: "Re-derivation: T68-1 and the T36 clone (AY170468) carry R174; validated clone EU937521 " +
+        "carries K174 — FS577 vs EU937521 differ at exactly R174K. The packet's first 'both encode K174' refutation was inverted; the abstract's call is consistent with the sequences.",
         options: { color: C.TXT } }]] },
     { h: 0.6, cells: [
       [{ text: "FS577 (24.1%) and T68-1 (44.2%) carry R174 — 'the high-transmission residue'", options: {} }],
-      [{ text: "So does T30 — at 1.57%. Same residue, fifteen-fold apart. R174 is neither sufficient nor explanatory.",
+      [{ text: "So does T30 — at 1.57%. Same residue, fifteen-fold apart. And Harper's K174-retaining hybrids transmit 17.9–20.6%. R174 is not sufficient; K174 is no off-switch. 174 cannot be the dominant lever.",
         options: { color: C.TXT } }]] },
     { h: 0.6, cells: [
       [{ text: "K174R as the construct target for a single-residue edit", options: {} }],
-      [{ text: "Census of 125 full-length p33 sequences: R174 96.8%, K174 3.2% (4 isolates, none of them measured high transmitters).",
+      [{ text: "Corrected census of 130 homologous p33 sequences: R174 126/130 (96.9%) — the consensus residue; K174 sits in 4 isolates, none a measured high transmitter.",
         options: { color: C.TXT } }]] },
   ];
   T.table(s, M, 2.9, CW, cols, rows, { rowLineColor: C.LINE2, size: 9.5 });
@@ -315,8 +318,8 @@ function s24(pres, tag) {
       "'coordinated function of P33, P61 and P65'. The full text remains paywalled; every use of it in " +
       "this deck is tier-3 flagged.", options: {} }], M, 5.35, 11.6, { size: 10, h: 0.75, lsm: 1.1 });
   T.takeaway(s, "LESSON FOR THE TEAM: A RESIDUE CLAIM FROM AN ABSTRACT IS A RUMOR UNTIL THE ALIGNMENT AGREES");
-  T.footer(s, tag, "PEER REVIEW 6/6 · CENSUS: 130 GENOMES · SHILTS 2026: ABSTRACT ONLY");
-  s.addNotes("K174R: dead as a residue story, alive as a lesson. The 6/6 unanimous peer-review catch, confirmed by the census. Gene-level p33 effect is unaffected.");
+  T.footer(s, tag, "ROUND-3 RE-DERIVATION · CENSUS: 130 GENOMES · SHILTS 2026: ABSTRACT ONLY");
+  s.addNotes("Residue 174: dead as a single-residue explanation on sufficiency grounds — T30 carries R174 at 1.57%, and Harper's K174-retaining hybrids still transmit 17.9–20.6% — and the packet's own 'both encode K174' rebuttal was itself inverted (T68-1/AY170468 = R174; EU937521 = K174). The 2026 abstract's K174R statement is consistent with these sequences. Gene-level p33 effect is unaffected.");
 }
 function s25(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);

@@ -1,0 +1,37 @@
+1. Viruses. 2020 Oct 6;12(10):1131. doi: 10.3390/v12101131.
+
+Citrus tristeza virus P33 Protein is Required for Efficient Transmission by the 
+Aphid Aphis (Toxoptera) citricidus (Kirkaldy).
+
+Shilts T(1), El-Mohtar C(1), Dawson WO(1), Killiny N(1).
+
+Author information:
+(1)Plant Pathology Department, CREC-IFAS, University of Florida, 700 Experiment 
+Station Road, Lake Alfred, FL 33850, USA.
+
+Plant viruses are threatening many valuable crops, and Citrus tristeza virus 
+(CTV) is considered one of the most economically important plant viruses. CTV 
+has destroyed millions of citrus trees in many regions of the world. 
+Consequently, understanding of the transmission mechanism of CTV by its main 
+vector, the brown citrus aphid, Aphis (Toxoptera) citricidus (Kirkaldy), may 
+lead to better control strategies for CTV. The objective of this study was to 
+understand the CTV-vector relationship by exploring the influence of viral 
+genetic diversity on virus transmission. We built several infectious clones with 
+different 5'-proximal ends from different CTV strains and assessed their 
+transmission by the brown citrus aphid. Replacement of the 5'- end of the T36 
+isolate with that of the T30 strain (poorly transmitted) did not increase the 
+transmission rate of T36, whereas replacement with that of the T68-1 isolate 
+(highly transmitted) increased the transmission rate of T36 from 1.5 to 23%. 
+Finally, substitution of p33 gene of the T36 strain with that of T68 increased 
+the transmission rate from 1.5% to 17.8%. Although the underlying mechanisms 
+that regulate the CTV transmission process by aphids have been explored in many 
+ways, the roles of specific viral proteins are still not explicit. Our findings 
+will improve our understanding of the transmission mechanisms of CTV by its 
+aphid vector and may lead to the development of control strategies that 
+interfere with its transmission by vector.
+
+DOI: 10.3390/v12101131
+PMCID: PMC7600554
+PMID: 33036216 [Indexed for MEDLINE]
+
+Conflict of interest statement: The authors declare no conflict of interest.

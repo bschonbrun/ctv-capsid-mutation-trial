@@ -32,13 +32,20 @@ The transmission gains:
 MECHANISM: TITER vs BINDING
 ──────────────────────────────
 
-Harper Figure 2 (RT-qPCR): "No significant difference (Tukey HSD P > 0.05) 
+Harper Figure 2 (RT-qPCR): "No significant difference (Tukey HSD P > 0.05)
 in virus replication and accumulation caused by the insertions."
 
-Harper conclusion: "We propose that the increase in efficacy is due to the 
+[FLAGGED 2026-09-05, round-3 panel: quote is verbatim, but the Tukey HSD ran
+ on n = 2-4 source plants per arm — an underpowered null. Face-value
+ "TITER IS RULED OUT" below is overstated; read as "no detectable titer
+ difference at low power". See docs/peer_reviews_round3/CONSENSUS.md]
+
+Harper conclusion: "We propose that the increase in efficacy is due to the
 polymorphisms contained within the substituted p61 and p65 genes."
 
 ⇒ **TITER IS RULED OUT** — viral RNA accumulation identical across hybrids
+   [caveat per flag above: n = 2-4 source plants/arm; treat as
+    "no detectable accumulation difference", not proof of absence]
 ⇒ **MECHANISM IS LIKELY FOREGUT BINDING** — direct vector-protein interaction
 
 IMPLICATION FOR CONSTRUCT DESIGN
@@ -51,6 +58,17 @@ IMPLICATION FOR CONSTRUCT DESIGN
               transmission should drop from 24% toward 0-5% range
   Expected outcome: 0-5% (test of sufficiency)
   n per construct: 250-300 aphids (see Stage_0 power section)
+    [unit caveat 2026-09-05, round-3 panel: the packet elsewhere conflated
+     plants with aphids (~10x undercount: 550-700 *plants* x 10 aphids =
+     5,500-7,000 aphids); n conventions here need re-estimation before
+     pre-registration. See docs/peer_reviews_round3/CONSENSUS.md]
+
+  11-vs-7 ALLELE-SET NOTE (2026-09-05, round-3 panel — adjudicate BEFORE
+  construct ordering): the substitution lists are written FS577->T36
+  (reverse the signs for the actual edit). 4 of the 11 residues
+  (p61 D324G, E382D, I455V; p65 G227S) are AY170468-private — the validated
+  clone EU937521 matches *FS577* there. Default to the EU937521-validated
+  7-residue set. (see docs/peer_reviews_round3/CONSENSUS.md)
 
 **RATIONALE:**
   ✓ Tests the larger effect (p61+p65 together, not separately)
@@ -65,12 +83,20 @@ IMPLICATION FOR CONSTRUCT DESIGN
 
 **WHAT THIS CONTRADICTS:**
   ✗ DeepSeek's "minimal subset" idea (D324G, E382D, D458G charged residues)
-    → If Harper's data is right, you need ALL 11 residues in Phase 1
+    → If Harper's data is right, you need the full substituted set in Phase 1
+      (which set — 11 vs the EU937521-validated 7 — adjudication pending,
+      default 7; corrected 2026-09-05, round-3 panel:
+      see docs/peer_reviews_round3/CONSENSUS.md)
   ✗ Individual-gene testing as Phase 1
     → Neither gene alone works; synergy is required
   ✗ K174R in p33 as Phase 1
     → p33 is a separate mechanism (literature: 16-23 pp effect)
     → If p33 is titer/replication, but p65/p61 is binding, test binding first
+    → (2026-09-05, round-3 panel: also, residue 174 is no longer
+       conservation-anchored — T68-1 = R174, not K174; FS577 vs EU937521
+       differ at exactly R174K; T30 (R174, 1.57%) and Harper's K174-retaining
+       hybrids (17.9%/20.6%) show it cannot be the dominant lever.
+       See docs/peer_reviews_round3/CONSENSUS.md)
 
 ═════════════════════════════════════════════════════════════════════════════
 DESIGN RANKING: GROK > DEEPSEEK (v3) > DEEPSEEK (v1,2)
@@ -79,13 +105,16 @@ DESIGN RANKING: GROK > DEEPSEEK (v3) > DEEPSEEK (v1,2)
 GROK:
   ✓ p65+p61 together (correct)
   ✓ FS577 background (correct)
-  ✓ Full 11 residues (correct)
+  ✓ Full 11 residues (list confirmed; 11-vs-7 adjudication pending, default 7
+    — corrected 2026-09-05, round-3 panel: see docs/peer_reviews_round3/CONSENSUS.md)
   ~ Mechanism (foregut binding not explicitly stated, but direction right)
   Rating: 8.5/10 — fully aligned with Harper data
 
 DEEPSEEK v3:
   ✓ Pivoted to p65+p61 (correct)
-  ✓ 11 residues identified (correct)
+  ✓ 11 residues identified (list confirmed, but 11-vs-7 adjudication pending;
+    EU937521-validated 7 = default — corrected 2026-09-05, round-3 panel:
+    see docs/peer_reviews_round3/CONSENSUS.md)
   ✓ Harper cited (correct)
   ✗ Suggests "charged residue subset" (too reductive; Harper says synergy)
   ✗ Ranking (implies p65 > p61 individually; Harper shows both needed)
@@ -102,6 +131,9 @@ STAGE_0 REQUIREMENTS: BEFORE CONSTRUCT ORDERING
 
 1. **Candidate Site Table**
    - All 11 residues (p65 × 2; p61 × 9)
+     [pending 11-vs-7 adjudication — see NOTE at Phase 1 above; default is the
+      EU937521-validated 7 residues. corrected 2026-09-05, round-3 panel:
+      see docs/peer_reviews_round3/CONSENSUS.md]
    - Per-residue conservation (across your 130 genomes)
    - Biochemical property (charge, hydrophobicity, size)
    - Ranking: which are most likely to interact with aphid receptor?

@@ -93,8 +93,8 @@ function s05(pres, tag) {
     { phase: "P2 · SEQUENCE CENSUS", prod: "130 CTV genomes pulled from GenBank; p27/p33/p61/p65 extracted & aligned", gate: "DATA, NOT PROSE", c: C.OLIVE },
     { phase: "P3 · FALSIFICATION", prod: "CPm 240/240 identical across a 16× transmission gap — favorite hypothesis dead", gate: "PIVOT, DON'T PATCH", c: C.TERRA },
     { phase: "P4 · LITERATURE SURVEY", prod: "Shilts 2020 p33 swap (1.5%→17.8%); Killiny 2016 foregut binding", gate: "EFFECTS HAVE DENOMINATORS", c: C.OLIVE },
-    { phase: "P5 · CANDIDATE RESIDUE", prod: "p33 K174R from the 2026 abstract — plus a viroporin mechanism (2025)", gate: "CITED ≠ VERIFIED", c: C.TERRA },
-    { phase: "P6 · ADVERSARIAL REVIEW", prod: "6 models × 2 rounds: K174R impossible; power gaps; missing reciprocal", gate: "CONSENSUS MUST RECOMPUTE", c: C.TERRA },
+    { phase: "P5 · CANDIDATE RESIDUE", prod: "p33 K174R from the 2026 abstract — plus a viroporin mechanism (2025), later verified in full text", gate: "FETCH = VERIFY", c: C.TERRA },
+    { phase: "P6 · ADVERSARIAL REVIEW", prod: "6 models × 2 rounds: caught the deck's own K174R inversion and a phantom 17/90 construct; the pair design survived", gate: "CONSENSUS MUST RECOMPUTE", c: C.TERRA },
     { phase: "P7 · SOURCE RETRIEVAL", prod: "Harper 2016 PDF read: synergy, denominators, titer all verified first-hand", gate: "THE PDF ADJUDICATES", c: C.OLIVE },
     { phase: "P8 · RE-DERIVATION & DESIGN", prod: "11 substitutions re-derived from accessions; Stage 0 pre-registered", gate: "READY FOR GREENHOUSE", c: C.OLIVE },
   ];
@@ -120,11 +120,11 @@ function s06(pres, tag) {
     { h: 0.62, cells: [
       [{ text: "CPm sequence variation determines transmission", options: { italic: true, color: C.TXT } }],
       "Starting hypothesis; DeepSeek v1–v2 (CPm deletion)",
-      "240/240 identity across a 16-fold transmission gap; functional null: CPm+5′UTR 17/90 vs p33 alone 16/90 (Fisher p = 1.00)"] },
+      "240/240 identity across a 16-fold transmission gap — a sequence that never varies cannot tune the phenotype. (A cited 17/90 'functional null' proved to exist nowhere in Shilts 2020 — struck.)"] },
     { h: 0.62, cells: [
       [{ text: "p33 K174R is the transmission switch", options: { italic: true, color: C.TXT } }],
       "Early brief, from the 2026 abstract",
-      "Re-derivation: donor and T36 clone both encode K174 — nothing was exchanged. R174 sits in 24% and 1.6% transmitters alike; 96.8% of 125 genomes carry R174"] },
+      "Re-derivation: the T68-1/T36-clone pair encodes R174 — an earlier 'both encode K174' reading was inverted. And R174 is no switch: T30 has it at 1.57%; Harper's K174 hybrids transmit 18–21%"] },
     { h: 0.56, cells: [
       [{ text: "Three charged residues suffice (D324G, E382D, D458G)", options: { italic: true, color: C.TXT } }],
       "DeepSeek v3 (electrostatics logic)",
@@ -132,7 +132,7 @@ function s06(pres, tag) {
     { h: 0.5, cells: [
       [{ text: "Test the genes individually first", options: { italic: true, color: C.TXT } }],
       "DeepSeek v3 phase plan",
-      "Harper 2016: singles restore 1.9% / 4.0% — statistically near the 0.6% baseline. 'Concerted action' is not optional"] },
+      "Harper 2016: p61 alone partially active (4.0%, p = 0.034), p65 alone not (1.9%, p = 0.41) — singles are insufficient; moving both genes is data-required"] },
     { h: 0.56, cells: [
       [{ text: "The effect is virus titer, not vector interaction", options: { italic: true, color: C.TXT } }],
       "DeepSeek mechanism prediction",
@@ -141,7 +141,9 @@ function s06(pres, tag) {
   T.table(s, M, 2.8, CW, cols, rows, { rowLineColor: C.LINE2 });
   T.takeaway(s, "FIVE PLAUSIBLE ANSWERS · FIVE FUNERALS · EACH ONE WOULD HAVE COST A CONSTRUCT SERIES IN THE LAB");
   T.footer(s, tag, "SILVEC BIOLOGICS · CONFIDENTIAL");
-  s.addNotes("The falsification log. Read it as a ledger of avoided greenhouse work — each row is a construct series never built.");
+  s.addNotes("The falsification log. Read it as a ledger of avoided greenhouse work — each row is a construct series never built. " +
+    "Round-3 corrections applied here: the 17/90 CPm construct is a phantom (struck), the K174R refutation was inverted (T68-1 and AY170468 encode R174; EU937521 encodes K174), " +
+    "and the Tukey null behind the titer row ran on n = 2–4 source plants per arm — underpowered, cited at face value and flagged.");
 }
 function s07(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
@@ -161,7 +163,7 @@ function s07(pres, tag) {
   // right: findings + the twist
   T.h(s, "WHAT UNANIMITY CAUGHT (6/6)", 5.35, 3.0, 3.6, { color: C.TERRA });
   T.bullets(s, [
-    { text: "K174R is a mathematical impossibility — both sequences encode K174" },
+    { text: "K174R as 'the switch' — dead; and the panel's own 'both encode K174' proof was inverted (the pair encodes R174), caught in round 3" },
     { text: "The 'residual gap' for p61/p65 rested on an unread paper's unattributed 23%" },
     { text: "14% power at n=90 for a 5-point effect — the planned screen could not see it" },
     { text: "No reciprocal swap existed; causality untested" },
@@ -176,7 +178,9 @@ function s07(pres, tag) {
     9.55, 3.3, 3.15, { size: 10, h: 2.6, lsm: 1.1 });
   T.takeaway(s, "ADVERSARIAL REVIEW FOUND THE HOLES · ONLY FETCHING THE PDF CLOSED THEM");
   T.footer(s, tag, "ROUND 1 INDEPENDENT · ROUND 2 REBUTTAL · CONSENSUS RECOMPUTED, NOT VOTED");
-  s.addNotes("The consortium slide. Unanimity is not proof: the panel was right about K174R and wrong about p61/p65 — the retrieved paper settled both.");
+  s.addNotes("The consortium slide. Unanimity is not proof: the panel was wrong about p61/p65 — the retrieved paper settled it — and rounds 3–4 caught the panel itself: " +
+    "its 'both encode K174' rebuttal was inverted (T68-1 and AY170468 carry R174; EU937521 carries K174) and a phantom 17/90 construct was struck. " +
+    "The paired p61+p65 design survived. Final confidence scores: 6–8/10, with one 2/10 dissent on record (it reviews the document's justification, not the experiment's rationale).");
 }
 function s08(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
@@ -242,7 +246,7 @@ function s10(pres, tag) {
     { num: "02", head: "Demand denominators", text: 'Every rate must arrive as "positive / n". "Poorly transmitted" is not a number; 1 of 66 is.' },
     { num: "03", head: "Ask for the inverse experiment", text: "The gain-of-function swap was published. The loss-of-function knockout — the one the product needs — had never been asked for." },
     { num: "04", head: "Force the primary source", text: '"Cite it" is not enough. "Fetch it, quote it, give the figure number." The 23% that confused the panel dissolved on first reading.' },
-    { num: "05", head: "Run the adversarial round", text: "Have the models attack their own consensus. K174R died in rebuttal, not in review." },
+    { num: "05", head: "Run the adversarial round", text: "Have the models attack their own consensus. The inverted K174R rebuttal survived review; re-derivation in round 3 buried it." },
     { num: "06", head: "Re-derive, never transcribe", text: "The substitution table came from GenBank CDS translations, not from any model's prose — including this one's." },
   ];
   const cw = 3.93, chh = 1.62;
@@ -289,7 +293,7 @@ function s12(pres, tag) {
   const stats = [
     { n: "130", l: "GENOMES CENSUS-ALIGNED", d: "p27, p33, p61, p65 extracted and compared across the public record — the falsification material" },
     { n: "12", l: "MODEL REVIEWS IN 2 ROUNDS", d: "Six models, independent then adversarial. Statistics recomputed to unanimity, not voted" },
-    { n: "5", l: "WRONG ANSWERS KILLED EARLY", d: "CPm, K174R, the charged subset, single-gene-first, the titer story — none cost a clone" },
+    { n: "5", l: "WRONG ANSWERS KILLED EARLY", d: "CPm, the residue-174 switch, the charged subset, single-gene sufficiency, the titer story — none cost a clone" },
   ];
   stats.forEach((st, i) => T.numStat(s, M + i * 4.24, y0, 3.74, st.n, st.l, st.d, { nsize: 40, nh: 0.62 }));
   T.vline(s, M + 4.0, y0 - 0.1, 1.75); T.vline(s, M + 8.24, y0 - 0.1, 1.75);

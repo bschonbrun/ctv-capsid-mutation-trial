@@ -83,7 +83,7 @@ function s30(pres, tag) {
     { lead: "Primary —", text: "T36 p33 (whole gene) into FS577, titer-matched" },
     { lead: "Registered reciprocal —", text: "the missing causality test, designed before data arrives" },
     { lead: "Mandatory —", text: "RT-qPCR titer on every source plant; transmission normalized per unit titer — the peer review's loudest fix" },
-    { lead: "Excluded —", text: "K174R point edit: falsified; never enters the library" },
+    { lead: "Excluded —", text: "K174R point edit: ruled out — R174 does not gate transmission (T30 carries it at 1.57%); never enters the library" },
   ], M + 0.25, y0 + 0.5, cw - 0.5, { size: 9.6, gap: 6.5, h: 2.9 });
   const x2 = M + cw + 0.42;
   G.card_min(s, x2, y0, cw, 3.35);

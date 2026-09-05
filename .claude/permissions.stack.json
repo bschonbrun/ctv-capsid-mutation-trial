@@ -156,5 +156,38 @@
     "ask": {}
   },
   "pinned": [],
-  "waivers": []
+  "waivers": [],
+  "sandbox_policy": {
+    "stashed_entries": [],
+    "ledger": {
+      "api.anthropic.com": {
+        "owner": "stack",
+        "first_seen": "2026-09-05"
+      },
+      "api.openai.com": {
+        "owner": "stack",
+        "first_seen": "2026-09-05"
+      },
+      "generativelanguage.googleapis.com": {
+        "owner": "stack",
+        "first_seen": "2026-09-05"
+      },
+      "api.deepseek.com": {
+        "owner": "stack",
+        "first_seen": "2026-09-05"
+      },
+      "api.x.ai": {
+        "owner": "stack",
+        "first_seen": "2026-09-05"
+      },
+      "openrouter.ai": {
+        "owner": "stack",
+        "first_seen": "2026-09-05"
+      },
+      "access.carbonet.app": {
+        "owner": "stack",
+        "first_seen": "2026-09-05"
+      }
+    }
+  }
 }

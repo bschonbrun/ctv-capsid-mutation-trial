@@ -34,7 +34,7 @@ function s43(pres, tag) {
     { text: "Aphid colony on hand + its historical baseline", marker: "→  " },
     { text: "Containment route for construct work", marker: "→  " },
     { text: "Citrus host for validation phase (Hamlin? Duncan? grapefruit?)", marker: "→  " },
-    { text: "Capacity: ~550–700 aphid transfers across 3–4 weeks", marker: "→  " },
+    { text: "Capacity: ~550–700 plants (≈5.5–7K aphids) across 3–4 weeks", marker: "→  " },
     { text: "One scientist, a few hours, to confirm the five above", marker: "→  " },
   ], x2 + 0.25, y0 + 0.5, cw - 0.5, { size: 9.4, gap: 5.5, h: 2.8 });
   T.takeaway(s, "THE ANALYSIS IS COMPLETE · THE REMAINING QUESTIONS COULD BE ANSWERED IN ONE AFTERNOON");
@@ -73,7 +73,8 @@ function s44(pres, tag) {
     "After infection is confirmed; 8-week ELISA is the long pole", { nsize: 26, nh: 0.42, dh: 0.6 });
   T.takeaway(s, "SMALL ENOUGH TO FIT NEXT TO EXISTING GREENHOUSE WORK · LARGE ENOUGH THAT 0/200 READS AS ≤1.5%");
   T.footer(s, tag, "SILVEC BIOLOGICS · CONFIDENTIAL");
-  s.addNotes("Assay card: Harper's protocol untouched, masked reading, titer everywhere. ~550-700 aphids, roughly $8-13K, three to four weeks of aphid work.");
+  s.addNotes("Assay card: Harper's protocol untouched, masked reading, titer everywhere. ~550-700 plants — ≈5.5-7K aphids at 10/plant — roughly $8-13K, three to four weeks of aphid work. " +
+    "Round-3 flag: 550-700 is plants, not aphids; the $8-13K cost and ~20-week clock rest on a ~10x aphid undercount and must be re-estimated before pre-registration.");
 }
 function s45(pres, tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
@@ -273,7 +274,7 @@ function s52(pres, tag) {
     "Recorded so they are not reintroduced — and so the team can see exactly what the verification stack is for.", { densetop: true });
   const rows = [
     ["p33 identity first reported as 44.7% from an ungapped comparison across an indel",
-      "Proper gapped alignment: 98.7% (295/302)"],
+      "Proper gapped alignment: 98.7% (~299/303)"],
     ["Residue 174 first called off field isolate U16304, whose p33 reading frame differs",
       "Residue calls anchored to infectious clone EU937521"],
     ["The 2026 Virology paper cited 67× as 'Harper et al. 2026'",

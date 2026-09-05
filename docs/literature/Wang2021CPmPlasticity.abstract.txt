@@ -1,0 +1,47 @@
+1. J Gen Virol. 2021 Sep;102(9):001652. doi: 10.1099/jgv.0.001652.
+
+Plasticity of the lettuce infectious yellows virus minor coat protein (CPm) in 
+mediating the foregut retention and transmission of a chimeric CPm mutant by 
+whitefly vectors.
+
+Ng JCK(1)(2), Peng JHC(1), Chen AYS(1), Tian T(3), Zhou JS(1), Smith TJ(4).
+
+Author information:
+(1)Department of Microbiology and Plant Pathology, University of California, 
+Riverside, CA 92521, USA.
+(2)Center for Infectious Disease and Vector Research, University of California, 
+Riverside, CA 92521, USA.
+(3)California Department of Food and Agriculture, Sacramento, CA 95832, USA.
+(4)Department of Biochemistry and Molecular Biology, University of Texas Medical 
+Branch at Galveston, TX, 77555, USA.
+
+Transmission of the crinivirus, lettuce infectious yellows virus (LIYV), is 
+determined by a minor coat protein (CPm)-mediated virion retention mechanism 
+located in the foregut of its whitefly vector. To better understand the 
+functions of LIYV CPm, chimeric CPm mutants engineered with different lengths of 
+the LIYV CPm amino acid sequence and that of the crinivirus, lettuce chlorosis 
+virus (LCV), were constructed based on bioinformatics and sequence alignment 
+data. The 485 amino acid-long chimeric CPm of LIYV mutant, CPmP-1, contains 60 % 
+(from position 3 to 294) of LCV CPm amino acids. The chimeric CPm of mutants 
+CPmP-2, CPmP-3 and CPmP-4 contains 46 (position 3 to 208), 51 (position 3 to 
+238) and 41 % (position 261 to 442) of LCV CPm amino acids, respectively. All 
+four mutants moved systemically, expressed the chimeric CPm and formed virus 
+particles. However, following acquisition feeding of the virus preparations, 
+only CPmP-1 was retained in the foreguts of a significant number of vectors and 
+transmitted. In immuno-gold labelling transmission electron microscopy (IGL-TEM) 
+analysis, CPmP-1 particles were distinctly labelled by antibodies directed 
+against the LCV but not LIYV CPm. In contrast, CPmP-4 particles were not 
+labelled by antibodies directed against the LCV or LIYV CPm, while CPmP-2 and -3 
+particles were weakly labelled by anti-LIYV CPm but not anti-LCV CPm antibodies. 
+The unique antibody recognition and binding pattern of CPmP-1 was also displayed 
+in the foreguts of whitefly vectors that fed on CPmP-1 virions. These results 
+are consistent with the hypothesis that the chimeric CPm of CPmP-1 is 
+incorporated into functional virions, with the LCV CPm region being potentially 
+exposed on the surface and accessible to anti-LCV CPm antibodies.
+
+DOI: 10.1099/jgv.0.001652
+PMCID: PMC8567426
+PMID: 34494949 [Indexed for MEDLINE]
+
+Conflict of interest statement: The authors declare that there are no conflicts 
+of interest

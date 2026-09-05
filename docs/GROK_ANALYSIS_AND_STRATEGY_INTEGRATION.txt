@@ -122,6 +122,13 @@ My recomputation (FS577 vs AY170468):
 
 ⇒ Grok's mutagenesis table is CORRECT (verified against GenBank accessions).
 
+[CORRECTION NOTE 2026-09-05, round-3 panel — docs/peer_reviews_round3/CONSENSUS.md:
+ Lists are written FS577->T36; reverse the signs for the actual edit. Also:
+ 11-vs-7 adjudication is PENDING and must be settled BEFORE construct
+ ordering — 4 of the 11 AY170468 residues (p61 D324G, E382D, I455V;
+ p65 G227S) are AY170468-private: the validated clone EU937521 matches
+ *FS577* there. Default = the EU937521-validated 7-residue set.]
+
 ALTERNATIVE RECIPIENT: EU937521
 ─────────────────────────────────────────────────────────────────────────────
 
@@ -130,9 +137,16 @@ Note: EU937521 is a DIFFERENT T36 infectious clone and has fewer changes:
   p61: S169N, I179T, T224A, M289T, S391G, D458G (6 total, vs 9 for AY170468)
   p65: R496H (1 total, vs 2 for AY170468)
 
-Reason: EU937521 is slightly more divergent from the "canonical" T36 (field 
-isolate U16304). If easier mutagenesis is a priority, EU937521 is a smaller 
+Reason: EU937521 is slightly more divergent from the "canonical" T36 (field
+isolate U16304). If easier mutagenesis is a priority, EU937521 is a smaller
 target (7 total changes vs 11 for AY170468).
+
+  [2026-09-05, round-3 panel: this is not just a convenience choice — the
+   4 residues EU937521 drops (D324G, E382D, I455V, G227S) are
+   AY170468-private, i.e. the phenotyped-validated clone already matches
+   FS577 at those positions. EU937521's 7-residue set is the DEFAULT;
+   adjudicate 11-vs-7 before construct ordering.
+   See docs/peer_reviews_round3/CONSENSUS.md]
 
 NEXT STEPS
 ─────────────────────────────────────────────────────────────────────────────
@@ -146,6 +160,9 @@ I recommend:
   3. Decide on recipient clone:
      - AY170468: 11 changes (more comprehensive)
      - EU937521: 7 changes (faster, less risk of off-target effects)
+       [2026-09-05, round-3 panel: EU937521's 7 is the DEFAULT — its dropped
+        4 are AY170468-private, not phenotype-validated; adjudicate 11-vs-7
+        before construct ordering. See docs/peer_reviews_round3/CONSENSUS.md]
   
   4. Build three primary constructs:
      a) p61 alone (6–9 changes)
@@ -174,18 +191,27 @@ The team brief should now show:
     - Success: <5% transmission (broken vector; virion still forms)
     - Timeline: 3 weeks (construct) + 4 weeks (assay) = 7 weeks
     - Cost: ~$8–12K (aphid assays + sequencing)
-  
+      [RE-ESTIMATE 2026-09-05, round-3 panel: cost/timeline figures in this
+       packet were built on a plants-vs-aphids unit conflation — ~10x aphid
+       undercount (elsewhere "550-700 aphids" should read 550-700 *plants*
+       x 10 aphids = 5,500-7,000 aphids). All $ and week figures below need
+       re-estimation before pre-registration.
+       See docs/peer_reviews_round3/CONSENSUS.md]
+
   PHASE 2: "Test p33 K174R and combinations"
     - Conditional on Phase 1 results
     - Timeline: 2–3 weeks (construct) + 4 weeks (assay) = 6–7 weeks
-    - Cost: ~$5–8K
+    - Cost: ~$5–8K  [re-estimate, see Phase 1 note — 2026-09-05, round-3 panel]
 
   PHASE 3 (optional): "Reciprocal swap in T68-1 background"
     - Validates causality (is the effect genotype-universal or background-specific?)
     - Timeline: 4 weeks
-    - Cost: ~$6–10K
+    - Cost: ~$6–10K  [re-estimate, see Phase 1 note — 2026-09-05, round-3 panel]
 
 Total pathway: 13–20 weeks to "transmission-disabled construct + understanding of mechanism"
 (vs. 10–12 weeks in my original plan, but with stronger evidence and lower risk)
+[RE-ESTIMATE 2026-09-05, round-3 panel: this total rests on the same ~10x
+ aphid undercount; re-cost and re-time before pre-registration.
+ See docs/peer_reviews_round3/CONSENSUS.md]
 
 ═══════════════════════════════════════════════════════════════════════════════

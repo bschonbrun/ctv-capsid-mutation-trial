@@ -52,6 +52,11 @@ credible path. Recommended reviewers:
    Examples: evolutionary biologist, population geneticist, bioinformatician
    What they check:
      • Is the 125-sequence p33 census (R174 96.8%, K174 3.2%) representative?
+       [corrected 2026-09-05, round-3 panel: census was 125 = 121 R + 4 K
+        after dropping five 302-aa T36-lineage sequences (U16304, NC_001661,
+        DQ272579, AY340974, OR192037) that carry R at their shifted position
+        173 — normalized homologous census is 126 R / 4 K / 130
+        (96.9% R, 3.1% K). See docs/peer_reviews_round3/CONSENSUS.md]
        (Is it biased toward particular geographic regions, years, host species?)
      • Does the alignment of "16-fold transmission gap between FS577 and T36"
        really depend on only three amino acids across five ORFs? (Have
@@ -100,6 +105,10 @@ Sequence validation:
   ✓ T30 and FS577 differ by only 22 aa across 5 ORFs: reproducible ✓
   ? K174R discrepancy in T36 infectious clones (AY170468 vs EU937521): VERIFY
     by downloading and re-aligning
+    [RESOLVED 2026-09-05, round-3 panel: re-derived from repo GenBank files —
+     AY170468 = R174, EU937521 = K174; earlier packet claim that "both encode
+     K174" was inverted; T68-1 (JQ965169) = R174; FS577 vs EU937521 p33
+     differ at exactly R174K. See docs/peer_reviews_round3/CONSENSUS.md]
 
 ═══════════════════════════════════════════════════════════════════════════════
 D. SUMMARY: STRENGTH OF EVIDENCE BY CATEGORY
@@ -112,13 +121,17 @@ STRONGEST (Full-text fetched, methods visible):
 
 MODERATE (Abstract, methods partially known, quotes from readable papers):
   • Shilts 2026 claim that "coordinated p33+p61+p65 required" (abstract only)
-  • K174R is one of the differing residues (verified vs GenBank)
+  • K174R is one of the differing residues (verified vs GenBank:
+    FS577 vs EU937521 differ at exactly R174K)
 
 WEAKEST (Known only through quotation in paper; original source not read):
   • Harper 2016 "p65/p61 swap → 0.6% to 18%" (no denominators) 
   • Killiny et al. baseline "0.6%" transmission
-  • The pairing of K174R specifically with high transmission (T68-1 has it,
-    but so does everything; T30 has R174 and transmits poorly)
+  • The pairing of residue 174 with high transmission
+    [corrected 2026-09-05, round-3 panel: the parenthetical here was inverted —
+     T68-1 does NOT have K174 (T68-1 = R174, JQ965169); EU937521 = K174.
+     Dead-lever conclusion re-anchored on T30 (R174, 1.57%) + Harper's
+     K174-retaining hybrids (17.9%/20.6%). See docs/peer_reviews_round3/CONSENSUS.md]
 
 ═══════════════════════════════════════════════════════════════════════════════
 E. RECOMMENDED NEXT STEPS BEFORE TEAM PRESENTATION
@@ -128,6 +141,8 @@ E. RECOMMENDED NEXT STEPS BEFORE TEAM PRESENTATION
 2. Fetch Killiny et al. papers that establish the 0.6% T36 baseline
 3. Fetch Tatineni 2010 if accessible (CPm encapsidation parameters)
 4. Re-verify K174R in your T36 infectious clones against GenBank
+   [DONE 2026-09-05, round-3 panel: AY170468 = R174, EU937521 = K174 —
+    see docs/peer_reviews_round3/CONSENSUS.md]
 5. Send the CTV_Presentation_Hypothesis_Arc.pptx to one virologist in your
    network for 48-hour review with marked-up feedback
 6. Mark claims in the presentation by confidence level:

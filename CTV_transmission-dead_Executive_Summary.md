@@ -47,7 +47,8 @@ single vendor gating a research question.**
 
 - **A · The knockout (lead).** FS577 + T36 p61+p65. Prediction: ≤5% transmission at
   parental titer. Largest verified effect, published protocol, pre-registered pass line.
-- **B · The viroporin arm (parallel).** FS577 + T36 p33 whole gene, titer-matched, with
+- **B · The viroporin arm (parallel).** FS577 + T36 p33 whole gene, titer-matched
+  (RT-qPCR — donor titer was previously checked by DAS-ELISA only), with
   the missing reciprocal registered. Prices the accumulation-based mechanism.
 - **C · The true capsid mutant (later).** p27 point edits aimed by A's residue map —
   the literal original question, worth having, gated on evidence.
@@ -56,7 +57,9 @@ They share one protocol and predict *different measurements* — the season adju
 
 ## The plan and the ask
 
-Twenty weeks, ~$8–13K total, ~550–700 aphids, pass line ≤5% pre-registered; the gate
+Twenty weeks, ~$8–13K total, ~550–700 plant assays (≈5,500–7,000 aphid transfers at
+10/plant — the earlier "aphids" figure was a ~10× undercount, and cost/timeline are
+flagged for re-estimation before pre-registration; `docs/peer_reviews_round3/CONSENSUS.md`, 2026-09-05), pass line ≤5% pre-registered; the gate
 (sequence-verified systemic infection at parental titer) comes before the expense. All
 Stage 0 in-silico work is complete. **This week we need five answers from records**:
 backbone-clone access (FS577/T68), aphid colony + baseline, containment route, citrus

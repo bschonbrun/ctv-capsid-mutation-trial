@@ -4,6 +4,12 @@ STAGE_0 IN SILICO PLANNING: CONSERVATION & MUTATION RANKING
 ═════════════════════════════════════════════════════════════════════════════
 
 CANDIDATE MUTATION SITES (11 total: FS577 → T36)
+  [OPEN: 11-vs-7 adjudication pending before construct ordering — 4 of the 11
+   (p61 D324G, E382D, I455V; p65 G227S) are AY170468-private; the validated
+   clone EU937521 matches FS577 at those positions. Default = the 7 residues
+   that differ from EU937521. Notation is FS577→T36 (reverse the signs for
+   the actual edit into FS577). See docs/peer_reviews_round3/CONSENSUS.md,
+   correction 11, 2026-09-05]
 ───────────────────────────────────────────────────
 
 Gene    Pos   FS577  T36   Biochemistry      Entropy*  Ranking Rationale
@@ -76,15 +82,19 @@ Scenario B: Construct transmits at 15% (partial effect)
   → Allows detection of drop from 24% → 15%
 
 Recommendation for Phase 1:
-  PRIMARY CONSTRUCT: 250-300 aphids (FS577 + T36 p65+p61)
+  PRIMARY CONSTRUCT: 250-300 plants (FS577 + T36 p65+p61)
                      → If ≤ 5 successes / 250, interpret as success (CI ≤ 3%)
-  CONTROL FS577:     100-150 aphids (expected ~25-40 successes)
+  CONTROL FS577:     100-150 plants (expected ~25-40 successes)
   BACKUP CONSTRUCTS: Individual genes or subsets if timeline allows
-                     → 200 aphids each
+                     → 200 plants each
 
-Total aphids for Phase 1: ~550-700 aphids
-Timeline: 3-4 weeks (single infection, no complementation assays)
-Cost: ~$2-3K for aphid trials + $5-10K construct synthesis/validation
+Total for Phase 1: ~550-700 PLANTS ≈ 5,500-7,000 aphids (10 aphids/plant)
+  [UNIT CORRECTION 2026-09-05 — CONSENSUS correction 6: these counts were
+   written as "aphids" but are plants; cost and timeline below were built on
+   the ~10× undercount and are flagged for re-estimation before
+   pre-registration]
+Timeline: 3-4 weeks (single infection, no complementation assays) — re-estimate
+Cost: ~$2-3K for aphid trials + $5-10K construct synthesis/validation — re-estimate
 
 ═════════════════════════════════════════════════════════════════════════════
 MECHANISM VALIDATION (TITER CHECK)
@@ -115,7 +125,9 @@ NEXT STEPS BEFORE ORDERING CONSTRUCTS
                    Individual genes as Phase 1.5 if budget allows.
 5. ~ Finalize: Which citrus host? (Sweet orange? Grapefruit? Duncan? Hamlin?)
    (Affects transgenic feasibility but not N. benthamiana validation)
-6. ~ Budget & schedule: Lab capacity for 550-700 aphid interactions?
+6. ~ Budget & schedule: Lab capacity for 550-700 plant assays (≈5,500-7,000
+   aphid transfers)? Budget/timeline under ~10× re-estimation (CONSENSUS
+   correction 6)
 
 ═════════════════════════════════════════════════════════════════════════════
 RISK & MITIGATION
@@ -135,7 +147,9 @@ RISK 3: Mutation disables movement protein (p23) secondary structure
               (Answer: No — different genome segments; independent.)
 
 RISK 4: Phase 1 result is "partial" (5-15% transmission)
-  Mitigation: Pre-planned Phase 2: add p33 K174R, or test reciprocal 
-              (T36 + FS577 p65/p61 to confirm causality).
+  Mitigation: Pre-planned Phase 2: add the p33 whole-gene swap (note: residue
+              K174R is adjudicated NOT the dominant lever — T30 R174 at 1.57%,
+              K174-retaining hybrids at 17.9%/20.6%; CONSENSUS corrections 2–3),
+              or test reciprocal (T36 + FS577 p65/p61 to confirm causality).
 
 ═════════════════════════════════════════════════════════════════════════════

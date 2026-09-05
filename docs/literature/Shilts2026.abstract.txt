@@ -1,0 +1,49 @@
+1. Virology. 2026 Aug;621:110928. doi: 10.1016/j.virol.2026.110928. Epub 2026 Apr
+ 28.
+
+Dissecting aphid transmission determinants in Citrus Tristeza Virus using 
+chimeric viruses and gene substitutions.
+
+Shilts T(1), Nehela Y(2), Killiny N(3).
+
+Author information:
+(1)Department of Plant Pathology, Citrus Research and Education Center, 
+University of Florida, 700 Experiment Station Rd., Lake Alfred, FL, 33850, USA.
+(2)Department of Agricultural Botany, Faculty of Agriculture, Tanta University, 
+Tanta, Egypt.
+(3)Department of Plant Pathology, Citrus Research and Education Center, 
+University of Florida, 700 Experiment Station Rd., Lake Alfred, FL, 33850, USA. 
+Electronic address: nabilkilliny@ufl.edu.
+
+Citrus Tristeza Virus (CTV) is the most economically significant viral pathogen 
+of citrus worldwide, transmitted in a semipersistent manner by several aphid 
+species, most efficiently by Aphis [Toxoptera] citricidus. Transmission 
+efficiency varies substantially among CTV genotypes, but the viral determinants 
+underlying these differences remain poorly understood. In this study, we 
+investigated the roles of three viral genes, p33, p18, and p13, in aphid 
+transmission using a genetically engineered CTV-T36 mutant (CTV-T36Δp33Δp18Δp13) 
+as a backbone. This mutant is derived from the poorly transmissible T36 isolate 
+and lacks three accessory genes implicated in host specificity and possibly 
+vector interactions. To assess their contribution to transmissibility, we 
+substituted the deleted genes with their counterparts from CTV-FS577, a highly 
+transmissible isolate. The resulting chimeric virus exhibited a significant 
+increase in transmission efficiency up to 50% compared to the original T36 
+background (∼0.6%). Sequence analysis revealed that among the three substituted 
+genes, only p33 differs between T36 and FS577, with a single amino acid change 
+(K174R). This residue is conserved in other highly transmissible isolates such 
+as T68-1, supporting its potential role as a key determinant of transmission. 
+Our findings highlight P33 as a critical viral protein in aphid-mediated 
+transmission and suggest that efficient transmissibility requires coordinated 
+function of multiple viral proteins, including P33, P61, and P65. This work 
+provides new insights into the molecular basis of vector transmission and sets 
+the stage for further studies on virus-vector interactions in CTV.
+
+Copyright © 2026 Elsevier Inc. All rights reserved.
+
+DOI: 10.1016/j.virol.2026.110928
+PMID: 42061270 [Indexed for MEDLINE]
+
+Conflict of interest statement: Declaration of competing interest The authors 
+declare that they have no known competing financial interests or personal 
+relationships that could have appeared to influence the work reported in this 
+paper.

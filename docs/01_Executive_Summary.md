@@ -45,7 +45,8 @@ Why the pivot?
      - Shilts et al. 2026 (just published April 2026): p33 K174R identified as 
        key candidate; engineered swaps show 83-fold gain in transmission
   
-  3. MAJOR DISCOVERY (November 24, 2025 — PLOS Pathogens)
+  3. MAJOR DISCOVERY (November 24, 2025 — Aknadibossian et al., PLoS Pathogens
+     21(11):e1013730, DOI 10.1371/journal.ppat.1013730)
      - p33 is a VIROPORIN (ion channel protein)
      - Functions: K+/Na+ transport, membrane remodeling, host cell alteration
      - Provides MECHANISM for how p33 sequence variation affects transmission
@@ -72,13 +73,17 @@ FS577 vs. T36 comparison:
 ├─────────────────┼──────────────┼───────────────┼────────────────┤
 │ CPm (p27)       │    100%      │       0       │ 24.1% vs 1.5%  │
 │ CP (p25)        │     99.0%    │       2       │ (16-fold gap)  │
-│ p33             │     98.7%    │       3       │                │
+│ p33             │     98.7%    │  ~4 (3 aa + 1 │                │
+│                 │  (~299/303)* │  gap)         │                │
 │ p65             │     98.8%    │       7       │                │
 │ p61             │     98.1%    │      10       │                │
 └─────────────────┴──────────────┴───────────────┴────────────────┘
 
 Conclusion: CPm is CONSERVED between these isolates. No way to explain transmission 
 variation through CPm mutations. HYPOTHESIS FALSIFIED.
+
+*p33 count corrected 2026-09-05: ~299/303 = 98.7% on the gapped alignment (vs the T36
+clones AY170468/EU937521 it is 99.7%) — docs/peer_reviews_round3/CONSENSUS.md.
 
 FACT 2: p33 IS THE BEST CANDIDATE BY LITERATURE AND SEQUENCE
 ═════════════════════════════════════════════════════════════
@@ -97,16 +102,24 @@ Shilts et al. 2026 (April 2026):
   - Identified: K174R as likely single-residue driver
   - "P33 is a critical viral protein in aphid-mediated transmission"
 
-Our verification (Sept 5, 2026):
-  - Confirmed K174R is present in FS577 (24.1%) and T68-1 (44.2%)
-  - T36 infectious clone (EU937521) has K174 (matches Shilts et al. 2026 claim)
-  - BUT: T30 (1.6% transmission) ALSO has R174, yet differs 23-fold from FS577
-  - Implication: K174R is NECESSARY but NOT SUFFICIENT; other residues matter too
+Our verification (Sept 5, 2026) — CORRECTED (docs/peer_reviews_round3/CONSENSUS.md,
+corrections 2–3, 2026-09-05):
+  - Earlier statement here ("K174R present in FS577 and T68-1") was INVERTED.
+    Verified from the repo GenBank files: FS577 = R174, T68-1 = R174,
+    AY170468 = R174; T36 infectious clone EU937521 = K174.
+  - FS577 vs EU937521 p33 differ at exactly R174K → the Shilts et al. 2026
+    abstract's K174R claim is CONSISTENT with these sequences; our refutation
+    was the error.
+  - BUT: T30 (1.57% transmission) ALSO has R174, yet differs 15-fold from FS577,
+    and Harper's K174-retaining hybrids transmit at 17.9%/20.6%
+  - Implication: residue 174 is NOT the dominant lever of the phenotype;
+    other residues/factors matter (the "necessary but not sufficient" framing
+    is withdrawn).
 
 FACT 3: p33 IS A VIROPORIN — ION CHANNEL (NEW)
 ════════════════════════════════════════════════
 
-PLOS Pathogens, November 24, 2025:
+Aknadibossian et al. 2025, PLoS Pathogens 21(11):e1013730 (November 24, 2025):
   - p33 has structural similarity to Class I viroporins (like influenza M2)
   - Two-electrode voltage clamp in Xenopus oocytes: p33 conducts K+ and Na+ ions
   - Electron microscopy: p33 triggers membrane remodeling
@@ -124,7 +137,11 @@ TARGETS:
 ─────────
 Primary: p33 K174R and related mutations (K174A, K174E) in T36 backbone
 Rationale: 
-  - K174R reverses T36 toward high-transmission T68-1 and FS577 sequences
+  - CORRECTED 2026-09-05 (CONSENSUS corrections 2–3): T68-1 and FS577 both encode
+    R174, not K174 — K174R does not "reverse T36 toward high-transmission
+    sequences." The one verified residue-174 difference is FS577 (R174) vs T36
+    clone EU937521 (K174), matching the 2026 abstract. K174 remains one candidate
+    among the p33 differences, not a proven switch (T30 has R174 at 1.57%).
   - Single-residue mutation → minimal off-target effects vs. multi-residue swaps
   - Ion channel domain location → plausible mechanism for transmission change
 
@@ -256,10 +273,11 @@ QUESTIONS THE TEAM MIGHT ASK
 
 Q: "How confident are you that p33 K174R will actually reduce transmission?"
 A: Medium confidence. The literature (Shilts 2020, Shilts et al. 2026 shows p33 is 
-   important, and K174R is the single-residue candidate. BUT T30 has R174 and 
-   still transmits poorly (1.6%), so K174R alone may not be sufficient. Think 
-   of it as "necessary but not sufficient" — a likely component of the answer, 
-   not the whole story. That's why we start with Stage 0 screening (other 
+   important, and K174R is the published single-residue candidate. BUT T30 has R174 and 
+   still transmits poorly (1.57%), and Harper's K174-retaining hybrids transmit at
+   17.9%/20.6% — so residue 174 is not the dominant lever (corrected framing
+   2026-09-05; the earlier "necessary but not sufficient" reading is withdrawn —
+   CONSENSUS corrections 2–3). That's why we start with Stage 0 screening (other 
    residues as backups).
 
 Q: "What if it doesn't work?"

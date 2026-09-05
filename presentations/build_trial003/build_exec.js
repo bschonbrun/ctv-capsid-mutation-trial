@@ -47,14 +47,14 @@ function e02(tag) {
 }
 function e03(tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
-  T.titleBlock(s, "WHY / NOT THE COAT", "The obvious target was falsified first — twice.",
-    "CPm, the minor coat protein, was everyone's starting guess. The record killed it cleanly.", { densetop: true });
+  T.titleBlock(s, "WHY / NOT THE COAT", "The obvious target was falsified on the sequence.",
+    "CPm, the minor coat protein, was everyone's starting guess. Identity killed it; a second 'test' once cited in support turned out not to exist — and was struck.", { densetop: true });
   const y0 = 3.0;
   T.numStat(s, M, y0, 3.5, "240 / 240", "CPM IDENTICAL · FS577 VS T36",
     "Zero sequence difference across a 16-fold transmission gap.", { nsize: 34, nh: 0.52 });
   T.vline(s, M + 4.0, y0 - 0.05, 1.6);
-  T.numStat(s, M + 4.4, y0, 3.5, "p = 1.00", "FUNCTIONAL NULL",
-    "Adding CPm to the p33 swap changed nothing: 17/90 vs 16/90 (Shilts 2020).", { nsize: 34, nh: 0.52 });
+  T.numStat(s, M + 4.4, y0, 3.5, "WITHDRAWN", "THE 17/90 'FUNCTIONAL NULL'",
+    "A 17/90 CPm+5′UTR construct was cited from Shilts 2020 — no such construct exists in the paper. The 240/240 identity now carries the coat falsification alone.", { nsize: 34, nh: 0.52 });
   T.vline(s, M + 8.4, y0 - 0.05, 1.6);
   G.card_min(s, M + 8.8, y0 - 0.05, 3.95, 1.85, C.TAN);
   T.body(s, [{ text: "What survives:  ", options: { italic: true, color: C.TXT } },
@@ -63,7 +63,7 @@ function e03(tag) {
     M + 9.0, y0 + 0.15, 3.55, { size: 9.5, h: 1.5 });
   T.takeaway(s, "WHERE THE APHID READS THE VIRION: FREE p27, p61 AND p65 COMPETE FOREGUT BINDING — p25 DOES NOT");
   T.footer(s, tag, "KILLINY 2016 · OUR ALIGNMENT · SHILTS 2020");
-  s.addNotes("Why not the coat: two falsifications, plus the binding evidence that redirects design to the tail complex.");
+  s.addNotes("Why not the coat: falsified on sequence identity (240/240). Round-3 correction: the 17/90 'functional null' was never in Shilts 2020 — struck from the record. What survives: CPm is still the foregut ligand.");
 }
 function e04(tag) {
   const s = pres.addSlide(); T.bg(s); T.header(s, tag);
@@ -85,7 +85,8 @@ function e04(tag) {
   T.table(s, M, 3.0, CW, cols, rows, { rowLineColor: C.LINE2, size: 9.5 });
   T.body(s, [{ text: "Lead goes to A:  ", options: { italic: true, color: C.TXT } },
     { text: "largest verified effect, published protocol, pre-registered pass line. B is the cheap parallel " +
-      "bet; C inherits A's map. K174R — the residue an abstract once named — is falsified and appears only in the log.",
+      "bet; C inherits A's map. Residue 174 — the 'switch' an abstract once named — fails on sufficiency " +
+      "(T30 carries R174 at 1.57%; Harper's K174-retaining hybrids still transmit 17.9–20.6%). It appears only in the log.",
       options: {} }], M, 4.9, 11.6, { size: 10.5, h: 0.8, lsm: 1.1 });
   T.takeaway(s, "WHICHEVER COLUMN MOVES, SILVEC LEARNS WHICH MACHINE IT IS EDITING");
   T.footer(s, tag, "SILVEC BIOLOGICS · CONFIDENTIAL");
@@ -97,7 +98,7 @@ function e05(tag) {
     "What the project actually demonstrated about AI in Silvec's research: speed came from structure, not from any single model.");
   const y0 = 2.95;
   const stats = [
-    ["5", "WRONG ANSWERS KILLED BEFORE THE BENCH", "CPm, K174R, the charged subset, single-gene-first, the titer story"],
+    ["5", "WRONG ANSWERS KILLED BEFORE THE BENCH", "CPm, the residue-174 switch, the charged subset, single-gene sufficiency, the titer story"],
     ["12", "ADVERSARIAL REVIEWS · 6 MODELS × 2 ROUNDS", "Consensus recomputed, not voted; the panel even corrected itself once sources landed"],
     ["130", "GENOMES CENSUS-ALIGNED", "Every residue claim re-derived from accessions, never transcribed from prose"],
   ];
@@ -122,7 +123,7 @@ function e06(tag) {
     { label: "Confirm inputs · this week", start: 0, end: 1, color: C.TERRA, tag: "BACKBONE CLONE · APHID COLONY · CONTAINMENT" },
     { label: "Clone & verify (4 constructs)", start: 1, end: 9, color: C.FAINT, tag: "FULL-LENGTH SEQ · SYSTEMIC TITER" },
     { label: "Gate: infection at parental titer", start: 9, end: 10, color: C.AMBER, tag: "OR STOP, CHEAPLY", gate: 9 },
-    { label: "Transmit — blinded (Harper protocol)", start: 10, end: 18, color: C.TERRA, tag: "~550–700 APHIDS · TITER ON EVERY SOURCE" },
+    { label: "Transmit — blinded (Harper protocol)", start: 10, end: 18, color: C.TERRA, tag: "~550–700 PLANTS · 5.5–7K APHIDS" },
     { label: "Score & decide", start: 18, end: 20, color: C.OLIVE, tag: "PRE-REGISTERED CRITERIA" },
   ], { maxW: 20 });
   const y1 = 5.7;

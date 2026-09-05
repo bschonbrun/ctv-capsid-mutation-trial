@@ -8,9 +8,9 @@ This repository documents the data-driven hypothesis development for disabling a
 **Current Hypothesis:** p33 (silencing suppressor/viroporin) is the primary transmission determinant, acting in coordinated function with p65 and p61 (heat shock proteins).
 
 ## Key Findings
-- **CPm hypothesis falsified**: Minor coat protein p27 is 100% identical between high-transmission (FS577, 24.1%) and low-transmission (T36, 1.5%) isolates, yet transmission differs 16-fold. → CPm sequence variation does not explain phenotype.
+- **CPm hypothesis falsified**: Minor coat protein p27 is 100% identical between high-transmission (FS577, 24.1%) and low-transmission (T36, 1.5% in the Shilts clone assay; field 0.53%) isolates, yet transmission differs 16-fold. → CPm sequence variation does not explain phenotype.
 - **p33 as primary driver**: Swapping p33 from T68-1 (44.18% transmission) into T36 background raises transmission 1.5% → 17.8%.
-- **K174R is a candidate residue**: Present in highest-transmitter T68-1 and infectious clone EU937521, but not FS577 or field-collected T36.
+- **K174R adjudicated** (2026-09-05, `docs/peer_reviews_round3/CONSENSUS.md` corrections 2–3): verified sequences are T68-1 = R174, FS577 = R174, AY170468 = R174, T36 clone EU937521 = K174 — the 2026 abstract's K174R statement is consistent (FS577↔EU937521 differ at exactly R174K). But residue 174 is not the dominant lever: T30 (R174) transmits at 1.57%, and Harper's K174-retaining hybrids transmit at 17.9–20.6%.
 - **Coordinated protein requirement**: Shilts et al. 2026 (Virology 621:110928) show efficient transmission requires p33+p61+p65 together.
 
 ## Repository Structure

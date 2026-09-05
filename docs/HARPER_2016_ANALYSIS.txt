@@ -38,12 +38,18 @@ VIRAL TITER
 ───────────────────────────────────────────────────────────────────────────────
   RT-qPCR: No significant difference (Tukey HSD P > 0.05)
   ELISA:   Similar results
-  
-  Conclusion: "the substitutions did not affect virus accumulation, 
-  therefore we propose that the increase in efficacy is due to the 
+
+  [FLAGGED 2026-09-05, round-3 panel: the Tukey HSD ran on n = 2-4 source
+   plants per arm — an underpowered null. "No significant difference" is not
+   evidence of no difference at this n. See docs/peer_reviews_round3/CONSENSUS.md]
+
+  Conclusion: "the substitutions did not affect virus accumulation,
+  therefore we propose that the increase in efficacy is due to the
   polymorphisms contained within the substituted p61 and p65 genes."
-  
+
   → This RULES OUT titer-based mechanism for p61/p65
+    [caveat per flag above: read as "no detectable accumulation difference at
+     n = 2-4/arm", not proof]
 
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -66,8 +72,19 @@ CLAIM 3 (from peer review): "K174R is impossible (both are K174)"
 REALITY: K174R is a change in p33, NOT p65 or p61
          Harper 2016 does NOT mention K174 or any p33 variation
          K174R was first mentioned in Shilts 2026, not Harper 2016
-VERDICT: The peer review is correct about K174R being impossible, but this is
-         a finding from Shilts 2026, not Harper 2016.
+VERDICT (ORIGINAL, SUPERSEDED): "The peer review is correct about K174R being
+         impossible."
+VERDICT (CORRECTED 2026-09-05, round-3 panel): The impossibility claim itself
+         was INVERTED — the sequences are NOT both K174. Re-derived from repo
+         GenBank files (corroborated by two panel models): T68-1 (JQ965169) =
+         R174; AY170468 = R174; EU937521 = K174; FS577 vs EU937521 p33 differ
+         at exactly R174K. The Shilts 2026 abstract's K174R statement is
+         consistent with these sequences; the refutation was the error.
+         The dead-residue conclusion now re-anchors on: T30 = R174 at 1.57%,
+         and Harper's own K174-retaining hybrids (T36 clone = K174) at
+         17.9%/20.6% — residue 174 cannot be the dominant lever of the T36
+         phenotype. (corrected 2026-09-05, round-3 panel:
+         see docs/peer_reviews_round3/CONSENSUS.md)
 
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -89,7 +106,10 @@ SHILTS 2020 (same lab + others)
   Genes tested:     p33 + p18 + p13 (triple deletion & restoration)
   Construct:        T36 with all three genes deleted, then restored from FS577
   Result:           p33+p18+p13 together → ~50% (from ~0.6%)
-  Mechanism:        Unknown (titer not reported)
+  Mechanism:        Unknown (titer: DAS-ELISA on donor plants measured —
+                    OD 3.36/3.41/3.50, same Tukey letter; the genuine gap is
+                    RT-qPCR only) [corrected 2026-09-05, round-3 panel:
+                    see docs/peer_reviews_round3/CONSENSUS.md]
   Sample size:      Not visible in abstract (paper needs retrieval)
   Conclusion:       These three genes matter, but can't separate which drives effect
 
@@ -98,8 +118,12 @@ SHILTS 2026 (same lab + others, most recent)
   Genes tested:     p33 + p18 + p13 (triple deletion, same as Shilts 2020)
   Construct:        Same as Shilts 2020 but now with sequence analysis
   Result:           Triple substitution → 50% (from 0.6%)
-                    Sequence analysis: "only p33 differs" with K174R change
-  Mechanism:        Unknown (titer not reported)
+                    Sequence analysis: "only p33 differs" with residue-174
+                    change (K→R direction: FS577/AY170468 = R174,
+                    EU937521 = K174; corrected 2026-09-05, round-3 panel:
+                    see docs/peer_reviews_round3/CONSENSUS.md)
+  Mechanism:        Unknown (titer: gap is RT-qPCR only; DAS-ELISA on donor
+                    plants was reported in Shilts 2020)
   Sample size:      Not visible in abstract
   Conclusion:       p33 is the key driver, but tested as part of triple substitution
 
@@ -119,8 +143,12 @@ CURRENT KNOWLEDGE:
   • p33 (with p18, p13) adds more benefit → 50% (Shilts 2026)
   • Individual p61 substitution alone: 4% (Harper 2016)
   • Individual p65 substitution alone: 1.9% (Harper 2016)
-  • Mechanism for p61/p65: NOT titer-based (RT-qPCR negative)
-  • Mechanism for p33: UNKNOWN (titer not measured)
+  • Mechanism for p61/p65: NOT titer-based (RT-qPCR negative — but underpowered:
+    Tukey HSD at n = 2-4 source plants/arm; flagged 2026-09-05, round-3 panel)
+  • Mechanism for p33: UNKNOWN [corrected 2026-09-05, round-3 panel: Shilts 2020
+    Table 2 DID measure donor-plant titer by DAS-ELISA (OD 3.36/3.41/3.50, same
+    Tukey letter; titer explanation explicitly rejected by the authors). The
+    genuine gap is RT-qPCR only. See docs/peer_reviews_round3/CONSENSUS.md]
 
 THE 5.2-POINT "GAP" DOES NOT EXIST
   ✗ The peer review invented a gap by subtracting Shilts 2020's 17.8% from 
@@ -130,8 +158,18 @@ THE 5.2-POINT "GAP" DOES NOT EXIST
 
 DESIGN IMPLICATIONS:
   ✓ p65 and p61 SHOULD be in the construct (17.9% effect, not titer-based)
+    — as a PAIR: singles are insufficient (p61 alone 4.0%, p = 0.034 vs
+    control; p65 alone 1.9%, p = 0.41); only the gain-of-function direction
+    is published, reciprocal loss-of-function swap untested
+    (note added 2026-09-05, round-3 panel)
   ✓ p33 SHOULD be in the construct (50% effect in triple substitution)
   ✗ K174R CANNOT be the mechanism (both donor and recipient encode K174)
+    [RETRACTED 2026-09-05, round-3 panel: reason inverted — donor and
+     recipient do NOT both encode K174. T68-1 = R174, AY170468 = R174,
+     EU937521 = K174; FS577 vs EU937521 differ at exactly R174K. The
+     de-emphasis of residue 174 instead rests on T30 (R174, 1.57%) and
+     Harper's K174-retaining hybrids (17.9%/20.6%). See
+     docs/peer_reviews_round3/CONSENSUS.md]
   ? Individual effects of p33 within the triple deletion are unknown
      (Shilts 2026 measures p33 in a triple-deletion context, not alone)
 
@@ -148,7 +186,11 @@ a 5.2-point "residual gap" that doesn't exist.
 
 Once Harper is read:
   ✓ p61/p65 ARE verified (17.9%, not titer-dependent)
-  ✓ K174R is impossible (confirmed from Shilts 2026, not Harper)
+  ~~✓ K174R is impossible (confirmed from Shilts 2026, not Harper)~~
+    [RETRACTED 2026-09-05, round-3 panel: inverted — see CLAIM 3 correction
+     above. T68-1/AY170468 = R174; EU937521 = K174; FS577↔EU937521 differ at
+     exactly R174K; the 2026 abstract is consistent with these sequences.
+     See docs/peer_reviews_round3/CONSENSUS.md]
   ✗ The 5.2-point gap is spurious (conflation of two studies)
   ✓ Construct SHOULD include p65, p61, and p33
   ? But individual roles within triple substitution remain undefined

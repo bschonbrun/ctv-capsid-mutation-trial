@@ -127,6 +127,10 @@ Updated elements:
   ✓ New slides on evidence strength categorization (STRONG/MODERATE/WEAK)
   ✓ Statistical caveats slide: binomial CIs on transmission percentages
   ✓ K174R verification: T36 clones vs field isolate genotypes shown
+    (NOTE 2026-09-05, round-3 panel: the p33 residue-174 genotype assignments
+    in the deck were inverted — T68-1(JQ965169) = R174, AY170468 = R174,
+    EU937521 = K174; FS577 vs EU937521 differ at exactly R174K, consistent
+    with the Shilts 2026 abstract. See docs/peer_reviews_round3/CONSENSUS.md)
   ✓ Coordinated p33+p61+p65 requirement explicitly stated from Shilts 2026
   ✓ Flags for what is ABSTRACT-ONLY (Shilts 2026, Harper 2016)
 
@@ -151,8 +155,10 @@ Citation status:
     Status: FULL TEXT FETCHED AND READ
     Used for: T68-1/T36/T30 transmission percentages, p33 swap data
     
-  ✓ Aknadibossian et al. 2025 (PLOS Pathog 21:e1013730)
-    Status: FULL TEXT FETCHED AND READ
+  ✓ Aknadibossian et al. 2025 (PLoS Pathog 21(11):e1013730,
+    DOI 10.1371/journal.ppat.1013730)
+    Status: FULL TEXT FETCHED AND READ; citation verified by direct fetch
+    (corrected 2026-09-05, round-3 panel: see docs/peer_reviews_round3/CONSENSUS.md)
     Used for: p33 viroporin functional mechanism
     
   ✓ Shilts et al. 2026 (Virology 621:110928)
@@ -243,6 +249,9 @@ Recommended next steps before team presentation:
   ✓ Shilts 2026: abstract visible, full text pending
   → ACTION: Fetch Harper et al. 2016 full text (contact Killiny, UF)
   → ACTION: Verify K174R in T36 clones (EU937521 vs AY170468) directly
+    [DONE 2026-09-05, round-3 panel: re-derived from repo GenBank files —
+     EU937521 = K174, AY170468 = R174; the prior packet's "both encode K174"
+     claim was inverted. See docs/peer_reviews_round3/CONSENSUS.md]
   → ACTION: Confirm FS577 transmission denominator (24.1% with what N?)
 
 ═══════════════════════════════════════════════════════════════════════════════

@@ -69,3 +69,8 @@ secrets.json
 graphify-out/
 graph.json
 .claude/settings.json.lock
+
+# Local tooling scratch
+.playwright-mcp/
+node_modules/
+presentations/build_trial003/node_modules/

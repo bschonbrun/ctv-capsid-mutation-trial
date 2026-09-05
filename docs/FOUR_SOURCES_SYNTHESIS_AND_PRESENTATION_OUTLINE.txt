@@ -8,9 +8,18 @@ SOURCES & WHAT EACH PROVIDED:
 ─────────────────────────────
 
 1. YOUR ORIGINAL WORK (Sequence Analysis + Peer Review)
-   ✓ CPm hypothesis falsified (FS577 vs T36: p27 100% identical)
+   ✓ CPm *sequence* falsified (FS577 vs T36: p27 100% identical)
+     [2026-09-05, round-3 panel: sequence identity is now the sole basis —
+      the 17/90 CPm functional-construct figure does not exist in Shilts 2020
+      (PMC7600554); CPm involvement itself not ruled out. See
+      docs/peer_reviews_round3/CONSENSUS.md]
    ✓ Identified p33 and p65/p61 as candidates
    ✓ 11 mutations confirmed between high/low transmitters
+     [2026-09-05, round-3 panel: 11-vs-7 adjudication pending — 4 of the 11
+      (p61 D324G, E382D, I455V; p65 G227S) are AY170468-private; the
+      EU937521-validated 7-residue set is the default. Notation is
+      FS577->T36; reverse signs for the actual edit.
+      See docs/peer_reviews_round3/CONSENSUS.md]
    ✓ Peer review from 6 models flagged: "Read Harper 2016"
    ✗ Couldn't access Harper 2016 initially
 
@@ -39,8 +48,12 @@ SOURCES & WHAT EACH PROVIDED:
      - p65 alone: 1.9%
      - p61 alone: 4.0%
      - p65+p61 together: 17.9%
-   ✓ Figure 2: RT-qPCR shows titer identical across constructs
-   ✓ Conclusion: "Synergistic effect; mechanism is not titer"
+   ✓ Figure 2: RT-qPCR shows no detectable titer difference across constructs
+     [FLAGGED 2026-09-05, round-3 panel: Tukey HSD ran on n = 2-4 source
+      plants/arm — underpowered null; "identical" is overstated.
+      See docs/peer_reviews_round3/CONSENSUS.md]
+   ✓ Conclusion: "Synergistic effect; mechanism is not titer" (with the
+     n = 2-4/arm caveat above)
 
 ═════════════════════════════════════════════════════════════════════════════
 DECISION MATRIX: WHOSE DESIGN IS RIGHT?
@@ -68,6 +81,13 @@ MODIFICATIONS:     Introduce T36 alleles of:
                    - p61: S169N, I179T, T224A, M289T, D324G, E382D, S391G,
                           I455V, D458G  (9 aa)
                    - p27: UNCHANGED (100% identity, already matching)
+                   [2026-09-05, round-3 panel: 11-vs-7 adjudication PENDING —
+                    p61 D324G, E382D, I455V and p65 G227S are AY170468-private;
+                    EU937521 (the validated clone) matches FS577 there.
+                    Default = the 7-residue EU937521 set; adjudicate before
+                    construct ordering. Notation above is FS577->T36; reverse
+                    signs for the actual edit of an FS577 background.
+                    See docs/peer_reviews_round3/CONSENSUS.md]
 
 EXPECTED OUTCOME:  Transmission drops from 24.1% → ≤5% (biocontainment success)
                    OR 5-15% (partial effect, proceed to Phase 2)
@@ -76,6 +96,11 @@ EXPECTED OUTCOME:  Transmission drops from 24.1% → ≤5% (biocontainment succe
 POWER:             250-300 aphids for primary construct
                    100-150 FS577 control
                    Total Phase 1: ~550-700 aphids
+   [CORRECTED 2026-09-05, round-3 panel: UNIT FIX — these figures conflated
+    plants with aphids (~10x undercount). Read as 550-700 *plants*
+    x ~10 aphids/plant = 5,500-7,000 aphids. Cost/timeline built on the
+    undercount must be re-estimated before pre-registration.
+    See docs/peer_reviews_round3/CONSENSUS.md]
 
 SUCCESS CRITERION: ≤ 5 successes / 250 aphids (95% CI upper bound ≤ 3.3%)
 
@@ -86,7 +111,10 @@ WHAT HARPER 2016 FALSIFIES
 DeepSeek's "minimal subset" hypothesis (D324G, E382D, D458G):
   → Rationale: Three charged-residue changes in predicted aphid-binding pocket
   → Harper result: Neither p61 alone (includes D458G) nor p65 alone reaches 5%
-  → Conclusion: Minimal subset DOESN'T WORK; you need the full 11
+  → Conclusion: Minimal subset DOESN'T WORK; you need the full substituted set
+    [2026-09-05, round-3 panel: whether "full" means 11 (vs AY170468) or the
+     EU937521-validated 7 is PENDING adjudication — default 7.
+     See docs/peer_reviews_round3/CONSENSUS.md]
 
 DeepSeek's "test p65 alone first" (Phase 1.A):
   → Rationale: P65 has only 2 changes, simpler starting point
@@ -105,7 +133,11 @@ WHAT HARPER 2016 CONFIRMS (From Grok)
 ✓ FS577 backbone is the right starting point (24% transmission, rich for testing)
 ✓ p65+p61 must be tested TOGETHER (synergy at 17.9%)
 ✓ All 11 mutations are in the same "co-evolved interaction module"
-✓ Mechanism is NOT titer (RT-qPCR identical)  → likely foregut binding
+  [11-vs-7 adjudication pending, default = EU937521-validated 7 —
+   2026-09-05, round-3 panel: see docs/peer_reviews_round3/CONSENSUS.md]
+✓ Mechanism is probably NOT titer (no detectable RT-qPCR difference —
+  but Tukey HSD at n = 2-4 source plants/arm, underpowered; flagged
+  2026-09-05, round-3 panel)  → likely foregut binding
 ✓ Effect is large (drop from 24% to somewhere ≤ 5% is realistic)
 ✓ The test is feasible (Harper did it with 196-273 aphids per construct)
 
@@ -127,8 +159,11 @@ SLIDE 2: RESEARCH GOAL
 SLIDE 3: INITIAL HYPOTHESIS & FALSIFICATION
   Hypothesis v1: CPm (coat protein minor, p27) determines transmission
   Why? High-resolution structure, known carbohydrate binding
-  Evidence: FS577 (24.1%) vs T36 (1.5%) both have T36 genotype
-  Result: p27 is 100% identical → CPm falsified
+  Evidence: FS577 (24.1%) vs T36 (1.5% baseline) both have T36 genotype
+  Result: p27 is 100% identical → CPm sequence variation ruled out
+  (NOTE 2026-09-05, round-3 panel: CPm *involvement* not ruled out; sequence
+   identity is the sole basis after the 17/90 CPm-construct figure was found
+   not to exist in Shilts 2020. See docs/peer_reviews_round3/CONSENSUS.md)
   
 SLIDE 4: DATA THAT CHANGED EVERYTHING
   Six-model peer review flagged: "Read Harper 2016"
@@ -143,9 +178,11 @@ SLIDE 5: THE FOUR SOURCES (Quality Check)
   Harper:   The data adjudicator (verified)
 
 SLIDE 6: MECHANISM CLARIFICATION
-  Not: Viral titer/replication (RT-qPCR identical across hybrids)
+  Not: Viral titer/replication (RT-qPCR shows no detectable difference across
+       hybrids — caveat: Harper Tukey HSD at n = 2-4 source plants/arm is
+       underpowered; flagged 2026-09-05, round-3 panel)
   Rather: Direct aphid receptor interaction (foregut binding model)
-  Evidence: Harper Figure 2 — no difference in viral accumulation
+  Evidence: Harper Figure 2 — no detectable difference in viral accumulation
   Implication: Mutation target is protein-protein interface, not fitness
   Advantage: Shouldn't affect plant movement or virion structure
 
@@ -154,6 +191,9 @@ SLIDE 7: THE 11 MUTATIONS (Operationalized Design)
   p61 (9 changes):   S169N, I179T, T224A, M289T, D324G, E382D, S391G, I455V, D458G
   Background: FS577 (wild-type, can be synthesized or generated by site-directed mutagenesis)
   Target: Reduce transmission from 24% → ≤5% (biocontainment threshold)
+  [2026-09-05, round-3 panel: 11-vs-7 adjudication pending — default to the
+   EU937521-validated 7-residue set (drop p61 D324G/E382D/I455V, p65 G227S —
+   AY170468-private). See docs/peer_reviews_round3/CONSENSUS.md]
 
 SLIDE 8: PRE-REGISTERED HYPOTHESIS & DECISION CRITERION
   H0 (Null): Construct transmits at ≥15% (mutation has no effect)
@@ -172,9 +212,15 @@ SLIDE 9: POWER ANALYSIS & SAMPLE SIZE
   Control (FS577): 100-150 aphids
     → Expected ~25-40 successes (validates system)
   Total Phase 1: 550-700 aphids
-  
+
   Timeline: 3-4 weeks
   Cost: ~$7-13K (aphid trials + construct synthesis/validation)
+
+  [CORRECTED 2026-09-05, round-3 panel: UNIT FIX — "550-700 aphids" conflates
+   plants with aphids (~10x undercount): 550-700 *plants* x ~10 aphids/plant
+   = 5,500-7,000 aphids. The $7-13K cost and 3-4-week timeline are built on
+   that undercount and must be RE-ESTIMATED before pre-registration.
+   See docs/peer_reviews_round3/CONSENSUS.md]
 
 SLIDE 10: MECHANISM VALIDATION (OPTIONAL)
   Measure viral titer in Phase 1 constructs using RT-qPCR

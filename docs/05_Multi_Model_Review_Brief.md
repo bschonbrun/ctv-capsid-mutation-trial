@@ -39,7 +39,10 @@ B1. TRANSMISSION PHENOTYPE DATA (from Shilts et al. 2020, Viruses 12:1131)
     T68-1 isolate:  44.18%  (95/215 brown citrus aphids transmitted virus)
     FS577 isolate:  24.1%   (measured, same-genotype T36 per GenBank)
     T30 isolate:    1.57%   (2/127 aphids)
-    T36 field:      1.5%    (1/66 aphids)
+    T36 clone:      1.5%    (1/66 aphids)
+    [Corrected 2026-09-05, round-3 panel: 1/66 is Shilts's T36 *clone* arm
+     (AY170468 backbone), mislabeled "T36 field" here; Harper's T36 field
+     rate is 2/380 = 0.53% — see docs/peer_reviews_round3/CONSENSUS.md]
 
     Conclusion drawn: 16-fold difference in transmission between high (T68-1) 
                       and low (T36) transmitters.
@@ -57,10 +60,16 @@ B3. p33 SWAP EXPERIMENT (Shilts et al. 2020, Table 2)
     ────────────────────────────────────────────────────────────────────────
 
     T36 baseline:                              1.5%  (1/66)
-    T36 + p33 from T68-1:                     17.8%  (16/90)
-    T36 + p33 + CPm + 5′-UTR from T68-1:      18.9%  (17/90)  [no gain from CPm]
+    T36 + p33 from T68-1:                     17.8%  (16/90)  [construct 35sT8]
+    ~~T36 + p33 + CPm + 5′-UTR from T68-1:      18.9%  (17/90)~~  [WRONG — no
+    such construct or 17/90 figure exists in Shilts 2020 (PMC7600554, verified
+    by direct fetch). Real Table 2 data: 35sT8 (T36/T68-p33) 16/90; T36/T68
+    5′-end 71/306 (23.2%); T36/T30 5′-end 0%.
+    (corrected 2026-09-05, round-3 panel: see docs/peer_reviews_round3/CONSENSUS.md)]
 
-    Conclusion: p33 alone drives ~17% transmission gain; CPm adds <1%.
+    Conclusion: p33 alone drives ~17% transmission gain. The CPm *functional*
+    falsification arm (17/90) is retracted pending re-sourcing; the CPm case
+    now rests on sequence identity alone (p27 240/240 identical, B2).
 
 B4. BROADER 5′-END SWAP (Harper et al. 2016, cited in Shilts 2020)
     ────────────────────────────────────────────────────────────────────────
@@ -76,17 +85,29 @@ B4. BROADER 5′-END SWAP (Harper et al. 2016, cited in Shilts 2020)
 B5. SEQUENCE DIVERGENCE AT POSITION 174 IN p33
     ────────────────────────────────────────────────────────────────────────
 
-    T68-1 (44.18% transmission):     K174 (lysine)
-    FS577 (24.1% transmission):      R174 (arginine)
-    T36 infectious clone EU937521:   K174 (lysine)
-    T36 field isolate U16304:        A174 (frameshift artifact)
-    T30 (1.57% transmission):        R174 (arginine)
-    
-    Observation: K174 is present in highest-transmitter (T68-1) but not in
-                 FS577 (moderate transmitter) or T30 (low transmitter).
-    Puzzle: T30 has R174 (same as FS577) but transmits 15-fold worse than FS577.
-            This suggests K174 is correlated with high transmission but not alone
-            sufficient — other factors differ between FS577 and T30.
+    T68-1 (44.18% transmission, JQ965169):   R174 (arginine)
+    FS577 (24.1% transmission):              R174 (arginine)
+    T36 infectious clone EU937521:           K174 (lysine)
+    T36 clone arm backbone AY170468:         R174 (arginine)
+    T36 field isolate U16304:                A174 (frameshift artifact in the
+                                             302-aa frameshifted CDS; carries R
+                                             at shifted position 173)
+    T30 (1.57% transmission):                R174 (arginine)
+
+    [Rows corrected 2026-09-05, round-3 panel: this table previously listed
+     T68-1 as K174 — that was inverted. Re-derived from repo GenBank files,
+     corroborated by two panel models: T68-1(JQ965169) = R174; AY170468 = R174;
+     EU937521 = K174; FS577 vs EU937521 p33 differ at exactly R174K. The Shilts
+     2026 abstract's K174R statement is consistent with these sequences.
+     See docs/peer_reviews_round3/CONSENSUS.md]
+
+    Observation: the R174K difference exists only between FS577 and the T36
+                 infectious clone EU937521. FS577 and T30 share R174, yet
+                 differ ~15-fold in transmission (24.1% vs 1.57%); and Harper
+                 2016's K174-retaining hybrids transmit at 17.9%/20.6%.
+                 Together these show residue 174 cannot be the dominant lever
+                 of the T36 phenotype — the K174-correlation framing above
+                 is retired.
 
 B6. SHILTS ET AL. 2026 ABSTRACT (Virology 621:110928, paywalled)
     ────────────────────────────────────────────────────────────────────────
@@ -102,7 +123,11 @@ B6. SHILTS ET AL. 2026 ABSTRACT (Virology 621:110928, paywalled)
 
     Status: Abstract only; full construct design and statistical analysis not read.
 
-B7. p33 FUNCTIONAL DATA (Aknadibossian et al. 2025, PLOS Pathog 21:e1013730)
+B7. p33 FUNCTIONAL DATA (Aknadibossian et al. 2025, PLoS Pathog
+    21(11):e1013730, DOI 10.1371/journal.ppat.1013730 — citation verified by
+    direct fetch; TEVC inward K+/Na+ currents, membrane remodeling; third
+    plant-virus viroporin. corrected 2026-09-05, round-3 panel: see
+    docs/peer_reviews_round3/CONSENSUS.md)
     ────────────────────────────────────────────────────────────────────────
 
     Finding: p33 is a Class I viroporin (ion channel).
@@ -115,11 +140,22 @@ B7. p33 FUNCTIONAL DATA (Aknadibossian et al. 2025, PLOS Pathog 21:e1013730)
 SECTION C: INFERENCE CHAIN (What the researchers concluded)
 ═══════════════════════════════════════════════════════════════════════════════
 
-STEP 1: CPm doesn't explain the variance → FALSIFIED (100% identical, 16-fold gap)
+STEP 1: CPm doesn't explain the variance → CPm sequence variation does not
+        determine transmission (100% identical, 16-fold gap). NOTE 2026-09-05:
+        the supporting functional arm (17/90 CPm construct) does not exist in
+        Shilts 2020 — sequence identity is the sole basis pending re-sourcing.
 STEP 2: p33 explains most of the gap → p33 swap: 17.8% vs 1.5% baseline
 STEP 3: p33 alone insufficient for full gain → need p61 and/or p65
-STEP 4: K174R is a candidate key residue → conserved in high transmitter
-FINAL:  Plan constructs with p33 K174R + variants of p61, p65 for testing
+STEP 4: K174R residue 174 — RE-EVALUATED (corrected 2026-09-05, round-3 panel:
+        see docs/peer_reviews_round3/CONSENSUS.md). K174 is NOT in T68-1
+        (T68-1 = R174); EU937521 = K174; FS577↔EU937521 differ at exactly
+        R174K. T30 (R174, 1.57%) plus Harper's K174-retaining hybrids
+        (17.9%/20.6%) show residue 174 is not the dominant lever.
+FINAL:  Plan constructs as paired p61+p65 swaps (both genes data-required;
+        singles are insufficient: p61 alone partially active p = 0.034 vs
+        control, p65 alone not p = 0.41; only the gain-of-function direction
+        is published — the reciprocal loss-of-function swap is untested).
+        p33 variants remain candidates, not anchored on K174R alone.
 
 ═══════════════════════════════════════════════════════════════════════════════
 SECTION D: QUESTIONS FOR REVIEWER (Choose your lens)
@@ -225,7 +261,10 @@ SECTION F: METADATA & PROVENANCE
 
 Data sources cited:
   ✓ Shilts et al. 2020, Viruses 12(10):1131 — full text retrieved & verified
-  ✓ Aknadibossian et al. 2025, PLOS Pathog 21:e1013730 — full text retrieved
+  ✓ Aknadibossian et al. 2025, PLoS Pathog 21(11):e1013730,
+    DOI 10.1371/journal.ppat.1013730 — full text retrieved; citation verified
+    by direct fetch (corrected 2026-09-05, round-3 panel:
+    see docs/peer_reviews_round3/CONSENSUS.md)
   ✓ Shilts et al. 2026, Virology 621:110928 — abstract only (paywalled)
   ✓ Harper et al. 2016, Arch Virol 161:3555 — cited by Shilts 2020 (not fetched)
 

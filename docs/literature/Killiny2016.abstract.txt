@@ -1,0 +1,48 @@
+1. Appl Environ Microbiol. 2016 Oct 14;82(21):6294-6302. doi:
+10.1128/AEM.01914-16.  Print 2016 Nov 1.
+
+Minor Coat and Heat Shock Proteins Are Involved in the Binding of Citrus 
+Tristeza Virus to the Foregut of Its Aphid Vector, Toxoptera citricida.
+
+Killiny N(1), Harper SJ(2), Alfaress S(2), El Mohtar C(2), Dawson WO(2).
+
+Author information:
+(1)Plant Pathology Department, CREC-IFAS, University of Florida, Lake Alfred, 
+Florida, USA nabilkilliny@ufl.edu.
+(2)Plant Pathology Department, CREC-IFAS, University of Florida, Lake Alfred, 
+Florida, USA.
+
+Vector transmission is a critical stage in the viral life cycle, yet for most 
+plant viruses how they interact with their vector is unknown or is explained by 
+analogy with previously described relatives. Here we examined the mechanism 
+underlying the transmission of citrus tristeza virus (CTV) by its aphid vector, 
+Toxoptera citricida, with the objective of identifying what virus-encoded 
+proteins it uses to interact with the vector. Using fluorescently labeled 
+virions, we demonstrated that CTV binds specifically to the lining of the 
+cibarium of the aphid. Through in vitro competitive binding assays between 
+fluorescent virions and free viral proteins, we determined that the minor coat 
+protein is involved in vector interaction. We also found that the presence of 
+two heat shock-like proteins, p61 and p65, reduces virion binding in vitro 
+Additionally, treating the dissected mouthparts with proteases did not affect 
+the binding of CTV virions. In contrast, chitinase treatment reduced CTV binding 
+to the foregut. Finally, competition with glucose, N-acetyl-β-d-glucosamine, 
+chitobiose, and chitotriose reduced the binding. These findings together suggest 
+that CTV binds to the sugar moieties of the cuticular surface of the aphid 
+cibarium, and the binding involves the concerted activity of three virus-encoded 
+proteins.
+IMPORTANCE: Limited information is known about the specific interactions between 
+citrus tristeza virus and its aphid vectors. These interactions are important 
+for the process of successful transmission. In this study, we localized the CTV 
+retention site as the cibarium of the aphid foregut. Moreover, we demonstrated 
+that the nature of these interactions is protein-carbohydrate binding. The viral 
+proteins, including the minor coat protein and two heat shock proteins, bind to 
+sugar moieties on the surface of the foregut. These findings will help in 
+understanding the transmission mechanism of CTV by the aphid vector and may help 
+in developing control strategies which interfere with the CTV binding to its 
+insect vector to block the transmission.
+
+Copyright © 2016, American Society for Microbiology. All Rights Reserved.
+
+DOI: 10.1128/AEM.01914-16
+PMCID: PMC5066346
+PMID: 27520823 [Indexed for MEDLINE]

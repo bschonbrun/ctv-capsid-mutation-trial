@@ -32,7 +32,11 @@ The first-trial construct is therefore the **T36-clone allele pair of p61 and p6
 transplanted together** into a transmissible FS577 backbone — nine substitutions in
 p61 (S169N, I179T, T224A, M289T, D324G, E382D, S391G, I455V, D458G) and two in p65
 (G227S, R496H), AY170468 numbering, re-derived from the GenBank CDS translations
-(KC517488 × AY170468). Gain-of-function is published and verified: either gene alone
+(KC517488 × AY170468). That is the eleven-residue set against AY170468; four of them
+(p61 D324G, E382D, I455V; p65 G227S) are AY170468-private — the validated clone
+EU937521 matches FS577 at those positions, so the seven-residue set vs EU937521 is
+the default pending adjudication before construct ordering
+(`docs/peer_reviews_round3/CONSENSUS.md`, correction 11, 2026-09-05). Gain-of-function is published and verified: either gene alone
 restores only 1.9–4.0% transmission to the T36 clone, while the pair restores 17.9%
 against a 24.1% wild type (Harper et al. 2016) — a roughly 12.6-point synergy over the
 additive expectation.
@@ -44,9 +48,10 @@ which gene does what. If the pair does not silence, the hypothesis dies in eight
 at the cost of a cloning run.
 
 **One caveat carried openly.** The third gene, p33, has a verified transmission effect
-(16.3 points, p = 0.001) but no measured mechanism — its titer was never taken. It
-joins the panel as a parallel arm (Approach B) with titer normalization written in,
-not as the lead.
+(16.3 points, p = 0.001) but an under-controlled mechanism — source-plant titer was
+measured only by DAS-ELISA (Shilts 2020 Table 2, same Tukey letter across arms), never
+by RT-qPCR. It joins the panel as a parallel arm (Approach B) with RT-qPCR titer
+normalization written in, not as the lead.
 
 ## 1.2 What the method produced already
 
@@ -61,16 +66,16 @@ Five wrong answers died on the record, each before it could cost laboratory work
 
 | Claim | Source of the claim | What killed it |
 |---|---|---|
-| CPm sequence variation determines transmission | starting hypothesis; DeepSeek v1–v2 | 240/240 identity across the gap; functional null p = 1.00 |
-| p33 K174R is the transmission switch | early brief, from the 2026 abstract | both swap partners encode K174; R174 appears in 24% and 1.6% transmitters alike; 96.8% of 125 genomes carry R174 |
+| CPm sequence variation determines transmission | starting hypothesis; DeepSeek v1–v2 | 240/240 identity across the gap — that alone is the falsification (cited Shilts "functional null" construct 17/90 does not exist; withdrawn — CONSENSUS correction 1) |
+| p33 K174R is the transmission switch | early brief, from the 2026 abstract | the abstract is consistent with the verified sequences (clone EU937521 = K174, FS577 = R174, differ at exactly R174K); the switch reading dies on phenotype: T30 (R174) transmits at 1.57% and Harper's K174-retaining hybrids at 17.9%/20.6% — residue 174 is not the dominant lever (CONSENSUS corrections 2–3) |
 | Three charged residues suffice (D324G, E382D, D458G) | DeepSeek v3 | Harper: p61 alone 4.0%, pair 17.9% — synergy needs the set |
-| Test individual genes first | DeepSeek v3 phase plan | Harper singles sit at baseline; "concerted action" is not optional |
+| Test individual genes first | DeepSeek v3 phase plan | singles are *insufficient* (p61 alone partially active, p = 0.034 vs control; p65 alone not, p = 0.41) — moving both genes is data-required; only the gain-of-function direction is published, the reciprocal is untested (CONSENSUS correction 8) |
 | The effect is titer, not vector interaction | DeepSeek mechanism prediction | Harper Figure 2: RT-qPCR/ELISA identical, Tukey HSD p > 0.05 |
 
 The review consortium (GPT-6, Grok, Gemini, DeepSeek, Qwen, Claude — two rounds,
 independent then adversarial) recomputed statistics to unanimity rather than voting:
-the K174R impossibility, the missing reciprocals, the 14% power of a planned 5-point
-comparison, the undocumented experimental units. It also visibly corrected itself: its
+the K174R adjudication, the missing reciprocals, the baseline-dependent power of a
+planned 5-point comparison, the undocumented experimental units. It also visibly corrected itself: its
 "p61/p65 unfounded" verdict rested on an unread paper; once Harper 2016 was fetched,
 the supposed 5.2-point residual gap proved spurious — a misread of the wild-type
 parent's 24.1%. That self-correction is the strongest argument for the workflow:
@@ -109,13 +114,17 @@ is a null hypothesis with a denominator.
 
 # Part Two — The evidence
 
-## 2.1 The coat is falsified — two independent ways
+## 2.1 The coat is falsified on sequence alone
 
 **Sequence.** FS577 (24.1% transmission) and T36 (1.5%) are 240/240 identical in CPm.
-A sequence that does not vary cannot explain a phenotype that does. **Function.** In
-Shilts 2020's own series, adding CPm+5′UTR to the p33 swap changed nothing: 17/90 vs
-16/90, Fisher p = 1.00. What is dead is CPm as the *explanation*. What survives is CPm
-as the *ligand* — a necessary part of the machine and still a knockout target
+A sequence that does not vary cannot explain a phenotype that does — that single fact
+is the falsification, confirmed by independent re-alignment. (An earlier draft of this
+document cited a Shilts 2020 construct as functional confirmation — "adding CPm+5′UTR
+to the p33 swap changed nothing: 17/90 vs 16/90." Direct fetch of the paper
+(PMC7600554) shows no such construct and no such count; that arm is withdrawn, and the
+case rests on the sequence identity alone — `docs/peer_reviews_round3/CONSENSUS.md`,
+correction 1, 2026-09-05.) What is dead is CPm as the *explanation*. What survives is
+CPm as the *ligand* — a necessary part of the machine and still a knockout target
 (Approach C), just not the tuning knob.
 
 ## 2.2 The adjudicating experiment
@@ -163,21 +172,31 @@ is the case with published transmission genetics deep enough to aim a design rul
 
 p33 is a Class I viroporin (inward K⁺/Na⁺ currents in *Xenopus* oocytes; membrane
 remodeling; third viroporin described in a plant virus — Aknadibossian et al. 2025,
-full text verified). It is also multifunctional: plasmodesmata movement, host range
-(sour orange TMD), superinfection exclusion, CmMLP2 host-immunity interaction. Its
+*PLoS Pathogens* 21(11):e1013730, full text verified). It is also multifunctional:
+plasmodesmata movement, host range (sour orange TMD), superinfection exclusion,
+CmMLP2 host-immunity interaction. Its
 transmission effect is real and large (T68 p33 into T36: 1.5% → 17.8%, 16/90, Fisher
-p = 0.0012, OR 14.1; ~94% of the chimera-series gain) and its mechanism is unattributed
-— no titer was measured in any p33 swap assay. It is therefore priced as a parallel
-arm, with titer-matched inoculum and the missing reciprocal swap registered in
+p = 0.0012, OR 14.1; ~94% of the chimera-series gain) and its mechanism is
+under-controlled: donor-plant titer was checked by DAS-ELISA (Shilts 2020 Table 2 —
+OD 3.36/3.41/3.50, same Tukey letter; the authors reject a titer explanation) but
+never by RT-qPCR. It is therefore priced as a parallel
+arm, with RT-qPCR titer-matched inoculum and the missing reciprocal swap registered in
 advance.
 
-K174R deserves its own line as an instructive failure. A 2026 abstract (Shilts, Nehela
-& Killiny, Virology 621:110928 — still abstract-only for us; tier 3) named it the
-sole differing residue behind a ~50% triple-complement result. Ten minutes of
-alignment buried the claim: both swap partners encode K174, so no residue was
-exchanged; R174 sits in high and low transmitters alike (FS577 24.1%, T30 1.57%); and
-across 125 full-length p33 sequences K174 occurs in 4 (3.2%), in no measured high
-transmitter. What survives is the gene-level result and the abstract's own conclusion
+K174R deserves its own line — an instructive failure, twice over. A 2026 abstract
+(Shilts, Nehela & Killiny, Virology 621:110928 — still abstract-only for us; tier 3)
+named it the
+sole differing residue behind a ~50% triple-complement result. This project first
+"buried" the claim on a sequence error of its own — asserting both swap partners
+encode K174, so no residue was exchanged. Round-3 re-alignment from the repo GenBank
+files inverted that: T68-1 = R174, AY170468 = R174, T36 clone EU937521 = K174, and
+FS577 vs EU937521 differ at exactly R174K — the abstract is consistent with the
+verified sequences; our refutation was the error
+(`docs/peer_reviews_round3/CONSENSUS.md`, corrections 2–3, 2026-09-05). What buries
+the switch reading is phenotype, not sequence: T30 carries R174 and transmits at
+1.57%, and Harper's own K174-retaining hybrids transmit at 17.9% and 20.6%; across
+125 full-length p33 sequences K174 occurs in 4 (3.2%), in no measured high
+transmitter. Residue 174 is not the dominant lever of the T36 phenotype. What survives is the gene-level result and the abstract's own conclusion
 ("coordinated function of P33, P61 and P65") — which is, in effect, an external vote
 for this trial's construct logic. A residue named by abstract arithmetic is a rumor
 until the alignment agrees.
@@ -224,9 +243,13 @@ fatal case holds, the fallback is the p27 map (Approach C), not abandonment.
 ## 3.4 Statistics discipline
 
 Every rate carries its n; every claim its interval. T36's "1.5%" is one plant in 66
-(CI 0.04–8.16%) — say "low single digits" when the distinction matters. A 5-point
-effect is invisible at n=90 per arm (14% power; 80% power needs ~934) — so the design
-targets large effects only. The containment claim is a zero over a large n: 0/200
+(CI 0.04–8.16%), Shilts's *clone* arm (AY170468 backbone) — Harper's T36 *field* rate
+is 2/380 = 0.53%, and the two must not be mixed — say "low single digits" when the
+distinction matters. A 5-point
+effect is invisible at n=90 per arm (14% power; 80% power needs ~934) — but only at a
+mid-scale 15%→20% contrast; at the decision-relevant 1%→6% contrast n=90 gives ~45%
+and 80% needs ~211/arm, so the contrast is stated beside every power number — the
+design targets large effects only. The containment claim is a zero over a large n: 0/200
 transmissions bounds the rate ≤1.5%. Seven uncorrected comparisons carry a 30%
 false-positive risk; the panel caps primaries at 3–4 with Bonferroni correction.
 Experimental units (plant/run/batch) are documented before any CI is invoked.
@@ -257,25 +280,32 @@ Done and in the repo: the re-derived substitution table; per-residue conservatio
 ranking; pre-registered H0/H1 with decision bands; power analysis; the risk register
 with counters; the corrections log. Before ordering constructs, only logistics remain:
 backbone-clone access, aphid colony and baseline, containment route, the citrus host
-for validation, and capacity for ~550–700 aphid transfers — one scientist, one
-afternoon.
+for validation, and capacity for ~550–700 plant assays (≈5,500–7,000 aphid transfers
+at 10 aphids/plant) — one scientist, one afternoon.
 
 ## 4.2 The assay, unchanged
 
 Harper's published protocol: C. macrophylla seedlings, single-genotype infections;
 24 h acquisition on titred source flush; 10 T. citricida per plant; 24 h inoculation
-access; ELISA at 8 weeks; clone identity masked from scorers; RT-qPCR + ELISA titer on
-every source plant. Arms: primary construct A3 at 250–300 aphids; FS577 control at
-100–150; singles A1/A2 optionally at 200 each. Total ≈550–700 aphids, ~3–4 weeks of
+access; ELISA at 8 weeks; RT-qPCR + ELISA titer on
+every source plant. Blinding (clone identity masked from scorers) is this study's
+addition — Harper published none; cite Harper for the assay mechanics only
+(CONSENSUS correction 12). Arms — sized in *plants*, 10 aphids each: primary
+construct A3 at 250–300 plants; FS577 control at
+100–150; singles A1/A2 optionally at 200 each. Total ≈550–700 plants ≈ 5,500–7,000
+aphid transfers, ~3–4 weeks of
 transmission work after infection is confirmed, roughly $2–3K in aphid trials plus
-$5–10K for construct synthesis and validation.
+$5–10K for construct synthesis and validation. The cost and timeline figures here were
+built on a ~10× plants-vs-aphids undercount (550–700 is plants, not aphids) and are
+flagged for re-estimation before pre-registration (CONSENSUS correction 6).
 
 ## 4.3 Pre-registered criteria
 
 H0: the construct transmits at ≥15% (insufficient). H1: ≤5% at parental titer
 (biocontainment). The 5–15% band is phase 2 by registration, not by improvisation.
 The null statement is written: *"If transmission remains ≥15% at parental titer, we
-conclude the eleven-residue set is not sufficient for silencing on this backbone, and
+conclude the residue set (eleven vs seven pending adjudication against EU937521 —
+CONSENSUS correction 11) is not sufficient for silencing on this backbone, and
 transmission gating depends on factors outside p61+p65."* Construct spec, criteria and
 analysis plan are frozen before cloning — that is what makes a win unarguable and a
 loss useful.
@@ -326,10 +356,17 @@ environmental release. The knockout cannot by itself cure tristeza in the field
 families untested.
 
 **Corrections applied to this document set (kept on purpose):** p33 identity first
-reported as 44.7% from an ungapped comparison → 98.7% (295/302) gapped; residue-174
-calls moved from field isolate U16304 to infectious clone EU937521; the 2026 Virology
+reported as 44.7% from an ungapped comparison → 98.7% (~299/303, gapped; the "295/302"
+counting was itself an arithmetic error — vs the T36 clones the identity is 99.7%);
+residue-174
+calls moved from field isolate U16304 to infectious clone EU937521 — then re-derived
+again in round 3 (T68-1/R174, AY170468/R174, EU937521/K174, FS577↔EU937521 = R174K);
+the Shilts "CPm+5′UTR 17/90" construct was verified not to exist and withdrawn; the
+"550–700 aphids" budget corrected to 550–700 plants (5,500–7,000 aphids), with cost
+and timeline flagged for ~10× re-estimation; the 2026 Virology
 paper re-authored from "Harper et al." to Shilts, Nehela & Killiny; the AEM binding
 paper re-authored from "Prado et al." to Killiny et al.; p61/p65 promoted from
 fallback to required partners. Four earlier CPm-target decks in the project are
 marked superseded; the arc deck's K174R centerpiece is retained only as a falsified
-branch. The log is the evidence the process works.
+branch. Round-3/4 panel corrections are catalogued in
+`docs/peer_reviews_round3/CONSENSUS.md` (2026-09-05). The log is the evidence the process works.

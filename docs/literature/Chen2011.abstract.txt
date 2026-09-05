@@ -1,0 +1,42 @@
+1. Proc Natl Acad Sci U S A. 2011 Oct 4;108(40):16777-82. doi: 
+10.1073/pnas.1109384108. Epub 2011 Sep 19.
+
+A virus capsid component mediates virion retention and transmission by its 
+insect vector.
+
+Chen AY(1), Walker GP, Carter D, Ng JC.
+
+Author information:
+(1)Department of Plant Pathology and Microbiology and Center for Disease Vector 
+Research, University of California, Riverside, CA 92521, USA.
+
+Numerous pathogens of humans, animals, and plants are transmitted by specific 
+arthropod vectors. However, understanding the mechanisms governing these 
+pathogen-vector interactions is hampered, in part, by the lack of easy-to-use 
+analytical tools. We investigated whitefly transmission of Lettuce infectious 
+yellows virus (LIYV) by using a unique immunofluorescent localization approach 
+in which we fed virions or recombinant virus capsid components to whiteflies, 
+followed by feeding them antibodies to the virions or capsid components, 
+respectively. Fluorescent signals, indicating the retention of virions, were 
+localized in the anterior foregut or cibarium of a whitefly vector biotype but 
+not within those of a whitefly nonvector biotype. Retention of virions in these 
+locations strongly corresponded with the whitefly vector transmission of LIYV. 
+When four recombinant LIYV capsid components were individually fed to whitefly 
+vectors, significantly more whiteflies retained the recombinant minor coat 
+protein (CPm). As demonstrated previously and in the present study, whitefly 
+vectors failed to transmit virions preincubated with anti-CPm antibodies but 
+transmitted virions preincubated with antibodies recognizing the major coat 
+protein (CP). Correspondingly, the number of insects that specifically retained 
+virions preincubated with anti-CPm antibodies were significantly reduced 
+compared with those that specifically retained virions preincubated with anti-CP 
+antibodies. Notably, a transmission-defective CPm mutant was deficient in 
+specific virion retention, whereas the CPm-restored virus showed WT levels of 
+specific virion retention and transmission. These data provide strong evidence 
+that transmission of LIYV is determined by a CPm-mediated virion retention 
+mechanism in the anterior foregut or cibarium of whitefly vectors.
+
+DOI: 10.1073/pnas.1109384108
+PMCID: PMC3189079
+PMID: 21930903 [Indexed for MEDLINE]
+
+Conflict of interest statement: The authors declare no conflict of interest.

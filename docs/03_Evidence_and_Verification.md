@@ -54,7 +54,9 @@ CLAIM 2: Transmission rates
   - T68-1 = 44.18% (95/215)
   - FS577 = 24.1% (isolate, not direct measurement in Shilts 2020)
   - T30 = 1.57% (2/127)
-  - T36 = 1.5% (1/66)
+  - T36 = 1.5% (1/66) — this is the Shilts T36 CLONE arm (AY170468 backbone);
+    Harper's T36 FIELD rate is 2/380 = 0.53% [labeling CORRECTED 2026-09-05 —
+    CONSENSUS correction 4]
   STATUS: ✓ [VERIFIED via fetch]
   SOURCE: Shilts et al. 2020, Results section, Figure 4C
   DIRECT MATCH: Yes, word-for-word
@@ -71,12 +73,16 @@ CLAIM 3: Shilts 2020 shows p33 swap raises transmission from 1.5% to 17.8%
 CLAIM 4: p33 is 98.7% identical between FS577 and T36
   STATUS: ✓ [VERIFIED via tool]
   SOURCE: Our pairwise alignment (Biopython, 302 aa)
-  EVIDENCE: 295/302 = 98.7% identity (7 aa differences including 1 gap)
+  EVIDENCE [COUNTS CORRECTED 2026-09-05 — CONSENSUS correction 7]: ~299/303 = 98.7%
+    on the gapped alignment (1 gap); the quoted "295/302" was itself an arithmetic
+    error (295/302 = 97.7%). Against the T36 clones AY170468/EU937521 the identity
+    is 99.7%.
   CONFIDENCE: CERTAIN
 
 CLAIM 5: Viroporin mechanism for p33 (PLOS Pathogens 2025)
   STATUS: ✓ [VERIFIED via fetch]
-  SOURCE: PLOS Pathogens 2025 (full text fetched)
+  SOURCE: Aknadibossian et al. 2025, PLOS Pathogens 21(11):e1013730 (full text
+    fetched; citation confirmed 2026-09-05 — CONSENSUS correction 9)
   DOI: 10.1371/journal.ppat.1013730
   KEY FINDINGS:
     • p33 is a Class I viroporin with transmembrane + cytoplasmic domains
@@ -108,9 +114,15 @@ CLAIM 7: K174R frequency in 125 full-length p33 sequences
     • R174: 121 sequences (96.8%)
     • K174: 4 sequences (3.2%)
     • Isolates with K174: EU937521, MH323441, MH323442, ON094625
-    • High-transmitters all have R174: T68-1 (JQ965169), FS577 (KC517488), 
-      T30 (AF260651)
-  INTERPRETATION: K174R is rare; not found in naturally high-transmitting isolates
+    • All phenotype-labeled reference isolates carry R174: T68-1 (JQ965169, high),
+      FS577 (KC517488, mid), T30 (AF260651, low) — T30 is a LOW transmitter;
+      corrected 2026-09-05
+    • Round-3 re-derivation (CONSENSUS corrections 2–3, 2026-09-05): T68-1 = R174,
+      AY170468 = R174, EU937521 = K174; FS577 vs EU937521 differ at exactly R174K,
+      so the 2026 abstract's K174R statement is consistent with these sequences
+  INTERPRETATION: K174 is rare and absent from naturally high-transmitting
+    isolates; residue 174 is not the dominant lever (T30 R174 at 1.57%; Harper's
+    K174-retaining hybrids at 17.9%/20.6%) — see corrected section below
   CONFIDENCE: CERTAIN
 
 CLAIM 8: 0.6% baseline for poorly transmissible T36 clone
@@ -129,36 +141,42 @@ CLAIM 8: 0.6% baseline for poorly transmissible T36 clone
 
 ───────────────────────────────────────────────────────────────────────────────
 
-CRITICAL INTERPRETATION: K174R is NECESSARY but NOT SUFFICIENT
+CRITICAL INTERPRETATION: K174R — reframed after round-3 review
 ═══════════════════════════════════════════════════════════════
 
-The K174R claim requires careful interpretation:
+[Section rewritten 2026-09-05 per docs/peer_reviews_round3/CONSENSUS.md,
+corrections 2–3. The prior "K174R is NECESSARY but NOT SUFFICIENT" reading,
+and the claim that T36 "naturally has R174," are withdrawn.]
 
-WHAT WE KNOW:
-  1. Harper 2026 confirms K174R is the ONLY differing residue between T36 
-     (poorly transmitted) and FS577 (highly transmitted) in p33
-  2. Harper 2026 reports the triple-deletion + FS577 counterparts achieves 
+WHAT WE KNOW (sequence-verified from the repo GenBank files):
+  1. The 2026 Virology abstract (Shilts, Nehela & Killiny) names K174R as the
+     ONLY differing p33 residue between the T36 clone and FS577 — and this is
+     CONSISTENT with the verified sequences: clone EU937521 = K174, FS577 =
+     R174; they differ at exactly R174K
+  2. The paper reports the triple-deletion + FS577 counterparts achieves
      ~50% transmission
-  3. BUT: The abstract emphasizes "coordinated roles of p33, p61, and p65"
-  4. Naturally high-transmitting isolates (T68-1, FS577, T30... wait, T30 is 
-     low transmitter) ALL have R174, not K174
+  3. The abstract emphasizes "coordinated roles of p33, p61, and p65"
+  4. ALL phenotype-labeled natural isolates carry R174 — T68-1 (44.18%),
+     FS577 (24.1%), AND the low transmitter T30 (1.57%); only the T36 clone
+     EU937521 and three other sequences (4/125) carry K174
 
-THE APPARENT PARADOX:
-  • K174R is rare in nature (3.2% of sequences)
-  • High-transmitters have R174 (wild-type), not K174 (the engineered change)
-  • Harper engineered K174 INTO T36 (which natively has R174)
-  • This suggests K174R works in a T36 genetic background, but...
-  • ...maybe R174 is sufficient in other backgrounds (T68-1, FS577)?
+THE KEY FACTS:
+  • K174 is rare in nature (3.2% of sequences) and absent from natural
+    high-transmitters — but the K174-retaining engineered hybrids in
+    Harper 2016 transmitted at 17.9% and 20.6%, so K174 does not block
+    transmission either
+  • Residue 174 is therefore NOT the dominant lever of the T36 phenotype:
+    T30 (R174) is a low transmitter; the K174 hybrids were mid-range
 
 HYPOTHESIS (REQUIRING TESTING):
-  K174R alone is not sufficient for high transmission. It requires:
+  K174R alone will not confer high transmission. What matters is:
   a) The T36 genetic background (all three proteins p33, p18, p13 matter)
-  b) Coordinated function with p61 and p65 (as Harper 2026 states)
+  b) Coordinated function with p61 and p65 (as the 2026 paper states)
   c) Perhaps epistatic interactions with other p33 residues
 
 RECOMMENDATION FOR STAGE 0:
-  Do NOT assume K174R alone will work. Include p61 and p65 co-mutations 
-  in the construct library, as Harper 2026 concludes.
+  Do NOT assume K174R alone will work. Include p61 and p65 co-mutations
+  in the construct library, as the 2026 paper concludes.
 
 ───────────────────────────────────────────────────────────────────────────────
 
@@ -166,6 +184,10 @@ TRANSMISSION BASELINE RECONCILIATION
 ═════════════════════════════════════
 
 Two different "baseline" values appear:
+
+[UPDATED 2026-09-05 — CONSENSUS correction 4: the Shilts 1.5% (1/66) is the
+ T36 CLONE arm; Harper's T36 FIELD rate is a third value, 2/380 = 0.53%. Keep
+ all three distinct.]
 
 SHILTS 2020 EXPERIMENTS (Figure 4C):
   • T36 infectious clone baseline: 1.5% (1/66 plants)
