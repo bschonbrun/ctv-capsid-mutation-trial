@@ -1,0 +1,301 @@
+
+═════════════════════════════════════════════════════════════════════════════
+                       PEER REVIEW SYNTHESIS
+                 CTV Transmission Brief & Construct Plan
+                        Round 1 + Round 2
+═════════════════════════════════════════════════════════════════════════════
+
+REVIEWERS: 6 models (GPT-6, Grok, Gemini, DeepSeek, Qwen, Claude Opus 5)
+ROUNDS: Independent review (Round 1) + adversarial rebuttal (Round 2)
+CONSENSUS METHOD: 6/6 agreed, 5/6 agreed, 4/6 agreed, divided, or alone
+
+═════════════════════════════════════════════════════════════════════════════
+A. VERIFIED STATISTICAL FACTS (all reviewers in agreement after recomputation)
+═════════════════════════════════════════════════════════════════════════════
+
+**Key quantities just computed (reproducible, ✓ verified):**
+
+  Comparison                              Fisher p      OR      
+  ─────────────────────────────────────────────────────────────
+  p33 swap (16/90) vs T36 baseline (1/66)  0.00116    14.1    ✓ Unanimous
+  T68-1 (95/215) vs T36 (1/66)            <0.00001    51.5    ✓ Unanimous
+  CPm+5'UTR (17/90) vs p33 alone (16/90)   1.00       0.93    ✓ Unanimous
+  T30 (2/127) vs T36 (1/66)               1.00        1.04    ✓ Unanimous
+
+  Fold-change:
+    T68-1 / T36 field     = 29.2-fold (NOT 16-fold) ✓ A,B caught it
+    FS577(24.1%) / T36    = 15.9-fold (but FS577 has NO N)
+    
+  Percentage points:
+    p33 swap gain                = 16.3 points
+    T36→T68-1 total gap          = 42.7 points
+    Fraction recovered by p33     = 38.1% (NOT "most")
+    CPm+5'UTR combined increment = 1.1 points (brief says "<1%")
+    p33 fraction of observed chimera gain = 93.6%
+
+  95% Confidence intervals (Clopper-Pearson):
+    T68-1:       37.4 – 51.1%
+    T36 field:   0.04 – 8.16% (brief had 7.7%, off by 0.46 points)
+    T36+p33:     10.5 – 27.3%
+    T30:         0.19 – 5.57%
+
+  Statistical power (for the 5.2-point "gap" to p61/p65):
+    At n=90/arm (current plan):    14.0% power to detect 17.8% vs 23%
+    For 80% power:                 934 per arm needed
+    At n=200/arm:                  25.4%
+    At n=90/arm for 10-point effect: 35.8% power
+
+═════════════════════════════════════════════════════════════════════════════
+B. FINDINGS (Checkable facts, in ranking order by consensus strength)
+═════════════════════════════════════════════════════════════════════════════
+
+**UNANIMOUS (6/6 reviewers):**
+
+1. [CHECKABLE: residue identity data in brief B5 and Shilts 2020]
+   **K174R as a construct target is mathematically impossible.**
+   - T36 infectious clone EU937521 encodes K174, not R174
+   - T68-1 p33 also encodes K174
+   - p33 swap moves T68-1 p33 (K174) into T36 clone (K174)
+   - The observed gain (1.5% → 17.8%, 16.3 points) cannot be driven by a
+     K↔R change at position 174 because neither sequence changed
+   - FS577 and T30 both encode R174 (not K174), yet differ ~15-fold in
+     transmission (24.1% vs 1.57%), further falsifying R174 as necessary
+   ⇒ IMPLICATION: Drop K174R from ANY construct design.
+
+2. [CHECKABLE: sample sizes and named studies]
+   **The 5.2-point "residual" attributed to p61/p65 is not a verified gap.**
+   - Harper 2016's 23% is unread, lacks a denominator, CI unknown
+   - Shilts 2020's 17.8% has CI 10.5–27.3% (n=90)
+   - Subtraction: 23% − 17.8% = 5.2 points
+   - Cross-study variance, overlapping CIs, unknown assay equivalence
+   - Power to detect 5.2 points at n=90/arm: 14%
+   - For 80% power: need ~934 per arm
+   ⇒ IMPLICATION: Do not treat p61/p65 as primary targets. Downgrade to
+     exploratory screening. No statistical basis for their inclusion.
+
+3. [CHECKABLE: denominator missing in cited reference]
+   **FS577's 24.1% transmission rate has no denominator (N unknown).**
+   - Used to establish "16-fold gap" between CPm-high and CPm-low
+   - Used to claim CPm sequence variation matters
+   - Cannot be statistically evaluated without N
+   ⇒ IMPLICATION: FS577 cannot anchor quantitative claims. CPm falsification
+     rests on the functional test (16/90 vs 17/90, p=1.00) not the FS577 ratio.
+
+4. [CHECKABLE: fold-change arithmetic]
+   **The brief conflates two different fold-changes.**
+   - States "16-fold difference between high (T68-1) and low (T36)"
+   - T68-1/T36 field = 95/215 ÷ 1/66 = 29.2-fold
+   - 16-fold = 24.1% ÷ 1.5% (FS577 vs T36, but FS577 lacks N)
+   ⇒ IMPLICATION: Use 29.2-fold when referring to T68-1 vs T36. Avoid mixing
+     in FS577 without its denominator.
+
+5. [JUDGEMENT: biological mechanism unidentified]
+   **The p33 effect is statistically real but mechanistically unidentified.**
+   - p33 is a viroporin (documented: affects membrane stability, virion yield)
+   - Swap could increase transmission via:
+     a) Virion accumulation in source plant (→ higher titer)
+     b) Phloem loading efficiency
+     c) Virion-aphid binding (the claimed target)
+   - No titer measurements in the assays
+   ⇒ IMPLICATION: Unmeasured source-plant titer is the most dangerous
+     uncontrolled confound. Measure it in any future p33 chimeras.
+
+6. [CHECKABLE: experimental design gap]
+   **No reciprocal swap (T36 p33 → T68-1 background) has been performed.**
+   - All current work: move T68-1 sequence into T36
+   - Missing: move T36 p33 into T68-1
+   - Cannot distinguish "p33 is causal" from "p33 is permissive in T36"
+   - Reciprocal is the single most efficient falsification test
+   ⇒ IMPLICATION: Design and run reciprocal swap (n ≥ 200) before committing
+     to multi-construct screening.
+
+7. [CHECKABLE: source-availability status]
+   **Harper 2016 and Shilts 2026 remain unread.**
+   - Brief cites Harper as a paywalled journal (methods, denominators unknown)
+   - Shilts 2026 cited from abstract only (no methods, no construct details)
+   - "Coordinated function of p33, p61, p65" is an abstract claim, unverified
+   ⇒ IMPLICATION: Retrieve full texts before designing constructs around
+     their findings. The 5.2-point gap and p61/p65 inclusion rest on these.
+
+8. [CHECKABLE: arithmetic error in brief]
+   **Percentage-point language in brief misstates the numbers.**
+   - "p33 explains most of the gap" vs. baseline T36 (1.5%)
+   - p33 gain: 16.3 points (documented)
+   - Total gap to T68-1: 42.7 points
+   - p33 accounts for 38.1% of the total gap, not "most" (>50%)
+   - However: p33 accounts for 93.6% of the observed chimera-series gain
+     (16.3 of 16.3+1.1 points)
+   ⇒ IMPLICATION: Restate as "p33 accounts for ~38% of the baseline-to-donor
+     gap; ~94% of the gain seen in the p33 and p33+CPm+5'UTR comparison series."
+
+9. [JUDGEMENT: statistical power for multi-construct screen]
+   **The proposed 7-construct combinatorial panel has insufficient power.**
+   - Planned N: 66–90 per construct
+   - Planned comparisons: 7 or more (uncorrected for multiplicity)
+   - Power to detect 10-point effects at n=90: 35–47%
+   - P(≥1 false positive in 7 independent tests, uncorrected): 30.2%
+   - For 80% power on 10-point effects: need ~200–280 per arm
+   ⇒ IMPLICATION: Either increase N to ~250/construct, or reduce to 3–4
+     prioritized targets with pre-specified effect size. Implement
+     multiplicity correction (e.g., Bonferroni α=0.007 for 7 tests).
+
+─────────────────────────────────────────────────────────────────────────────
+**NEAR-UNANIMOUS (5/6 or 5/6 accounting for one explicit recantation):**
+
+10. **CPm sequence variation is falsified, but CPm involvement is not.**
+    - 240/240 amino-acid identity between FS577 and T36 field
+    - Functional test: 16/90 vs 17/90, Fisher p=1.00 (no detectable CPm effect)
+    - These exclude CPm coding-sequence variation; do NOT exclude
+      - CPm expression level or timing
+      - CPm RNA-structure effects (synonymous codon variation)
+      - CPm interactions with p33 or other proteins (epistasis)
+    ⇒ Lead with the functional null (p=1.00), not the sequence identity alone.
+
+11. **Experimental units and clustering are undocumented.**
+    - Counts: 95/215, 16/90, 1/66
+    - Undocumented: whether these are independent inoculation events or
+      pooled plant/run/experiment observations
+    - If clustered, binomial CIs and Fisher tests are overprecise
+    ⇒ IMPLICATION: Document experimental unit structure before invoking
+      statistical significance. May need hierarchical/marginal analysis.
+
+12. **The brief's verdict conflates "gain of function" with "transmission
+    determinant."**
+    - The p33 swap increases transmission (17.8% vs 1.5%, p=0.001)
+    - This does NOT establish that p33 DISABLES transmission when removed
+    - A gain-of-function mutation is not a containment target
+    - Containment target requires: X present → low transmission;
+      X absent → high transmission (or vice versa for a disable)
+    ⇒ IMPLICATION: Distinguish the phenotype of interest (gain-of-function
+      suppression of T36, or loss-of-function in T68-1?) from the data shown.
+
+─────────────────────────────────────────────────────────────────────────────
+**CONSENSUS ON DECISION LOGIC (5/6 agreeing on outcome, different justifications):**
+
+**GPT-6 (A), Grok (B), DeepSeek (E), Qwen (F), Claude Opus (G) converge on:**
+"Do not proceed with the K174R + p61/p65 design as specified, but
+ **proceed with a narrowed plan** once Harper 2016 and Shilts 2026
+ are read and reciprocal swap is designed."
+
+**Gemini (D) alone holds:**
+"DO NOT PROCEED. Pull sources and run titer-matched controls on the
+ existing p33 chimera before any new constructs."
+
+⇒ Five reviewers accept exploratory design post-evidence; one demands
+  evidence completion first. Both framings are scientifically defensible
+  (difference in risk tolerance, not fact disagreement).
+
+═════════════════════════════════════════════════════════════════════════════
+C. ACTION ITEMS FOR THE TEAM (Ranked by urgency & impact)
+═════════════════════════════════════════════════════════════════════════════
+
+**MUST DO BEFORE CONSTRUCT DESIGN FREEZES:**
+
+1. Retrieve and read Harper 2016 and Shilts 2026 in full
+   - Check: What is the denominator for Harper's 23%?
+   - Check: What is the construct-level design of Shilts 2026?
+   - Check: Are the assays (aphid species, plant, titer normalization) identical?
+   ⇒ Outcome: Either validates p61/p65 inclusion OR invalidates the 5.2-point gap.
+
+2. Measure source-plant viral titer in ALL existing p33 chimeras
+   - Normalize transmission by titer-matched inoculum
+   - If p33 effect disappears post-normalization → viroporin (yield), not vector
+   - If p33 effect persists → may be vector-specific
+   ⇒ Outcome: Separates fitness/accumulation from transmission determinant.
+
+3. Verify stock identity and provenance
+   - T36 field isolate (U16304) vs. T36 infectious clone (EU937521)
+   - EU937521 is K174 ✓ (confirmed in brief)
+   - Confirm that phenotyping used EU937521 (the clone with K174), not field
+   ⇒ Outcome: Resolves K174R falsification completely.
+
+4. Design and execute reciprocal swap: T36 p33 → T68-1 backbone
+   - N ≥ 200 aphids per arm
+   - Same assay (species, plant, titer measurement)
+   - Does transmission drop in high-transmitter background?
+   ⇒ Outcome: Distinguishes "p33 is causal" from "p33 is merely permissive."
+
+**IF PROCEEDING WITH CONSTRUCT SCREENING (5-reviewer consensus path):**
+
+5. Drop K174R from construct library
+   ⇒ Frees design space for untested residues or whole-gene variants.
+
+6. Downgrade p61/p65 to exploratory arm
+   - Do NOT base sample-size calculations on expecting 5.2-point gaps
+   - Include as part of a broader combinatorial screen if space allows
+   - Pre-specify: "exploratory" vs. "primary" targets; adjust α accordingly
+
+7. Increase sample size OR reduce construct count
+   - Current plan: 7 constructs × 90 aphids = ~630 total, 30% false-positive rate
+   - Option A: 3–4 constructs × 250 aphids = ~750 total, <15% false-positive rate
+   - Option B: Staged screening (round 1: 3 leads at n=150; round 2: 3 exploratory)
+   ⇒ Outcome: 80% power for ≥10-point effects + multiplicity control.
+
+8. Measure source-plant titer in every construct
+   - Cannot interpret transmission differences without it
+   ⇒ Outcome: Separates fitness from transmission determinant.
+
+9. Implement pre-specified analysis plan
+   - Document: primary contrasts, effect-size targets, multiplicity correction
+   - Register plan before running assays (Open Science Framework, etc.)
+   ⇒ Outcome: Prevents p-hacking; increases credibility.
+
+═════════════════════════════════════════════════════════════════════════════
+D. LEARNING ARC REVISION (For the Brief & Presentation)
+═════════════════════════════════════════════════════════════════════════════
+
+**Current arc (before reviews):**
+  Hypothesis: CPm determines transmission
+  → Data: CPm identical, but transmission differs
+  → Conclusion: CPm falsified; p33 is the determinant
+  → Plan: Design K174R + p61/p65 constructs
+
+**Revised arc (post-reviews, before source retrieval):**
+  Hypothesis: CPm determines transmission
+  → Data: CPm identical (100%), but transmission differs 16-fold (T68-1 vs T36)
+  → Conclusion: CPm *sequence* falsified; but CPm involvement NOT ruled out
+  → Secondary finding: p33 swap increases transmission 1.5% → 17.8% (p=0.001)
+  → Problem: K174 is identical in donor & recipient → K174R is impossible
+  → Problem: p61/p65 attribution rests on cross-study, unverified subtraction
+  → Problem: Mechanism unknown (viroporin → titer? or vector binding?)
+  → STOP: Retrieve full Harper 2016 and Shilts 2026 before proceeding
+
+**Final arc (post-source retrieval and reciprocal swap, projected):**
+  Hypothesis: p33 (or co-inherited region) determines transmission efficiency
+  → Data: p33 swap 16.3-point gain; CPm adds 1.1 points; mechanism TBD
+  → Reciprocal swap confirms: p33 is [causal/permissive] in donor background
+  → Titer normalization shows: effect is [vector-specific/accumulation-driven]
+  → Plan: Construct library targeting [identified residues / whole-gene swaps]
+           with adequate replication (n≥200) and multiplicity correction
+
+═════════════════════════════════════════════════════════════════════════════
+E. STATISTICAL LANDSCAPE (For the Methods & Appendix)
+═════════════════════════════════════════════════════════════════════════════
+
+**If targeting zero transmission (containment readout):**
+  0 successes / 90 aphids → one-sided 95% CI upper bound = 3.3%
+  0 successes / 200 aphids → 1.5%
+  0 successes / 300 aphids → 0.99%
+  ⇒ For "transmission-disabled" claim, need 0/200+ to hit <2% upper bound
+
+**If proposing multi-construct combinatorial screen:**
+  Recommend: 3 primary constructs + up to 4 exploratory at n=200–250/arm
+  Multiplicity correction: Bonferroni α=0.01 for 3 primary (α=0.003 each)
+  False-positive rate across 7 tests, uncorrected: 30.2%
+  False-positive rate, Bonferroni-corrected: <0.05 family-wise
+
+═════════════════════════════════════════════════════════════════════════════
+SUMMARY FOR THE TEAM
+═════════════════════════════════════════════════════════════════════════════
+
+✓ The p33 effect is REAL and LARGE (16.3-point gain, p=0.001)
+✓ CPm sequence is FALSIFIED as determinant (p=1.00, 240/240 identity)
+✗ K174R is IMPOSSIBLE (both donor and recipient encode K174)
+✗ p61/p65 attribution is UNFOUNDED (5.2 points, power=14%, unread sources)
+✗ Mechanism is UNKNOWN (could be titer/fitness, not vector specificity)
+✗ Reciprocal swap is MISSING (cannot confirm causality)
+
+→ RECOMMENDATION: Pause construct design. Retrieve sources. Measure titer.
+   Design reciprocal. Then proceed with narrowed, higher-power plan.
+   Timeline impact: 4–6 weeks (literature + 3 weeks wet lab).
+
