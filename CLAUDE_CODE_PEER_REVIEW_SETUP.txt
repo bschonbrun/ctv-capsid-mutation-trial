@@ -1,0 +1,219 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+CTV PEER REVIEW AUTOMATION — CLAUDE CODE SETUP GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+WHAT THIS DOES:
+  Sends your CTV_MULTIMODEL_REVIEW_BRIEF.txt to three independent LLM
+  providers (Grok, GPT-6, Claude), collects their reviews, and saves them
+  to your GitHub repo under docs/peer_reviews/.
+
+TIME REQUIRED: ~5-10 minutes setup, ~2-3 minutes execution
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 1: GATHER API KEYS
+═══════════════════════════════════════════════════════════════════════════════
+
+You need API keys for whichever services you have access to. You can run
+this with just one model, but three yields the strongest signal (consensus
+vs. disagreement patterns).
+
+┌─ Grok (xAI) ──────────────────────────────────────────────────────────┐
+│  Go to: https://console.x.ai/                                         │
+│  Create account (if needed) and generate an API key                    │
+│  Copy the key — you'll need it in Step 2                              │
+└───────────────────────────────────────────────────────────────────────┘
+
+┌─ GPT-6 (OpenAI) ──────────────────────────────────────────────────────┐
+│  Go to: https://platform.openai.com/api/keys                          │
+│  Sign in or create an account                                         │
+│  Generate a new API key                                               │
+│  Copy the key — you'll need it in Step 2                              │
+│                                                                        │
+│  NOTE: The script uses "gpt-4" if "gpt-6" is not available.           │
+│        Check your account's available models first.                   │
+└───────────────────────────────────────────────────────────────────────┘
+
+┌─ Claude (Anthropic) ──────────────────────────────────────────────────┐
+│  Go to: https://console.anthropic.com/                                │
+│  Sign in or create an account                                         │
+│  Generate an API key                                                  │
+│  Copy the key — you'll need it in Step 2                              │
+└───────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 2: OPEN CLAUDE CODE
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Open Claude Code (in the Claude interface)
+
+2. Paste the entire CTV_CLAUDE_CODE_PEER_REVIEW.py script into the editor
+
+3. Before running, update these environment variables in the script:
+
+   At the top of the script (around line 30), you'll see:
+
+       XAI_API_KEY = os.getenv("XAI_API_KEY", "")
+       OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+       ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+
+   Replace the empty strings with your actual API keys:
+
+       XAI_API_KEY = "xai-XXXXXX..."
+       OPENAI_API_KEY = "sk-XXXXXX..."
+       ANTHROPIC_API_KEY = "sk-ant-XXXXXX..."
+
+   OR set them as environment variables before running:
+
+       export XAI_API_KEY="xai-XXXXXX..."
+       export OPENAI_API_KEY="sk-XXXXXX..."
+       export ANTHROPIC_API_KEY="sk-ant-XXXXXX..."
+
+4. Verify the REPO_PATH variable points to your local clone:
+
+       REPO_PATH = "/Users/bill_schonbrun/Claude/Science/Capsid Mutation/ctv-capsid-mutation-trial"
+
+   (This should already be correct if you're copy-pasting the script as-is.)
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 3: HANDLE MISSING DEPENDENCIES (if needed)
+═══════════════════════════════════════════════════════════════════════════════
+
+The script requires:
+  - requests     (for Grok API calls)
+  - openai       (for OpenAI/GPT-6 calls)
+  - anthropic    (for Anthropic Claude calls)
+
+Claude Code typically has these pre-installed. If you get import errors:
+
+   pip install requests openai anthropic
+
+Then re-run the script.
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 4: RUN THE SCRIPT
+═══════════════════════════════════════════════════════════════════════════════
+
+In Claude Code:
+  1. Click the "Run" button (or press Ctrl+Enter)
+  2. The script will:
+     - Load the brief from your workspace
+     - Submit it to each API in sequence (with 2-second pauses between)
+     - Collect responses (each ~1000-2500 words)
+     - Save three individual review files to docs/peer_reviews/
+     - Create a CONSENSUS_SUMMARY.md file
+
+  3. Total runtime: ~30-60 seconds (depends on API response times)
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 5: READ THE REVIEWS
+═══════════════════════════════════════════════════════════════════════════════
+
+Once the script finishes:
+
+  cd /Users/bill_schonbrun/Claude/Science/Capsid\ Mutation/ctv-capsid-mutation-trial
+  open docs/peer_reviews/
+
+Or in your repo viewer:
+  docs/peer_reviews/
+    ├── 01_Grok_Review.md
+    ├── 02_GPT6_Review.md
+    ├── 03_Claude_Review.md
+    └── CONSENSUS_SUMMARY.md
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 6: INTERPRET THE RESULTS
+═══════════════════════════════════════════════════════════════════════════════
+
+Each review addresses these five areas (from the brief):
+
+  a) Logical soundness of the inference chain
+  b) Strength of evidence (strong/moderate/weak)
+  c) Key confounds or missing explanations
+  d) What measurement would strengthen the case most
+  e) Final verdict: Proceed with construct design? Why/why not?
+
+WHAT TO LOOK FOR:
+
+  ✓ STRONG SIGNAL (all three agree):
+    - If all three say "don't proceed without FS577 sample size",
+      that's a real actionable gap.
+    - If all three highlight the same confound, prioritize it.
+
+  ✓ DISAGREEMENT (where two models differ):
+    - This reveals assumption differences.
+    - E.g., "Quantitative reviewer says n=66 is too small;
+      Virologist says the effect size is large enough anyway."
+    - These are often the most valuable discussions.
+
+  ✓ RED FLAGS:
+    - Any reviewer saying "insufficient evidence to proceed" → team decision needed
+    - Multiple reviewers citing the same missing data → collect it before construct design
+    - Novel alternatives you hadn't considered → add to Stage 0 decision tree
+
+  ✓ CONSTRUCTIVE ASKS:
+    - "Need denominators for FS577" → actionable before next construct
+    - "Sample sizes in Shilts too small for power analysis" → design your power upfront
+    - "T30 vs FS577 comparison missing" → add to the Stage 0 feature table
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 7: PUSH TO GITHUB
+═══════════════════════════════════════════════════════════════════════════════
+
+Once you've read the reviews and made notes:
+
+  cd ctv-capsid-mutation-trial
+  git add docs/peer_reviews/
+  git commit -m "Add multi-model peer reviews (Grok, GPT-6, Claude)"
+  git push origin main
+
+Your team can now read all three reviews in the GitHub repo.
+
+═══════════════════════════════════════════════════════════════════════════════
+COST ESTIMATION (rough)
+═══════════════════════════════════════════════════════════════════════════════
+
+  Grok:    ~$0.02 (free tier allows 1000 requests/day; 2500-word review = 1 req)
+  GPT-6:   ~$0.10 (gpt-4: $0.03/1K input tokens, $0.06/1K output)
+  Claude:  ~$0.05 (Sonnet: $3/1M input, $15/1M output)
+
+  Total: ~$0.17 per run (minimal cost)
+
+═══════════════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+PROBLEM: "ModuleNotFoundError: No module named 'openai'"
+  → pip install openai anthropic requests
+
+PROBLEM: "API key rejected"
+  → Verify the key is correct (copy/paste from the provider's dashboard)
+  → Check for leading/trailing whitespace
+  → Ensure the key has not expired
+
+PROBLEM: "Brief not found at [path]"
+  → The BRIEF_PATH in the script may be wrong
+  → Update BRIEF_PATH to point to where you saved CTV_MULTIMODEL_REVIEW_BRIEF.txt
+  → Or: place the brief in the repo root and use BRIEF_PATH = "./CTV_MULTIMODEL_REVIEW_BRIEF.txt"
+
+PROBLEM: "FileNotFoundError: docs/peer_reviews does not exist"
+  → The script creates it automatically. If this fails, manually mkdir -p docs/peer_reviews
+
+PROBLEM: "Connection timeout"
+  → API servers may be slow. Increase the timeout from 60 to 120 seconds.
+  → Retry after a few minutes.
+
+═══════════════════════════════════════════════════════════════════════════════
+NEXT STEPS AFTER REVIEW
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Schedule a 30-minute team call to discuss:
+   - Are there consensus weak points?
+   - Do we collect more data, or proceed to construct design?
+
+2. If proceeding: Refine your candidate list (Stage 0) using the reviewer notes
+
+3. If NOT proceeding: What specific measurement unlocks the next phase?
+   (Get it into the experimental timeline)
+
+═══════════════════════════════════════════════════════════════════════════════
