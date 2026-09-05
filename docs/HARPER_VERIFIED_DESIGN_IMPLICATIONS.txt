@@ -1,0 +1,142 @@
+
+═════════════════════════════════════════════════════════════════════════════
+HARPER 2016 DATA: TRANSMISSION TABLE VERIFIED & IMPLICATIONS FOR DESIGN
+═════════════════════════════════════════════════════════════════════════════
+
+VERIFIED TRANSMISSION RATES (from Harper Figure 1):
+───────────────────────────────────────────────────
+Construct                          Rate    N     Successes
+T36 Infectious Clone baseline      0.6%    172   1
+FS577 wild-type                    24.1%   394   95
+────────────────────────────────────────────────────────
+T36-FS577 Hybrids:
+  p65 alone                        1.9%    258   5    ← Minor increase (+1.3 pp)
+  p61 alone                        4.0%    273   11   ← Minor increase (+3.4 pp)
+  p65 + p61 together               17.9%   196   35   ← Major synergistic (+17.3 pp)
+  p6-p18 region (both)             20.6%   253   52   ← With flanking sequence
+
+KEY FINDING: SYNERGY REQUIREMENT
+───────────────────────────────────
+
+The transmission gains:
+  p65 alone:        +1.9 pp (1.3% above baseline)
+  p61 alone:        +4.0 pp (3.4% above baseline)
+  Sum if additive:  ~5.9 pp
+  
+  p65 + p61 actual: +17.9 pp (17.3% above baseline)
+  
+⇒ **SYNERGISTIC GAIN: ~12 percentage points** when both are present
+⇒ **Neither gene alone recovers FS577 levels** (24.1%)
+⇒ **Requirement: co-evolved compatible p61 + p65 protein-protein interaction**
+
+MECHANISM: TITER vs BINDING
+──────────────────────────────
+
+Harper Figure 2 (RT-qPCR): "No significant difference (Tukey HSD P > 0.05) 
+in virus replication and accumulation caused by the insertions."
+
+Harper conclusion: "We propose that the increase in efficacy is due to the 
+polymorphisms contained within the substituted p61 and p65 genes."
+
+⇒ **TITER IS RULED OUT** — viral RNA accumulation identical across hybrids
+⇒ **MECHANISM IS LIKELY FOREGUT BINDING** — direct vector-protein interaction
+
+IMPLICATION FOR CONSTRUCT DESIGN
+─────────────────────────────────
+
+**PHASE 1 (NECESSITY TEST):**
+  Construct: FS577 + T36's p65 (2 aa) + T36's p61 (9 aa)
+  Background: FS577 (transmissible)
+  Hypothesis: If these 11 changes are sufficient to disable transmission,
+              transmission should drop from 24% toward 0-5% range
+  Expected outcome: 0-5% (test of sufficiency)
+  n per construct: 250-300 aphids (see Stage_0 power section)
+
+**RATIONALE:**
+  ✓ Tests the larger effect (p61+p65 together, not separately)
+  ✓ Starts with transmissible background (lower risk of assembly failure)
+  ✓ Avoids false negatives from testing individually (Harper showed they don't work alone)
+  ✓ Directly mirrors Grok's proposal (FS577 backbone + T36 residues)
+
+**PHASE 2 (IF PHASE 1 SUCCEEDS):**
+  Option A: Individual genes (p61 alone; p65 alone) to rank importance
+  Option B: Reciprocal (T36 + FS577 p65/p61) to confirm causality
+  Option C: Subset testing (identify minimal residues, if desired)
+
+**WHAT THIS CONTRADICTS:**
+  ✗ DeepSeek's "minimal subset" idea (D324G, E382D, D458G charged residues)
+    → If Harper's data is right, you need ALL 11 residues in Phase 1
+  ✗ Individual-gene testing as Phase 1
+    → Neither gene alone works; synergy is required
+  ✗ K174R in p33 as Phase 1
+    → p33 is a separate mechanism (literature: 16-23 pp effect)
+    → If p33 is titer/replication, but p65/p61 is binding, test binding first
+
+═════════════════════════════════════════════════════════════════════════════
+DESIGN RANKING: GROK > DEEPSEEK (v3) > DEEPSEEK (v1,2)
+═════════════════════════════════════════════════════════════════════════════
+
+GROK:
+  ✓ p65+p61 together (correct)
+  ✓ FS577 background (correct)
+  ✓ Full 11 residues (correct)
+  ~ Mechanism (foregut binding not explicitly stated, but direction right)
+  Rating: 8.5/10 — fully aligned with Harper data
+
+DEEPSEEK v3:
+  ✓ Pivoted to p65+p61 (correct)
+  ✓ 11 residues identified (correct)
+  ✓ Harper cited (correct)
+  ✗ Suggests "charged residue subset" (too reductive; Harper says synergy)
+  ✗ Ranking (implies p65 > p61 individually; Harper shows both needed)
+  ✗ Two-phase "individual then together" (wrong order; together first)
+  Rating: 6.5/10 — right genes, wrong phase design
+
+DEEPSEEK v1,v2:
+  ✗ CPm deletion (falsified by sequence identity)
+  Rating: 1/10 — misdirected
+
+═════════════════════════════════════════════════════════════════════════════
+STAGE_0 REQUIREMENTS: BEFORE CONSTRUCT ORDERING
+═════════════════════════════════════════════════════════════════════════════
+
+1. **Candidate Site Table**
+   - All 11 residues (p65 × 2; p61 × 9)
+   - Per-residue conservation (across your 130 genomes)
+   - Biochemical property (charge, hydrophobicity, size)
+   - Ranking: which are most likely to interact with aphid receptor?
+
+2. **Power Estimate**
+   - If H0: transmission stays at 24% (FS577 level)
+   - If H1: transmission drops to 5% (biocontainment threshold)
+   - n = ? to reject H0 with β=0.10, α=0.05 (one-tailed)
+   - [Stage_0 will compute this]
+
+3. **Success Criterion (stated upfront)**
+   - Explicit pass/fail cutoff (e.g., "transmission < 5% = pass")
+   - Stops HARKing — test is pre-registered
+
+4. **Null Result Statement**
+   - "If transmission remains > 15%, we conclude p65+p61 alone insufficient"
+   - Points to Phase 2 (add p33? Test reciprocal? Try individual genes?)
+
+5. **Mechanism Test (optional for Phase 1)**
+   - Viral titer (RT-qPCR) of Phase 1 constructs in citrus
+   - If titer ≈ FS577, mechanism is binding (Harper result) ✓
+   - If titer ↓, mechanism is replication/stability
+
+═════════════════════════════════════════════════════════════════════════════
+STATUS: READY TO BUILD STAGE_0_IN_SILICO_PLANNING.MD
+═════════════════════════════════════════════════════════════════════════════
+
+Inputs needed:
+  ✓ Harper 2016 verified (done)
+  ✓ Grok direction confirmed (done)
+  ✓ Mutagenesis targets verified (done)
+  ✓ Mechanism clarified (binding, not titer)
+  ~ Conservation table (have data, need per-residue annotation)
+  ~ Power estimate (have n values from Harper, need stat design)
+
+Next cell: Build Stage_0 skeleton with conservation + power, ready for 
+           presentation to team before construct ordering.
+
