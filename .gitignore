@@ -43,8 +43,7 @@ results/
 .env
 secrets.json
 
-# Large files (keep locally, exclude from git)
-*.pdf
+# Large files that still get committed: literature PDFs + decks (user override 2026-09-05)
 *.zip
 
 # Deliverables that DO belong in the repo (override the patterns above)
