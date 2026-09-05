@@ -45,6 +45,8 @@ secrets.json
 
 # Large files (keep locally, exclude from git)
 *.pdf
-*.pptx
 *.zip
-data/sequences/*.gb
+
+# Deliverables that DO belong in the repo (override the patterns above)
+!presentations/*.pptx
+!data/sequences/*.gb

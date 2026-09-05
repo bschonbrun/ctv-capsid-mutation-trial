@@ -16,38 +16,45 @@ This repository documents the data-driven hypothesis development for disabling a
 ## Repository Structure
 
 ```
-├── README.md (this file)
-├── LICENSE
+├── README.md              (this file)
+├── LICENSE                MIT
+├── CONTRIBUTING.md        team workflow and review path
+├── DOWNLOAD_CHECKLIST.md  provenance of the files in this repo
 ├── .gitignore
 │
-├── docs/
+├── docs/                                     11 documents + README
 │   ├── 01_Executive_Summary.md
 │   ├── 02_Hypothesis_Arc.md
 │   ├── 03_Evidence_and_Verification.md
 │   ├── 04_Sources_and_Citations.md
-│   └── 05_Multi_Model_Review_Brief.md
+│   ├── 05_Multi_Model_Review_Brief.md
+│   ├── 06_Answers_To_Review_Questions.md
+│   ├── 07_Sources_Update_And_Assessment.md
+│   ├── 08_Team_Summary_And_Workflow.md
+│   ├── 09_Literature_Review.md
+│   ├── 10_p33_Viroporin_Mechanism.md
+│   └── 11_Adversarial_Review_Pathways.md
 │
 ├── presentations/
-│   └── CTV_Presentation_Hypothesis_Arc.pptx  [16 slides]
+│   └── CTV_Presentation_Hypothesis_Arc.pptx        16 slides
 │
 ├── qa_database/
-│   └── CTV_QA_Knowledge_Base.json  [22 Q&A pairs for team]
+│   ├── CTV_QA_Knowledge_Base.json                  22 Q&A pairs, sourced
+│   └── CTV_QA_Knowledge_Base.txt                   same, terminal-readable
 │
 ├── data/
 │   ├── sequences/
-│   │   ├── ctv_genomes.gb  [130 full-length CTV records]
-│   │   ├── ctv_labeled.gb  [4 phenotype-labeled reference isolates]
-│   │   └── ctv_t36_clones.gb  [T36 infectious clones AY170468, EU937521]
-│   │
+│   │   ├── ctv_genomes.gb                          130 CTV records (4.9 MB)
+│   │   ├── ctv_labeled_isolates.gb                 4 phenotype-labeled isolates
+│   │   └── ctv_t36_infectious_clones.gb            AY170468, EU937521
 │   └── alignments/
-│       ├── pairwise_alignments.json  [p25, p27, p33, p61, p65 identity]
-│       └── p33_sequence_census.json  [K174/R174 distribution across 125 genomes]
+│       └── pairwise_protein_alignments.json        p25, p27, p33, p61, p65
 │
 └── construct_design/
-    ├── Stage_0_In_Silico_Planning.md
-    ├── Stage_1_Construct_Library.md
-    └── Stage_2_Experimental_Validation.md
+    └── Stage_0_In_Silico_Planning.md               design gate; not yet executed
 ```
+
+Each directory carries its own README describing what is in it and how to use it.
 
 ## Current Status
 
@@ -91,7 +98,7 @@ Use `docs/05_Multi_Model_Review_Brief.md` to submit independent reviews.
 4. **For adversarial review:** Copy `docs/05_Multi_Model_Review_Brief.md` into your CLI tools (Grok, GPT-6, Claude).
 
 ## License
-[Choose one: MIT / Apache-2.0 / Other]
+MIT — see `LICENSE`.
 
 ## Questions or Feedback?
 Open an issue or contact the research team.

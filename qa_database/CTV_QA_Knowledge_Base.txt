@@ -1,0 +1,141 @@
+═══════════════════════════════════════════════════════════════════════════════
+CTV APHID-TRANSMISSION PROJECT — Q&A KNOWLEDGE BASE
+Question / answer / source triples for team Q&A. Every answer states where it
+comes from and how firm it is. Reference tags [R1]-[R5] resolve in
+CTV_VERIFIED_BIBLIOGRAPHY.txt.
+═══════════════════════════════════════════════════════════════════════════════
+
+
+───────────────────────────────────────────────────────────────────────────────
+HYPOTHESIS
+───────────────────────────────────────────────────────────────────────────────
+
+[Q01] What was the original hypothesis?
+  That sequence variation in the minor coat protein CPm (p27) determines how efficiently the brown citrus aphid transmits CTV, and therefore that mutating CPm could disable transmission while leaving virion assembly and plant movement intact.
+  SOURCE: project internal — team's starting position
+  CONFIDENCE: n/a — hypothesis, not a finding
+
+[Q02] Why was the CPm hypothesis rejected?
+  FS577 and the T36 field isolate differ roughly 16-fold in aphid transmission (24.1% vs 1.5%) yet their p27/CPm proteins are identical at all 240 amino acids. A sequence that does not vary cannot explain a phenotype that does.
+  SOURCE: our own Biopython alignment of GenBank KC517488 vs U16304; R1 for the transmission rates
+  CONFIDENCE: high — arithmetic on retrieved sequence
+
+[Q03] Does that mean CPm has no role in transmission?
+  No, and this distinction matters. Killiny et al. 2016 show CPm and the HSP70 homologue participate physically in binding CTV to the aphid foregut. The falsified claim is narrower: CPm sequence *variation* does not explain the *differences* in transmission between these isolates. CPm may still be a necessary part of the machinery, and remains a plausible knockout target even though it is not the natural tuning knob.
+  SOURCE: R5; our alignment
+  CONFIDENCE: high
+
+[Q04] What is the current hypothesis?
+  That p33 is the principal genetic determinant of transmission efficiency among CTV isolates, acting together with the HSP70-homologue p65 and p61, and that engineering this protein set is the route to a transmission-disabled virus.
+  SOURCE: R1; R3; R2
+  CONFIDENCE: moderate — literature-supported, not yet tested by us
+
+───────────────────────────────────────────────────────────────────────────────
+EVIDENCE
+───────────────────────────────────────────────────────────────────────────────
+
+[Q05] What is the direct evidence that p33 controls transmission?
+  Shilts et al. 2020 substituted the p33 gene from the T68 strain into the T36 infectious clone and transmission rose from 1.5% to 17.8% (16 of 90 plants). This is a single-gene swap in an otherwise identical backbone, which is why it carries weight.
+  SOURCE: R1 — full text fetched and quoted
+  CONFIDENCE: high
+
+[Q06] What are the measured transmission rates we are anchoring to?
+  From Shilts et al. 2020: T68-1 44.18% (95 of 215), T30 1.57% (2 of 127), T36 1.5% (1 of 66). FS577 is reported at 24.1%. Note the denominators — the T36 figure rests on a single positive plant out of 66.
+  SOURCE: R1 — direct quotation
+  CONFIDENCE: high for the numbers; see Q14 for the precision caveat
+
+[Q07] What does the 2026 Virology paper add?
+  Shilts, Nehela and Killiny built a CTV-T36 backbone with p33, p18 and p13 deleted, complemented it with the FS577 versions of those genes, and reported transmission up to ~50% against a ~0.6% background. Of the three substituted genes only p33 differs in sequence between T36 and FS577, by the single change K174R, and that residue is shared with the highly transmissible T68-1.
+  SOURCE: R3 — PubMed abstract only; full text paywalled
+  CONFIDENCE: moderate — abstract-level, methods unread
+
+[Q08] What is known about how p33 works mechanistically?
+  Aknadibossian et al. 2025 show p33 is a viroporin — a virally encoded ion channel. It has Class I viroporin architecture, drives inward K+ and Na+ currents when expressed in Xenopus oocytes under two-electrode voltage clamp, and remodels membranes. It is only the third viroporin described in a plant virus.
+  SOURCE: R4 — full text fetched
+  CONFIDENCE: high for the biophysics; the link from channel activity to aphid transmission is unestablished
+
+[Q09] What is the p65/p61 evidence?
+  Harper et al. 2016 replaced both p65 and p61 in T36 and transmission rose from 0.6% to 18%. We know this result only through its quotation in Shilts et al. 2020 — we have not read the Harper paper itself.
+  SOURCE: R2 via R1
+  CONFIDENCE: moderate — second-hand
+
+───────────────────────────────────────────────────────────────────────────────
+K174R
+───────────────────────────────────────────────────────────────────────────────
+
+[Q10] Should we just make the K174R change?
+  No. Treating K174R as a one-residue switch is the single biggest error to avoid. Three things argue against it: the 2026 abstract itself concludes that efficient transmission requires coordinated function of P33, P61 and P65; K174R was demonstrated in a triple-deletion background, not as a point mutation in wild-type T36; and the residue census below shows K174 is not what naturally high transmitters carry.
+  SOURCE: R3; our census
+  CONFIDENCE: high — this is a reading of the source's own conclusion
+
+[Q11] What did the residue-174 census find?
+  Across 125 full-length (303 aa) p33 sequences from GenBank, 121 carry R174 (96.8%) and 4 carry K174 (3.2%) — EU937521, MH323441, MH323442 and ON094625. Every isolate with a measured transmission rate carries R174, including the poorly transmissible T30 at 1.57%.
+  SOURCE: our own census over 130 retrieved CTV genomes
+  CONFIDENCE: high — direct count, reproducible
+
+[Q12] Isn't it contradictory that low transmitters also carry R174?
+  It is the most important open question in the project. R174 is present in both a 44% transmitter and a 1.57% transmitter, so residue 174 cannot be sufficient on its own. The honest reading is that 174 is one input to a multi-protein system whose other inputs we have not identified. Anyone presenting K174R as the answer is overreading the evidence.
+  SOURCE: our census; R1; R3
+  CONFIDENCE: this is interpretation, flagged as such
+
+[Q13] Which T36 sequence should be used for residue calls?
+  Use the infectious clone EU937521, not the field isolate U16304. U16304's p33 reading frame differs such that position 174 does not correspond; an early error in this project came from calling residues off U16304.
+  SOURCE: our own inspection of both GenBank records
+  CONFIDENCE: high
+
+───────────────────────────────────────────────────────────────────────────────
+CAVEATS
+───────────────────────────────────────────────────────────────────────────────
+
+[Q14] How precise are the transmission percentages?
+  Much less precise than the decimal places suggest. T36's 1.5% is one positive plant in 66; T30's 1.57% is two in 127. The binomial confidence interval on one-in-66 runs from roughly 0% to 8%. Quote these as 'low single digits' rather than as 1.5% when precision matters, and expect a wide band on any small-denominator comparison.
+  SOURCE: denominators from R1; interval reasoning ours
+  CONFIDENCE: high — the denominators are quoted in the paper
+
+[Q15] Why do both 0.6% and 1.5% appear as the T36 baseline?
+  They come from different experiments. 1.5% is Shilts et al. 2020's own measurement of their T36 clone; 0.6% is the baseline in Harper et al. 2016's p65/p61 work and is the background the 2026 paper also quotes. Different clones and conditions. Use 1.5% when referring to the Shilts chimera series and 0.6% only when discussing the Harper lineage of experiments.
+  SOURCE: R1; R2 via R1; R3
+  CONFIDENCE: high
+
+[Q16] What have we NOT verified?
+  Four things. The full text of the 2026 Virology paper (paywalled — we have only the PubMed abstract, so its methods and statistics are unread). The Harper et al. 2016 paper (never fetched). Any structural prediction for K174R (no modelling run). And whether the FS577 24.1% figure is an original measurement in Shilts et al. 2020 or itself a citation to earlier work.
+  SOURCE: retrieval status recorded per reference in the bibliography
+  CONFIDENCE: high — this is an inventory of gaps
+
+[Q17] Do we have any data of our own on transmission?
+  None. Every transmission number in this project comes from the published literature. Our own contribution is entirely sequence analysis: alignments and residue censuses over GenBank records. No wet-lab measurement has been made by this team yet.
+  SOURCE: project record
+  CONFIDENCE: high
+
+───────────────────────────────────────────────────────────────────────────────
+DESIGN
+───────────────────────────────────────────────────────────────────────────────
+
+[Q18] What should the first construct set test?
+  The single question worth spending the first round on is whether p33 alone is sufficient in a wild-type T36 background, or whether p61 and p65 must move with it. That means a p33-only swap, a p61+p65 swap reproducing Harper et al. 2016, and the p33+p61+p65 combination, each against unmodified T36 and a high-transmitting positive control. Point mutants of residue 174 are a second round, not a first.
+  SOURCE: design inference from R1, R2, R3
+  CONFIDENCE: ours — a proposal, not a result
+
+[Q19] Why is this direction attractive for biocontainment specifically?
+  Because the literature runs in the gain-of-function direction — low transmitters made higher — which means the same gene set is where loss of transmission should be engineerable, and because p33 is dispensable for infection of the primary host. A protein that can be deleted without losing systemic infection is a favourable target for disabling transmission without disabling the vector's utility as a delivery agent.
+  SOURCE: R1; R3
+  CONFIDENCE: moderate — direction is inference, not demonstrated
+
+[Q20] What would falsify the current hypothesis?
+  If a p33+p61+p65 triple substitution into T36 fails to raise transmission above the low single digits, the multi-protein model as we have framed it is wrong and the determinant lies elsewhere — most likely in the 5' UTR or in genes we have not considered. That is a clean stopping rule and it should be written into the protocol before any plants are inoculated.
+  SOURCE: ours
+  CONFIDENCE: ours — stated so the hypothesis stays falsifiable
+
+───────────────────────────────────────────────────────────────────────────────
+PROCESS
+───────────────────────────────────────────────────────────────────────────────
+
+[Q21] Were there errors in this analysis, and what were they?
+  Yes, five that were found and corrected. A position-by-position p33 comparison across an indel reported 44.7% identity where proper gapped alignment gives 98.7%. Residue 174 was initially called off the wrong T36 record. The 2026 paper was cited 67 times as 'Harper et al. 2026' when its authors are Shilts, Nehela and Killiny. The AEM foregut-binding paper was cited 24 times as 'Prado et al. 2016' when its authors are Killiny, Harper, Alfaress, El Mohtar and Dawson. And p61/p65 were written up as a fallback option when the 2026 abstract presents them as required partners.
+  SOURCE: project record; corrections applied 2026-09-05
+  CONFIDENCE: high
+
+[Q22] How should claims in these documents be weighted?
+  By retrieval status, which the bibliography records for every reference. Claims traceable to a fetched full text are the firmest. Claims from an abstract are weaker — methods and statistics are unread. Claims known only through quotation in another paper are weaker still. Our own alignments are reproducible but not peer reviewed. Anything labelled interpretation is neither.
+  SOURCE: CTV_VERIFIED_BIBLIOGRAPHY.txt
+  CONFIDENCE: high

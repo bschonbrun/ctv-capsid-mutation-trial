@@ -1,4 +1,8 @@
+# Multi-Model Review Brief
 
+*Source document: `CTV_MULTIMODEL_REVIEW_BRIEF.txt` — generated in the CTV transmission analysis session. Fixed-width layout preserved.*
+
+```text
 ═══════════════════════════════════════════════════════════════════════════════
 CTV TRANSMISSION BIOCONTAINMENT PROJECT
 MULTI-MODEL INDEPENDENT REVIEW BRIEF
@@ -230,3 +234,4 @@ Own data:
     AY170468) — reproducible, open source
 
 ═══════════════════════════════════════════════════════════════════════════════
+```
