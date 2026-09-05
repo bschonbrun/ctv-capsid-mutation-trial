@@ -1,0 +1,48 @@
+{
+  "stack_version": "1.3.1",
+  "stack_tier": 4,
+  "purpose": "Documentation and evidence repository for the CTV aphid-transmission biocontainment hypothesis (p33 as primary transmission determinant).",
+  "created": "2026-09-05",
+  "last_modified": "2026-09-05",
+  "orchestration_mode": "main-thread",
+  "strict_mode": true,
+  "domain_mode": null,
+  "domain_mode_paths": {},
+  "sensitivity": { "level": "normal", "notes": "" },
+  "active_subagents": [],
+  "required_approvals": [],
+  "model_overrides": {},
+  "skill_overrides": {},
+  "review": { "codex_transport": "api" },
+  "cost_protection": {
+    "per_session_alert_usd": 5.00,
+    "per_day_alert_usd": 50.00,
+    "per_session_hard_cap_usd": null
+  },
+  "loop_policy": {
+    "enabled": true,
+    "default_autonomy": "checkpoint",
+    "autonomy_ceiling": "checkpoint",
+    "max_iterations": 25,
+    "max_recursion_depth": 5,
+    "per_run_budget_usd": 5,
+    "timeout_minutes": 180,
+    "no_progress_exit": true,
+    "require_external_termination": "auto",
+    "commit_per_iteration": false,
+    "irreversible_actions_break_loop": true,
+    "level": null
+  },
+  "change_history": [
+    {
+      "date": "2026-09-05T13:34:20Z",
+      "setting": "stack_tier",
+      "old_value": null,
+      "new_value": 4,
+      "reason": "init",
+      "scope": "project",
+      "also_updated_global": false,
+      "invoked_via": "/project-init"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "baseline_version": "1.6.2",
+  "compiled_at": "2026-09-05",
+  "inputs": {
+    "domain_mode": null,
+    "sensitivity": "normal",
+    "required_approvals": [],
+    "mcp_servers": [
+      "context7",
+      "playwright",
+      "supabase"
+    ],
+    "consent_scope": {
+      "v": 1,
+      "modes": [],
+      "scoped": [],
+      "gates": []
+    },
+    "consent_scope_hash": "sha256:cf50d792da5dcb9243b542ad4ca47df3b8b9cb377933a19d89094f961bc365d7",
+    "suppressions_honored": [],
+    "suppressions_withheld": [],
+    "acks_in_force": [],
+    "acks_prunable": [],
+    "baseline_hash": "sha256:e48c548df9ce1814d622a145c3b5aacf5e5e28246aaf8294f2a1f302dee3cbeb",
+    "domain_mode_paths_ignored": [],
+    "domain_mode_paths_malformed": []
+  },
+  "emitted": {
+    "deny": [
+      "mcp__context7__apply_migration",
+      "mcp__context7__deploy_edge_function",
+      "mcp__context7__execute_sql",
+      "mcp__playwright__apply_migration",
+      "mcp__playwright__deploy_edge_function",
+      "mcp__playwright__execute_sql",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__deploy_edge_function",
+      "mcp__supabase__execute_sql",
+      "Edit(./.claude/permissions.stack.json)",
+      "Edit(./.claude/settings.json)",
+      "Edit(./.claude/settings.local.json)",
+      "Edit(./docs/user/.meta/**)",
+      "Edit(./docs/value/.meta/**)",
+      "Edit(~/.claude/config/permissions-baseline.json)",
+      "Edit(~/.claude/session-state/**)",
+      "Edit(~/.claude/settings.json)",
+      "Read(./.claude/next_prompt.md)",
+      "Read(~/.aws/credentials)",
+      "Read(~/.ssh/**)"
+    ],
+    "ask": []
+  },
+  "ledger": {
+    "deny": {
+      "mcp__context7__apply_migration": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__context7__deploy_edge_function": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__context7__execute_sql": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__playwright__apply_migration": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__playwright__deploy_edge_function": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__playwright__execute_sql": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__supabase__apply_migration": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__supabase__deploy_edge_function": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "mcp__supabase__execute_sql": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(./.claude/permissions.stack.json)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(./.claude/settings.json)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(./.claude/settings.local.json)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(./docs/user/.meta/**)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(./docs/value/.meta/**)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(~/.claude/config/permissions-baseline.json)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(~/.claude/session-state/**)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Edit(~/.claude/settings.json)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Read(./.claude/next_prompt.md)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Read(~/.aws/credentials)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      },
+      "Read(~/.ssh/**)": {
+        "owner": "stack",
+        "first_seen": "2026-09-05",
+        "last_compiled": "2026-09-05"
+      }
+    },
+    "ask": {}
+  },
+  "pinned": [],
+  "waivers": []
+}

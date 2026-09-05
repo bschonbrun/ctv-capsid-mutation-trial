@@ -50,3 +50,22 @@ secrets.json
 # Deliverables that DO belong in the repo (override the patterns above)
 !presentations/*.pptx
 !data/sequences/*.gb
+# Claude Code Stack — runtime scratch, never commit
+.claude/scratch/
+.claude/worktrees/
+.claude/plans/
+.claude/sessions/
+.claude/design-targets/
+.claude/cost-projections/
+.claude/coverage-snapshots/
+.claude/reviews/
+.claude/validations/
+.claude/next_prompt.md
+.claude/.automation-offered
+.claude/.graphify-init-done
+.claude/settings.local.json
+.claude/graphify/
+# graphify (ADR-054) — regenerable, large, contains source excerpts. Never commit.
+graphify-out/
+graph.json
+.claude/settings.json.lock
