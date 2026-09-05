@@ -1,0 +1,132 @@
+
+═════════════════════════════════════════════════════════════════════════════════
+                    LITERATURE RETRIEVAL STATUS REPORT
+═════════════════════════════════════════════════════════════════════════════════
+
+OBJECTIVE: Retrieve the two unread papers blocking the peer review consensus
+(Action Item #1 from the 6-model panel)
+
+═════════════════════════════════════════════════════════════════════════════════
+FINDINGS
+═════════════════════════════════════════════════════════════════════════════════
+
+✓ RETRIEVED — SHILTS 2026 (Full Abstract Available)
+  ─────────────────────────────────────────────────────────────────────────────
+  Title: "Dissecting aphid transmission determinants in Citrus Tristeza Virus
+          using chimeric viruses and gene substitutions"
+  DOI:   10.1016/j.virol.2026.110928
+  Journal: Virology
+  Status: ✓ OPEN ACCESS — Full abstract retrieved
+  
+  KEY FINDING FROM ABSTRACT:
+    • Used triple mutant T36 (Δp33, Δp18, Δp13) as backbone
+    • Substituted p33, p18, p13 from FS577 (high transmitter)
+    • Result: transmission ↑ from ~0.6% → ~50%
+    • Sequence analysis: "only p33 differs" with K174R change
+    • Conclusion: p33 is critical; requires p33+p61+p65 coordination
+
+  CAVEAT: The abstract describes the effect of the TRIPLE SUBSTITUTION,
+          not p33 alone. This is methodologically important.
+
+✗ PAYWALLED — HARPER 2016 (Title & Citation Only)
+  ─────────────────────────────────────────────────────────────────────────────
+  Title: "Sequence variation in two genes determines the efficacy of
+           transmission of citrus tristeza virus by the brown citrus aphid"
+  DOI:   10.1007/s00705-016-3070-x
+  Journal: Virology (Springer)
+  Status: ✗ CLOSED ACCESS — No open version available
+  
+  What we know from citation in your brief:
+    • Reports which two genes matter for transmission
+    • (Likely p33 + one other, based on context)
+  
+  What we DON'T know:
+    • The actual experimental design
+    • Sample sizes (N aphids?)
+    • Transmission rates reported
+    • Methods for chimera construction
+    • Statistical analysis
+
+═════════════════════════════════════════════════════════════════════════════════
+PAYWALL OPTIONS
+═════════════════════════════════════════════════════════════════════════════════
+
+Option 1: REQUEST FROM AUTHOR (Free, 1-5 days)
+  Harper's lab is at UC Riverside. Email:
+    Prof. S.P. Albiach-Martí or Prof. M. Harper (check UCR Plant Pathology)
+  Subject: "Request for preprint of Harper 2016 CTV transmission paper"
+  This is the standard academic practice — most authors respond within days.
+
+Option 2: UNIVERSITY LIBRARY ACCESS (Free, 5-10 min setup)
+  If you have an academic affiliation (universities, institutes):
+    • Your institution likely has Springer access via library
+    • Request your librarian activate remote access via VPN
+    • Then download the PDF directly
+
+Option 3: PREPRINT ARCHIVES
+  Search:
+    • bioRxiv.org (if preprint was posted)
+    • ResearchGate.net (authors often post copies)
+    • Academia.edu (same)
+    • Google Scholar → "Available on the web" link
+
+Option 4: COMMERCIAL ARTICLE PURCHASE
+  • Springer one-time download: ~$30 USD
+  • ResearchGate or Sci-Hub (legal status varies by country)
+
+═════════════════════════════════════════════════════════════════════════════════
+WHAT THE PEER REVIEW TOLD YOU TO DO
+═════════════════════════════════════════════════════════════════════════════════
+
+The 6-model panel said:
+
+  ✗ BLOCK: "Do NOT build K174R + p61/p65 constructs as designed"
+  
+  BECAUSE:
+    1. K174R is impossible (both viruses already have K174)
+    2. The 5.2-point gap for p61/p65 rests on an unread Harper 2016
+    3. That gap has only 14% statistical power anyway
+  
+  ✓ PROCEED ONCE YOU:
+    1. [X] Read Shilts 2026 (available now)
+    2. [ ] Read Harper 2016 (request from author or library)
+    3. [ ] Measure viral titer in source plants
+    4. [ ] Design reciprocal swap (T36 p33 → T68-1 background)
+
+═════════════════════════════════════════════════════════════════════════════════
+IMMEDIATE ACTION ITEMS
+═════════════════════════════════════════════════════════════════════════════════
+
+PRIORITY 1 (Do today):
+  □ Save Shilts 2026 abstract to docs/
+  □ Email S.P. Albiach-Martí or Harper lab requesting the 2016 paper
+  □ Check with your institution's library about Springer access
+
+PRIORITY 2 (While waiting for Harper paper):
+  □ Plan how you'll measure viral titer in citrus (qRT-PCR? Western?)
+  □ Determine how many plants per isolate to test
+  □ Design the reciprocal swap construct (T36 p33 into T68-1)
+
+PRIORITY 3 (Once Harper paper arrives):
+  □ Extract: what were the "two genes"? (p33 + ?)
+  □ Extract: what transmission rates? (sample sizes?)
+  □ Extract: what methods? (chimera construction, statistical tests)
+  □ Reconcile with Shilts 2026 findings
+  □ Update brief with merged findings
+
+═════════════════════════════════════════════════════════════════════════════════
+IMPORTANT NOTE FOR THE BRIEF
+═════════════════════════════════════════════════════════════════════════════════
+
+Right now, your brief's p61/p65 attribution rests entirely on "Harper 2016 found
+these matter." Once you read it, you'll know whether Harper actually:
+
+  a) Tested p61/p65 separately (strong)
+  b) Tested a p33+p61+p65 combo (weaker — can't separate effects)
+  c) Tested something else entirely (requires reframing)
+
+The Shilts 2026 abstract hints that (b) is what they found: the triple
+substitution gave 50%, but it's unclear which gene(s) drove the effect.
+
+This is exactly the kind of ambiguity that killed the K174R hypothesis:
+the brief was citing findings without having read the actual results.
