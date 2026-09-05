@@ -1,0 +1,47 @@
+================================================================================
+MUTAGENESIS TARGETS: VERIFIED FROM GENBANK
+================================================================================
+
+Task: Make FS577 (high transmission) resemble T36 clones in p61+p65
+This tests whether p65+p61 control transmission, as Grok's document proposes
+
+
+================================================================================
+Option A: Target AY170468 (T36 clone)
+================================================================================
+
+Required changes in FS577 to match AY170468:
+  p61: 9 substitutions
+    S169N
+    I179T
+    T224A
+    M289T
+    D324G
+    E382D
+    S391G
+    I455V
+    D458G
+
+  p65: 2 substitutions
+    G227S
+    R496H
+
+  Total: 11 changes
+
+================================================================================
+Option A: Target EU937521 (T36 clone)
+================================================================================
+
+Required changes in FS577 to match EU937521:
+  p61: 6 substitutions
+    S169N
+    I179T
+    T224A
+    M289T
+    S391G
+    D458G
+
+  p65: 1 substitutions
+    R496H
+
+  Total: 7 changes
