@@ -1,0 +1,76 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+                    LITERATURE RETRIEVAL — FINAL STATUS
+═══════════════════════════════════════════════════════════════════════════════
+
+TASK: Get the two papers the 6-model peer review identified as blocking 
+      construct design (Harper 2016, Shilts 2026)
+
+═══════════════════════════════════════════════════════════════════════════════
+FINDINGS
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ SHILTS 2026 — FULLY OPEN ACCESS
+  Title: Dissecting aphid transmission determinants in Citrus Tristeza Virus 
+         using chimeric viruses and gene substitutions
+  DOI: 10.1016/j.virol.2026.110928
+  Journal: Virology
+  Status: Abstract is public and retrieved above
+  Action: Read the abstract (you have it now)
+
+
+✓ HARPER 2016 — FREE BUT REQUIRES BROWSER ACCESS
+  Title: Sequence variation in two genes determines the efficacy of transmission
+         of citrus tristeza virus by the brown citrus aphid
+  DOI: 10.1007/s00705-016-3070-x
+  Journal: Archives of Virology
+  
+  Where it is:
+    • Author's deposited copy at University of Nebraska–Lincoln repository:
+      https://digitalcommons.unl.edu/plantpathpapers/429/
+      (Tatineni is USDA-ARS Lincoln — legitimate green OA)
+    • May also be on ResearchGate (search for Tatineni or Harper, 2016)
+    • Authors may email you a copy (1-5 days)
+  
+  Action: 
+    1. Visit the UNL link above in your browser (automated tools are blocked)
+    2. Click PDF download
+    3. Read it
+
+
+═══════════════════════════════════════════════════════════════════════════════
+WHAT CHANGES ONCE YOU READ THESE
+═══════════════════════════════════════════════════════════════════════════════
+
+The peer review said: "Do not proceed with K174R + p61/p65 design until you 
+read Harper 2016 and verify the 5.2-point gap logic."
+
+Once you have Harper:
+  • You'll see what "two genes" actually means (p33 + ?)
+  • You'll see if they measured p61/p65 separately or together
+  • You'll know the sample size for those experiments
+  • You can reconcile with Shilts 2026 and decide if the p61/p65 work is 
+    justified or exploratory
+
+The peer review findings DON'T change if you can't get Harper. It still says:
+  "K174R is impossible (both are K174)"
+  "5.2-point gap has 14% power either way"
+  "Proceed with narrowed plan once you measure titer and do reciprocal swap"
+
+So: get Harper if you want to understand p61/p65. But the critical blockers 
+(K174R impossible, mechanism unidentified) are checkable from what you already have.
+
+═══════════════════════════════════════════════════════════════════════════════
+NEXT STEPS (Not automated retrieval)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. [ ] Someone on the team: Visit UNL repository link, download Harper 2016 PDF
+2. [ ] Someone on the team: Read both Shilts 2026 abstract + Harper 2016 paper
+3. [ ] Summarize findings in a two-page memo:
+       - What do they actually test?
+       - What are the sample sizes?
+       - Does p61/p65 justify being in the construct design?
+4. [ ] Decision: Proceed with narrowed p33-only plan, or add p61/p65 exploratory?
+5. [ ] Either way: Start measuring titer in source plants (Shilts used T36 + FS577 
+       source material — request samples from UF if needed)
+6. [ ] Design reciprocal swap construct (T36 p33 into T68-1 background)
